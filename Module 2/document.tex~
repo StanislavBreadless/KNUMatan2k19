@@ -614,7 +614,7 @@ $$[a;b] \subset \bigcup_{k=1}^{n} I_{x_k}$$
 
 \textbf{Наслідок.} Нехай $f$ --- неперервна на проміжку $[a;b]$. Тоді $f(x)$ приймає всі значення від $f(a)$ до $f(b)$.
 
-\textbf{Доведення.} $\forall y \in [f(a); f(b)]$ можна створити функцію $\varphi (x) = f(x) - y$. 
+\textbf{Доведення.} $forall y \in [f(a); f(b)]$ можна створити функцію $\varphi (x) = f(x) - y$. 
 $$\varphi (a) < 0,\ \varphi(b) > 0 \Longrightarrow \textrm{За теоремою Коші } \exists x_0 : \varphi(x_0) = 0 \Longrightarrow f(x_0) = y$$
 
 \vspace{3mm}
@@ -632,7 +632,7 @@ $$\varphi(1) = f(1) - 1 < 0$$
 	\textbf{Рівномірна неперервність}
 \end{center}
 
-\textbf{Означення рівномірної неперервності за Коші.} $f : \mathbb{R} \to \mathbb{R}$ називається рівномірно неперервною на множині $X \subset D_f$, якщо 
+\textbf{Означення рівномірної неперервності за Коші.} $f : \mathbb{R} \to \mathbb{R}$ називається рівномірно неперервною на множині $X \subset D_F$, якщо 
 $$\forall \varepsilon > 0 \ \exists \delta < 0 : \forall \{ x^{'}, x^{''}\} \subset X$$
 $$|x^{'} - x^{''}| < \delta \Longrightarrow |f(x^{'}) - f(x^{''})| < \varepsilon$$
 
@@ -670,15 +670,5 @@ $$x_n  - y_n \to 0,\ n \to \infty \Longrightarrow f(x_n) - f(y_n) \to 0, n \to \
 						   0, & x = 0\end{cases}$$
 		Функція розривається в точці $x_0$, тож вона не є неперервною, а отже й не є рівномірно неперервною.
 \end{enumerate}	
-
-\vspace{3mm}
-
-\textbf{Теорема. Лінійна властивість рівномірної неперервності.} $f$ і $g$ --- рівномірно меперервні на $X \subset D_f = D_g \Longrightarrow \forall \alpha, \beta \in \mathbb{R}\ \alpha f + \beta g$ --- рівномірно неперервна на $X$.
-
-\textbf{Доведення.} Очевидно з означення за Коші.
-
-\vspace{5mm}
-
-\textbf{Теорема (Рівномірна неперервність на звуженні).} $f$ --- рівномірно неперервна на $X \Longrightarrow \forall X_1 \subset X\ f \setminus _{X_1}$ рівномірно неперервна на $X_1$. (Тут  $f \setminus _{X_1}$ позначає звуження $f$ на $X_1$)
 
 \end{document} 
