@@ -6,7 +6,8 @@
 \usepackage[makeroom]{cancel}
 
 \title{Конспекти лекцій з математичного аналізу Анікушина А.В. Модуль 2.}
-\author{По поводу неточностей и пожеланий пишите в телеграм @bezkorstanislav}
+\author{Автор текста @bezkorstanislav \\ Если есть ошибки, пишите ему в телеграм \\  \small{Aфтар выражает благодарность @vic778 за многочисленные поправки}}
+
 \date{October 2019}
 
 \begin{document}
@@ -251,7 +252,7 @@ $$\Longleftrightarrow \lim_{x \to 0} \frac{\ln(x+1) - x}{x} = 0 \Longleftrightar
 
 \vspace{5mm}
 
-\textbf{Теорема.} Розглянемо шкалу функцій $x^n, \ x \in \mathbb{N}$ і вважатимемо, що $x \to 0$.
+\textbf{Теорема.} Розглянемо шкалу функцій $x^n, \ n, m \in \mathbb{N}$ і вважатимемо, що $x \to 0$.
 
 $$x^m = o(x^n), \ m > n \textrm{ (Наприклад, $x^{10} = o(x^2)$)}$$
 $$x^m \cdot o(x^n) = o(x^{n+m})$$
@@ -540,9 +541,9 @@ $$\textrm{Тобто } \exists x^{*} \in D_f, x^{*} < x_0 : f(x^*) \in (S - \var
 
 \vspace{5mm}
 
-\textbf{Теорема про неперервний образ компакта.} Нехай $f \in C(K)$, $K$ --- компакт. Тоді $f(K)$ --- теж компакт.
+\textbf{Теорема про неперервний образ компакту.} Нехай $f \in C(K)$, $K$ --- компакт. Тоді $f(K)$ --- теж компакт.
 
-\textbf{Доведення.} Нехай $\{ y_n\}_{n=1}^{\infty}$ --- довільна послідовність з $f(K)$. Оскільки $\forall n\ \exists x_n \in K : f(x_n) = y_n$, розглянемо послідовність $\{ x_n\}_{n=1}^{\infty}$.  Оскільки $K$ --- компакт, то з $\{ x_n\}_{n=1}^{\infty}$ можна обрати збіжну підпослідовність $\{ x_{n_k}\}_{k=1}^{\infty}$. При чому $x_{n_k} \to x_0 \in \mathbb{R}$.
+\textbf{Доведення.} Нехай $\{ y_n\}_{n=1}^{\infty}$ --- довільна послідовність з $f(K)$. Оскільки $\forall n\ \exists x_n \in K : f(x_n) = y_n$, розглянемо послідовність $\{ x_n\}_{n=1}^{\infty}$.  Оскільки $K$ --- компакт, то з $\{ x_n\}_{n=1}^{\infty}$ можна обрати збіжну підпослідовність $\{ x_{n_k}\}_{k=1}^{\infty}$. При цьому $x_{n_k} \to x_0 \in \mathbb{R}$.
 
 Оскільки $f$ --- неперервна в точці $x_0$, то $f(x_{n_k}) \to f(x_0)$, а отже $y_{n_k} \to f(x_0) \in f(K)$.
 
@@ -552,7 +553,7 @@ $$\textrm{Тобто } \exists x^{*} \in D_f, x^{*} < x_0 : f(x^*) \in (S - \var
 
 \vspace{5mm}
 
-\textbf{Теорема про неперервність оберненої функції.} Нехай $f \in C(\{ K\})$, $K$ --- компакт, а $f$ --- оборотня функція (тобто існує обернена до неї функція). Тоді обернена функція теж є неперервною на $K$.
+\textbf{Теорема про неперервність оберненої функції.} Нехай $f \in C( K)$, $K$ --- компакт, а $f$ --- оборотня функція (тобто існує обернена до неї функція). Тоді обернена функція теж є неперервною на $K$.
 
 \textbf{Доведення.} Самі знайдете :) + вам варто зрозуміти чи працює теорема, якщо $K$ не є компактом.
 
@@ -564,13 +565,13 @@ $$\textrm{Тобто } \exists x^{*} \in D_f, x^{*} < x_0 : f(x^*) \in (S - \var
 
 \textbf{Теорема Бореля-Лебега.} Нехай $K$ --- компакт і $\{ I_n\}_{n=1}^{\infty}$ --- послідовність інтервалів і при цьому 
 $$K \subseteq \bigcup\limits_{n=1}^{\infty} I_n$$ 
-Тоді з $I_n$ можна обрати скінченну кількість інтервалів, які будуть покривати $K$. 
+Тоді з $\{ I_n \}$ можна обрати скінченну кількість інтервалів, які будуть покривати $K$. 
 
 \textit{Зауваження.} У теоремі йдеться саме про відкриті інтервали.
 
 \vspace{3mm}
 
-\textbf{Доведення.} Розглянемо $K$. Оскільки $K$ --- обмежена, то $\exists [a,b]$, такий, що $K \subset [a,b]$. Розглянемо $K_l = K \cap [a;\frac{a+b}{2}], K_l = K \cap [\frac{a+b}{2}; b]$.
+\textbf{Доведення.} Розглянемо $K$. Оскільки $K$ --- обмежена, то $\exists [a,b]$, такий, що $K \subset [a,b]$. Розглянемо $K_l = K \cap [a;\frac{a+b}{2}], K_r = K \cap [\frac{a+b}{2}; b]$.
 
 Якщо припустити, що $K$ не можна покрити скінченною кількістю інтервалів, то те саме справделиве або для $K_l$ або для $K_r$. 
 
@@ -586,15 +587,15 @@ $$K \subseteq \bigcup\limits_{n=1}^{\infty} I_n$$
 
 \vspace{5mm}
 
-\textbf{Теорема Коші (Про проміжки значень).} Нехай $f \in C([a;b])$ і $f(a) f(b) \leq 0$. Тоді
+\textbf{Теорема Коші (Про проміжне значення).} Нехай $f \in C([a;b])$ і $f(a) f(b) \leq 0$. Тоді
 $$\exists c \in [a;b] : f(c) = 0$$
-\textbf{Доведення.} Припустимо, що це не так. Тобто для $\forall x \in [a;b]\ f(x) \neq 0$. 
+\textbf{Доведення.} Припустимо, що це не так. Тобто, для $\forall x \in [a;b]\ f(x) \neq 0$. 
 
 Не обмежуючи загальності $f(a) < 0$, а $f(b) > 0$.
 
 \vspace{3mm}
 
-\textit{Лема.} Якщо функція $f \in C(\{x_0\}) \textrm{ і } f(x_0) > 0$ то $\exists (a;b) : x_0 \in (a,b),\ \forall x \in (a,b)\ f(x) > 0$.
+\textit{Лема.} Якщо функція $f \in C(\{x_0\}) \textrm{ і } f(x_0) > 0$ то $\exists (a;b) : x_0 \in (a,b),\ \forall x \in (a,b)\cap D_f\ f(x) > 0$.
 
 \textit{Доведення.} Нехай $ \varepsilon = \frac{f(x_0)}{2}$. Тоді:
 $$ \exists \delta > 0 : \forall x \in D_f\ |x - x_0| < \delta \Longrightarrow |f(x) - f(x_0)| < \varepsilon$$
@@ -637,13 +638,15 @@ $$\forall \varepsilon > 0 \ \exists \delta < 0 : \forall \{ x^{'}, x^{''}\} \sub
 $$|x^{'} - x^{''}| < \delta \Longrightarrow |f(x^{'}) - f(x^{''})| < \varepsilon$$
 
 \textit{Приклад:}
-$$f(x) = \sin x$$
+$$f(x) = \sin x,\ x \in \mathbb{R}$$
+Покажемо, що вона рівномірно неперервна:
 $$|f(x^{'}) - f(x^{''})| = \Big|2 \sin \frac{x^{'} - x^{''}}{2} \cos \frac{x^{'} + x^{''}}{2}\Big| \leq \Big| 2 \sin \frac{x^{'} - x^{''}}{2} \Big| \leq$$
 $$\leq 2 \frac{|x^{'} - x^{''}|}{2} = |x^{'} - x^{''}| < \varepsilon$$
+Як тільки $|x^{'} - x^{''}| - \delta = \varepsilon$
 
 \vspace{3mm}
 
-\textit{Зауваження.} З означення слідує, що якщо функція рівномірно неперервна на $X$, то $f \in C(X)$.
+\textit{Зауваження.} З означення слідує, що якщо функція рівномірно неперервна на множині $X$ (рівномірно неперервна в кожній точці множини $X$), то $f \in C(X)$.
 
 \vspace{5mm}
 
@@ -679,6 +682,104 @@ $$x_n  - y_n \to 0,\ n \to \infty \Longrightarrow f(x_n) - f(y_n) \to 0, n \to \
 
 \vspace{5mm}
 
-\textbf{Теорема (Рівномірна неперервність на звуженні).} $f$ --- рівномірно неперервна на $X \Longrightarrow \forall X_1 \subset X\ f \setminus _{X_1}$ рівномірно неперервна на $X_1$. (Тут  $f \setminus _{X_1}$ позначає звуження $f$ на $X_1$)
+\textbf{Теорема (Рівномірна неперервність на звуженні).} $f$ --- рівномірно неперервна на $X \Longrightarrow \forall X_1 \subset X\ f | _{X_1}$ рівномірно неперервна на $X_1$. (Тут  $f | _{X_1}$ позначає звуження $f$ на $X_1$)
+
+\vspace{5mm}
+
+\textbf{Теорема. (Рівномірна неперервність на об'єднанні).} Якщо $f$ --- рівномірно неперервна на $(a,b]$ і $[b;c)$ ($a, c \in \overline{\mathbb{R}}$), то тоді $f$ рівномірно неперервна на $(a;c)$.
+
+\textbf{Доведення.} $\forall \varepsilon > 0 : x^{'}, x^{''} \in (a,c)$:
+
+\begin{enumerate}
+	\item $x^{'}, x^{''} \in (a,b] \Longrightarrow $ очевидно неперервна.
+	\item $x^{'}, x^{''} \in [b,c) \Longrightarrow $ очевидно неперервна.
+	\item $x^{'} \in (a, b], \ x^{''} \in [b;c).$
+		$$|f(x^{'}) - f(x^{''})| = |f((x^{'}) -f(b) + f(b) - f(x^{''}) | \leq  |f((x^{'}) -f(b)|  + |f(b) - f(x^{''}) | $$
+		З умови $ \exists \delta_1 :  |f((x^{'}) -f(b)| < \varepsilon,\ \exists \delta_2 :  |f(b) - f(x^{''}) | < \varepsilon$.
+		
+		Якщо ми поставимо $ \delta = min ( \delta_1, \delta_2)$, то отримаємо:
+		$$ |f((x^{'}) -f(b)| + |f(b) - f(x^{''}) | < 2 \varepsilon $$
+\end{enumerate}
+
+\vspace{3mm}
+
+\textbf{Теорема Кантора.} $f$ --- неперервна на $X$ і $X$ --- компакт, то $f$ рівномірно неперервна на $X$.
+
+\textbf{Доведення.} Нехай $f$ не є рівномірно неперервною на $X$. Це ознаає заперечення означення Коші:
+$$\exists \varepsilon > 0\ \forall \delta > 0\ \exists \{ x^{'},  x^{''}\} \subset X : | x^{'} -  x^{''}| < \delta \ \ |f( x^{'})  - f( x^{''}) | \geq \varepsilon \textrm{ Назвемо цю умову (1)}$$.
+Візьмемо деяку послідовність дельт таку, що $\delta_n = o(1)$, (Наприклад $ \delta_n = \frac{1}{n}).$
+$$\forall n\in \mathbb{N} \ \exists  x^{'},  x^{''} : | x^{'}_n -  x^{''}_n| < \delta_n\ |f( x^{'}_n) - f( x^{''}_n)| \geq \varepsilon $$
+$$ \{x^{'}_n\}_{n=1}^{\infty} \subset X \Longrightarrow \exists \{x^{'}_{n_k}\}_{k=1}^{\infty} \to x_0 \in X$$
+$$\textrm{Так як } | x^{'}_{n_k} -  x^{''}_{n_k} | < \delta_{n_k} \to 0 \Longrightarrow  x^{''}_{n_k} \to x_0$$
+Враховуючи неперервність $f$ в точці $x_0$, маємо:
+$$|f( x^{'}_{n_k}) - f( x^{''}_{n_k})| \to |f(x_0) - f(x_0)| = 0,\ k \to \infty \textrm{, що суперечить умові (1)}$$
+
+\vspace{3mm}
+
+\textbf{Теорема (Рівномірна неперервність на інтервалі).} Якщо $f$ --- неперервна на скінченному інтервалі $(a,b)$, то:
+
+\begin{enumerate}
+	\item $$ \exists \lim\limits_{x \to a + 0} = A \in \mathbb{R} \textrm{ і } \lim\limits_{x \to b - 0} f(x) = B \in \mathbb{R} \Longrightarrow$$
+		$$ \Longrightarrow f \textrm{ --- рівномірно неперервна на $(a,b)$}$$
+	\item Інакше, $f$ не є рівномірно неперервною на $(a,b)$. 
+\end{enumerate}
+
+\textbf{Доведення.} 
+
+$$F(x) = \begin{cases}
+	f(x), & x \in (a,b) \\
+	A, & x = a \\
+	B, & x = b
+\end{cases}$$
+То $F(x) \in C ([a;b])$, отже, за теоремою Кантора, $F$ --- рівномірно неперервна на $[a,b]$. Отже, $F$ рівномірно неперервна на $(a,b)$ за теоремою про рівномірну неперервність на звуженні $F | _{(a,b)}$.
+
+Друга частина без доведення.
+
+\vspace{3mm}
+
+\textit{Приклад:}
+$$f(x) = e^{ \frac{1}{x}}$$
+
+\begin{enumerate}
+	\item На проміжку $ (-1; 0)$
+		$$ \lim\limits_{x \to 1+0}f(x) = e^{-1} $$
+		$$ \lim\limits_{x\to -0} f(x) = 0 $$
+		Отже, $f$ рівномірно неперервна на $(-1, 0)$.
+	\item На проміжку $(0;1)$
+		$$ \lim\limits_{ x\to +0} f(x) = + \infty$$
+		Отже, $f$ не рівномірно неперервна на проміжку $(0;1)$.	
+\end{enumerate}
+
+\vspace{3mm}
+
+\textbf{Теорема (Рівномірна неперервніть на нескінченності).}
+$$f \in C( [a; +\infty)) \textrm{ і } \exists \lim\limits_{x \to +\infty} f(x) = A \in \mathbb{R}$$
+Тоді $f$ рівномірно неперервна на $[a; +\infty)$.
+
+\textbf{Доведення.} 
+Із існування границі на нескінченності:
+$$\forall \varepsilon > 0 \ \exists \Delta > 0 : \forall x \geq \Delta > a \ |f(x) - A| < \varepsilon$$
+$$[a; +\infty] = [a; \Delta] \cup [\Delta; +\infty]$$
+Наша функція рівномірно неперервна на $[a; \Delta]$. Залишилось тільки дізнатись чи є вона такою на $[\Delta; +\infty)$. За теоремою Кантора:
+$$\forall \varepsilon > 0$$
+$$|f(x^{'}) - f(x^{''})| \leq |f(x^{'}) - A| + f(x^{''}) - A| < \varepsilon + \varepsilon = 2 \varepsilon \textrm{, як тільки:}$$
+$$|x^{'} - x^{''}| < \delta \ \forall x^{'}, x^{''} \in [\Delta; +\infty]$$
+Отже, на $[\Delta; +\infty] \ f$ рівномірно неперервна.
+
+\vspace{3mm}
+
+\textit{Приклад:}
+
+\begin{enumerate}
+	\item $f(x) = e^{\frac{1}{x}},\ x \in [1; +\infty]$
+		$$ \lim\limits_{x \to +\infty} f(x) = 1 \Longrightarrow f \textrm{ --- рівномірно неперервна}$$
+	\item $f(x) = \sin x^2,\ x \in \mathbb{R}$. Візьмемо дві послідовності 
+		$$x_n = \sqrt{ \frac{\pi}{2} + 2 \pi n},\ y_n = \sqrt{2 \pi n}$$
+		$$\textrm{При } n \to +\infty$$
+		$$x_n - y_n \to 0$$
+		$$\sin (x_n^2) - \sin (y_n^2) = 1 - 0 = 1$$
+		Отже, $f(x)$ не є неперервною за Гейне.
+		
+\end{enumerate}
 
 \end{document} 

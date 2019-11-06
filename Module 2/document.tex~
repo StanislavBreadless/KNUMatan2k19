@@ -6,7 +6,8 @@
 \usepackage[makeroom]{cancel}
 
 \title{Конспекти лекцій з математичного аналізу Анікушина А.В. Модуль 2.}
-\author{По поводу неточностей и пожеланий пишите в телеграм @bezkorstanislav}
+\author{Автор текста @bezkorstanislav \\ Если есть ошибки, пишите ему в телеграм \\  \small{Aфтар выражает благодарность @vic778 за многочисленные поправки}}
+
 \date{October 2019}
 
 \begin{document}
@@ -251,7 +252,7 @@ $$\Longleftrightarrow \lim_{x \to 0} \frac{\ln(x+1) - x}{x} = 0 \Longleftrightar
 
 \vspace{5mm}
 
-\textbf{Теорема.} Розглянемо шкалу функцій $x^n, \ x \in \mathbb{N}$ і вважатимемо, що $x \to 0$.
+\textbf{Теорема.} Розглянемо шкалу функцій $x^n, \ n, m \in \mathbb{N}$ і вважатимемо, що $x \to 0$.
 
 $$x^m = o(x^n), \ m > n \textrm{ (Наприклад, $x^{10} = o(x^2)$)}$$
 $$x^m \cdot o(x^n) = o(x^{n+m})$$
@@ -614,7 +615,7 @@ $$[a;b] \subset \bigcup_{k=1}^{n} I_{x_k}$$
 
 \textbf{Наслідок.} Нехай $f$ --- неперервна на проміжку $[a;b]$. Тоді $f(x)$ приймає всі значення від $f(a)$ до $f(b)$.
 
-\textbf{Доведення.} $forall y \in [f(a); f(b)]$ можна створити функцію $\varphi (x) = f(x) - y$. 
+\textbf{Доведення.} $\forall y \in [f(a); f(b)]$ можна створити функцію $\varphi (x) = f(x) - y$. 
 $$\varphi (a) < 0,\ \varphi(b) > 0 \Longrightarrow \textrm{За теоремою Коші } \exists x_0 : \varphi(x_0) = 0 \Longrightarrow f(x_0) = y$$
 
 \vspace{3mm}
@@ -632,7 +633,7 @@ $$\varphi(1) = f(1) - 1 < 0$$
 	\textbf{Рівномірна неперервність}
 \end{center}
 
-\textbf{Означення рівномірної неперервності за Коші.} $f : \mathbb{R} \to \mathbb{R}$ називається рівномірно неперервною на множині $X \subset D_F$, якщо 
+\textbf{Означення рівномірної неперервності за Коші.} $f : \mathbb{R} \to \mathbb{R}$ називається рівномірно неперервною на множині $X \subset D_f$, якщо 
 $$\forall \varepsilon > 0 \ \exists \delta < 0 : \forall \{ x^{'}, x^{''}\} \subset X$$
 $$|x^{'} - x^{''}| < \delta \Longrightarrow |f(x^{'}) - f(x^{''})| < \varepsilon$$
 
@@ -670,5 +671,113 @@ $$x_n  - y_n \to 0,\ n \to \infty \Longrightarrow f(x_n) - f(y_n) \to 0, n \to \
 						   0, & x = 0\end{cases}$$
 		Функція розривається в точці $x_0$, тож вона не є неперервною, а отже й не є рівномірно неперервною.
 \end{enumerate}	
+
+\vspace{3mm}
+
+\textbf{Теорема. Лінійна властивість рівномірної неперервності.} $f$ і $g$ --- рівномірно меперервні на $X \subset D_f = D_g \Longrightarrow \forall \alpha, \beta \in \mathbb{R}\ \alpha f + \beta g$ --- рівномірно неперервна на $X$.
+
+\textbf{Доведення.} Очевидно з означення за Коші.
+
+\vspace{5mm}
+
+\textbf{Теорема (Рівномірна неперервність на звужен
+ні).} $f$ --- рівномірно неперервна на $X \Longrightarrow \forall X_1 \subset X\ f \setminus _{X_1}$ рівномірно неперервна на $X_1$. (Тут  $f \setminus _{X_1}$ позначає звуження $f$ на $X_1$)
+
+\vspace{5mm}
+
+\textbf{Теорема. (Рівномірна неперервність на об'єднанні).} Якщо $f$ --- рівномірно неперервна на $(a,b]$ і $[b;c)$ ($a, c \in \overline{\mathbb{R}}$), то тоді $f$ рівномірно неперервна на $(a;c)$.
+
+\textbf{Доведення.} $\forall \varepsilon > 0 : x^{'}, x^{''} \in (a,c)$:
+
+\begin{enumerate}
+	\item $x^{'}, x^{''} \in (a,b] \Longrightarrow $ очевидно неперервна.
+	\item $x^{'}, x^{''} \in [b,c) \Longrightarrow $ очевидно неперервна.
+	\item $x^{'} \in (a, b], \ x^{''} \in [b;c).$
+		$$|f(x^{'}) - f(x^{''})| = |f((x^{'}) -f(b) + f(b) - f(x^{''}) | \leq  |f((x^{'}) -f(b)|  + |f(b) - f(x^{''}) | $$
+		З умови $ \exists \delta_1 :  |f((x^{'}) -f(b)| < \varepsilon,\ \exists \delta_2 :  |f(b) - f(x^{''}) | < \varepsilon$.
+		
+		Якщо ми поставимо $ \delta = min ( \delta_1, \delta_2)$, то отримаємо:
+		$$ |f((x^{'}) -f(b)| + |f(b) - f(x^{''}) | < 2 \varepsilon $$
+\end{enumerate}
+
+\vspace{3mm}
+
+\textbf{Теорема Кантора.} $f$ --- неперервна на $X$ і $X$ --- компакт, то $f$ рівномірно неперервна на $X$.
+
+\textbf{Доведення.} Нехай $f$ не є рівномірно неперервною на $X$. Це ознаає заперечення означення Коші:
+$$\exists \varepsilon > 0\ \forall \delta > 0 \exists \{ x^{'},  x^{''}\} \subset X : | x^{'} -  x^{''}| < \delta \ |f( x^{'})  - f( x^{''}) | \geq \varepsilon \textrm{Назвему цю умову (1)}$$.
+Візьмемо деяку послідовність дельт таку, що $\delta_n = o(1)$, (Наприклад $ \delta_n = \frac{1}{n}).$
+$$\forall n\ \exists  x^{'},  x^{''} : | x^{'}_n -  x^{''}_n| < \delta_n\ |f( x^{'}_n) - f( x^{''}_n)| \geq \varepsilon $$
+$$ {x_n}_{n=1}^{\infty} \subset X \Longrightarrow \exists {x_{n_k}}_{k=1}^{\infty} \to x_0 \in X$$
+$$\textrm{Так як } | x^{'}_{n_k} -  x^{''}_{n_k} | < \delta_{n_k} \to 0 \Longrightarrow  x^{''}_{n_k} \to x_0$$
+Враховуючи неперервність $f$ в точці $x_0$, маємо:
+$$|f( x^{'}_{n_k}) - f( x^{''}_{n_k})| \to |f(x_0) - f(x_0)| = 0,\ k \to \infty \textrm{, що суперечить умові (1)}$$
+
+\vspace{3mm}
+
+\textbf{Теорема (Рівномірна неперервність на інтервалі).} Якщо $f$ --- неперервна на скінченному інтервалі $(a,b)$, то:
+
+\begin{enumerate}
+	\item $$ \exists \lim\limits_{x \to a + 0} = A \in \mathbb{R} \textrm{ і } \lim\limits_{x \to b - 0} f(x) = B \in \mathbb{R} \Longrightarrow$$
+		$$ \Longrightarrow f \textrm{ --- рівномірно неперервна на $(a,b)$}$$
+	\item Інакше, $f$ не є рівномірно неперервною на $(a,b)$. 
+\end{enumerate}
+
+\textbf{Доведення.} 
+
+$$F(x) = \begin{cases}
+	f(x), & x \in (a,b) \\
+	A, & x = a \\
+	B, & x = b
+\end{cases}$$
+То $F(x) \in C ([a;b])$, отже, за теоремою Кантора, $F$ --- рівномірно неперервна на $[a,b]$. Отже, $F$ рівномірно неперервна на $(a,b)$ за теоремою про рівномірну неперервність на звуженні
+
+Друга частина без доведення.
+
+\vspace{3mm}
+
+\textit{Приклад:}
+$$f(x) = e^{ \frac{1}{x}}$$
+
+\begin{enumerate}
+	\item $x = (-1, 0)$
+		$$ \lim\limits_{x \to 1+0}f(x) = e^{-1} $$
+		$$ \lim\limits_{x\to -0} f(x) = 0 $$
+		Отже, $f$ рівномірно неперервна на $(-1, 0)$.
+	\item $x = (0;1)$
+		$$ \lim\limits_{ x\to +0} f(x) = + \infty$$
+		Отже, $f$ не рівномірно неперервна на $X$.	
+\end{enumerate}
+
+\vspace{3mm}
+
+\textbf{Теорема (Рівномірна неперервніть на нескінченності).}
+$$f \in C( [a; +\infty)) \textrm{ і } \exists \lim\limits_{x \to +\infty} f(x) = A \in \mathbb{R}$$
+Тоді $f$ рівномірно неперервна на $[a; +\infty)$.
+
+\textbf{Доведення.} 
+$$\forall \varepsilon > 0 \ \exists \Delta > 0 : \forall x \geq \Delta > a \ |f(x) - A| < \varepsilon$$
+$$[a; +\infty] = [a; \Delta] \cup [\Delta; +\infty]$$
+Наша функція рівномірно неперервна на $[a; \Delta]$. Залишилось тільки дізнатись чи є вона такою на $[\Delta; +\infty)$. За теоремою Кантора:
+$$\forall \varepsilon > 0$$
+$$|f(x^{'}) - f(x^{''})| \leq |f(x^{'}) - A| + f(x^{''}) - A| < \varepsilon + \varepsilon = 2 \varepsilon \textrm{, як тільки:}$$
+$$|x^{'} - x^{''}| < \delta \ \forall x^{'}, x^{''} \in [\Delta; +\infty]$$
+Отже, на $[\Delta; +\infty] \ f$ рівномірно неперервна.
+
+\vspace{3mm}
+
+\textit{Приклад:}
+
+\begin{enumerate}
+	\item $f(x) = e^{\frac{1}{x}},\ x \in [1; +\infty]$
+		$$ \lim\limits_{x \to +\infty} f(x) = 1 \Longrightarrow f \textrm{ --- рівномірно неперервна}$$
+	\item $f(x) = \sin x^2,\ x \in \mathbb{R}$. Візьмемо дві послідовності 
+		$$x_n = \sqrt{ \frac{\pi}{2} + 2 \pi n},\ y_n = \sqrt{2 \pi n}$$
+		$$\textrm{При } n \to +\infty$$
+		$$x_n - y_n \to 0$$
+		$$\sin (x_n^2) - \sin (y_n^2) = 1 - 0 = 1$$
+		Отже, $f(x)$ не є неперервним за Гейне.
+		
+\end{enumerate}
 
 \end{document} 

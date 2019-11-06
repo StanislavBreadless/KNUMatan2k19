@@ -1,8 +1,8 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.27)  31 OCT 2019 10:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.1)  6 NOV 2019 21:31
 entering extended mode
 **./document.tex
 (document.tex
-LaTeX2e <2019-10-01>
+LaTeX2e <2019-10-01> patch level 1
 (E:\MikTex\tex/latex/base\report.cls
 Document Class: report 2019/08/27 v1.4j Standard LaTeX document class
 (E:\MikTex\tex/latex/base\size12.clo
@@ -39,9 +39,9 @@ File: uni-global.def 2013/05/13 UCS: Unicode global data
 \uc@temptokena=\toks18
 )
 (E:\MikTex\tex/generic/babel\babel.sty
-Package: babel 2019/09/27 3.34 The Babel package
+Package: babel 2019/10/15 3.35 The Babel package
  (E:\MikTex\tex/generic/babel\switch.def
-File: switch.def 2019/09/27 3.34 Babel switching mechanism
+File: switch.def 2019/10/15 3.35 Babel switching mechanism
 )
 *************************************
 * Local config file bblopts.cfg used
@@ -54,7 +54,7 @@ File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
 Language: russian 2017/08/12 1.3j Russian support for the Babel system
 
 (E:\MikTex\tex/generic/babel\babel.def
-File: babel.def 2019/09/27 3.34 Babel common definitions
+File: babel.def 2019/10/15 3.35 Babel common definitions
 \babel@savecnt=\count90
 \U@D=\dimen103
 
@@ -154,57 +154,52 @@ File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
 ))
 \openout1 = `document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 12.
-LaTeX Font Info:    ... okay on input line 12.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
  (E:\MikTex\tex/latex/ucs\ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 ) (E:\MikTex\tex/latex/ucs\uni-4.def
 File: uni-4.def 2013/05/13 UCS: Unicode data U+0400..U+04FF
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 14.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 15.
 
  (E:\MikTex\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 14.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 15.
 
 
 (E:\MikTex\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-Overfull \hbox (82.85262pt too wide) in paragraph at lines 14--14
- [][] 
- []
-
-[1
+) [1
 
 {C:/Users/Lenovo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 
-LaTeX Warning: Command \O invalid in math mode on input line 20.
+LaTeX Warning: Command \O invalid in math mode on input line 21.
 
 
-LaTeX Warning: Command \O invalid in math mode on input line 20.
+LaTeX Warning: Command \O invalid in math mode on input line 21.
 
 
-LaTeX Warning: Command \O invalid in math mode on input line 29.
+LaTeX Warning: Command \O invalid in math mode on input line 30.
 
 
-LaTeX Warning: Command \O invalid in math mode on input line 29.
+LaTeX Warning: Command \O invalid in math mode on input line 30.
 
 
-Overfull \hbox (33.22847pt too wide) in paragraph at lines 41--42
+Overfull \hbox (33.22847pt too wide) in paragraph at lines 42--43
 []\T2A/cmr/m/n/12 Нехай да-на функ-цiя $\OML/cmm/m/it/12 f \OT1/cmr/m/n/12 : \U
 /msb/m/n/12 R \OMS/cmsy/m/n/12 ! \U/msb/m/n/12 R$ \T2A/cmr/m/n/12 i точ-ка $\OM
 L/cmm/m/it/12 x[] \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 D[] \OT1/cmr/m/n/12 ([])$
@@ -212,7 +207,7 @@ L/cmm/m/it/12 x[] \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 D[] \OT1/cmr/m/n/12 ([])$
  []
 
 
-Overfull \hbox (10.82108pt too wide) in paragraph at lines 43--44
+Overfull \hbox (10.82108pt too wide) in paragraph at lines 44--45
 []\T2A/cmr/bx/n/12 Означення гра-ни-цi функ-цiЁ за Гейне. \T2A/cmr/m/n/12 Як-що
  $\OMS/cmsy/m/n/12 8f\OML/cmm/m/it/12 x[]\OMS/cmsy/m/n/12 g[] \OML/cmm/m/it/12 
 x[] \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 D[];  x[] \OMS/cmsy/m/n/12 6\OT1/cmr/m/
@@ -220,7 +215,7 @@ n/12 =
  []
 
 [1]
-Overfull \hbox (5.63155pt too wide) in paragraph at lines 58--59
+Overfull \hbox (5.63155pt too wide) in paragraph at lines 59--60
 []\T2A/cmr/m/n/12 Якби озна-чен-ня бу-ло б без умо-ви $\OML/cmm/m/it/12 x[] \OM
 S/cmsy/m/n/12 6\OT1/cmr/m/n/12 = \OML/cmm/m/it/12 x[]$\T2A/cmr/m/n/12 , то $[] 
 \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) = 0$ \T2
@@ -230,21 +225,21 @@ cmr/m/n/12 ) =
 
 [2] [3]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 1
-46.
+47.
  (E:\MikTex\tex/latex/base\omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 146.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 147.
  [4] [5]
-Overfull \hbox (24.49077pt too wide) in paragraph at lines 196--197
+Overfull \hbox (24.49077pt too wide) in paragraph at lines 197--198
 []$[] [] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 C; C \OMS/cmsy/m/n/12 6\OT1/cmr/m/n
 /12 = \OMS/cmsy/m/n/12 1\OML/cmm/m/it/12 ; C \OMS/cmsy/m/n/12 6\OT1/cmr/m/n/12 
 = 0\OML/cmm/m/it/12 ; []$ 
  []
 
 [6]
-Overfull \hbox (37.70166pt too wide) detected at line 244
+Overfull \hbox (37.70166pt too wide) detected at line 245
 [] [] \OT1/cmr/m/n/12 = 1 \OMS/cmsy/m/n/12 ([]) [] [][]   \OT1/cmr/m/n/12 1[] =
  0 \OMS/cmsy/m/n/12 ([]) [] [] \OT1/cmr/m/n/12 = 0 \OMS/cmsy/m/n/12 ([]) []\OT1
 /cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12   \OML/cmm/m/
@@ -253,29 +248,29 @@ it/12 x \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 o\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x
  []
 
 [7]
-Overfull \hbox (60.45148pt too wide) detected at line 271
+Overfull \hbox (58.25691pt too wide) detected at line 272
 \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 x \OMS/cmsy/m/n/12   [] \OT1/cmr/m/n/12 + \O
 ML/cmm/m/it/12 o\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 ) + [] \OM
-S/cmsy/m/n/12   [] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 x \OMS/cmsy/m/n/12  \OML
-/cmm/m/it/12 o\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 ) \OMS/cmsy/
-m/n/12   []\OML/cmm/m/it/12 x[] \OMS/cmsy/m/n/12   \OT1/cmr/m/n/12 2\OML/cmm/m/
-it/12 x[] \OMS/cmsy/m/n/12   \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 x[] \OMS/cmsy/m/
-n/12  \OML/cmm/m/it/12 o\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 )
- + \OML/cmm/m/it/12 x \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 o\OT1/cmr/m/n/12 (\OM
-L/cmm/m/it/12 x[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 x[] \OMS
-/cmsy/m/n/12  \OML/cmm/m/it/12 o\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]\OT1/cmr/
-m/n/12 ) + \OML/cmm/m/it/12 o\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]\OT1/cmr/m/n/
-12 ) \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 o\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]
-\OT1/cmr/m/n/12 ) =
+S/cmsy/m/n/12   \OML/cmm/m/it/12 x[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 x \OMS/
+cmsy/m/n/12  \OML/cmm/m/it/12 o\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]\OT1/cmr/m
+/n/12 ) \OMS/cmsy/m/n/12   \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 x[] \OT1/cmr/m/n/1
+2 + 2\OML/cmm/m/it/12 x[] \OMS/cmsy/m/n/12   \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 
+x[] \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 o\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]\
+OT1/cmr/m/n/12 ) + \OML/cmm/m/it/12 x \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 o\OT1
+/cmr/m/n/12 (\OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12   \OML/cmm/
+m/it/12 x[] \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 o\OT1/cmr/m/n/12 (\OML/cmm/m/it
+/12 x[]\OT1/cmr/m/n/12 ) + \OML/cmm/m/it/12 o\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 
+x[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12  \OML/cmm/m/it/12 o\OT1/cmr/m/n/12 (\OML
+/cmm/m/it/12 x[]\OT1/cmr/m/n/12 ) =
  []
 
 [8]
-Overfull \hbox (21.55624pt too wide) detected at line 297
+Overfull \hbox (21.55624pt too wide) detected at line 298
 \OT1/cmr/m/n/12 = [] [] = [] [] =
  []
 
-[9] [10] [11] [12] [13]
-Overfull \hbox (59.33786pt too wide) in paragraph at lines 466--467
+[9] [10] [11] [12]
+Overfull \hbox (59.33786pt too wide) in paragraph at lines 468--469
 []\T2A/cmr/m/n/12 Отже функ-цiя № непе-ре-рв-ною в усiх точ-ках, окрiм $\OML/cm
 m/m/it/12 x \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 x \OT1/cmr/m/n/12 = 0\OML/cmm/m/
 it/12 ; \OMS/cmsy/m/n/12 \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12 
@@ -283,48 +278,100 @@ it/12 ; \OMS/cmsy/m/n/12 \OT1/cmr/m/n/12 1\OML/cmm/m/it/12 ; \OMS/cmsy/m/n/12
  .
  []
 
+[13]
 
-LaTeX Warning: Command \O invalid in math mode on input line 484.
-
-
-LaTeX Warning: Command \O invalid in math mode on input line 484.
+LaTeX Warning: Command \O invalid in math mode on input line 486.
 
 
-Overfull \hbox (7.46597pt too wide) in paragraph at lines 494--495
+LaTeX Warning: Command \O invalid in math mode on input line 486.
+
+
+Overfull \hbox (7.46597pt too wide) in paragraph at lines 496--497
 \T2A/cmr/bx/n/12 ною мно-жи-ною\T2A/cmr/m/n/12 , як-що $\OMS/cmsy/m/n/12 8f\OML
 /cmm/m/it/12 x[]\OMS/cmsy/m/n/12 g[]\OML/cmm/m/it/12 ;  x[] \OMS/cmsy/m/n/12 2 
 \OML/cmm/m/it/12 K$ \T2A/cmr/m/n/12 iс-ну№ пiд-по-слi-дов-нiсть $\OMS/cmsy/m/n/
 12 f\OML/cmm/m/it/12 x[]\OMS/cmsy/m/n/12 g[] \OT1/cmr/m/n/12 :
  []
 
-[14] [15] [16] (document.aux) ) 
+[14] [15]
+Overfull \hbox (11.638pt too wide) in paragraph at lines 556--557
+[]\T2A/cmr/bx/n/12 Теорема про непе-ре-рв-нiсть обер-не-ноЁ функ-цiЁ. \T2A/cmr/
+m/n/12 Нехай $\OML/cmm/m/it/12 f \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 C\OT1/cmr/
+m/n/12 (\OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 K\OMS/cmsy/m/n/12 g\OT1/cmr/m/n/12 )
+$\T2A/cmr/m/n/12 ,
+ []
+
+[16]
+Overfull \hbox (10.32492pt too wide) in paragraph at lines 598--599
+[]\T2A/cmr/m/it/12 Лема. \T2A/cmr/m/n/12 Як-що функ-цiя $\OML/cmm/m/it/12 f \OM
+S/cmsy/m/n/12 2 \OML/cmm/m/it/12 C\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 f\OML/cmm/m
+/it/12 x[]\OMS/cmsy/m/n/12 g\OT1/cmr/m/n/12 )[]\OML/cmm/m/it/12 f\OT1/cmr/m/n/1
+2 (\OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 ) \OML/cmm/m/it/12 > \OT1/cmr/m/n/12 0$ 
+\T2A/cmr/m/n/12 то $\OMS/cmsy/m/n/12 9\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 a\OT1/c
+mr/m/n/12 ; \OML/cmm/m/it/12 b\OT1/cmr/m/n/12 ) : \OML/cmm/m/it/12 x[] \OMS/cms
+y/m/n/12 2 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 a; b\OT1/cmr/m/n/12 )\OML/cmm/m/it
+/12 ;  \OMS/cmsy/m/n/12 8\OML/cmm/m/it/12 x \OMS/cmsy/m/n/12 2
+ []
+
+[17] [18] [19]
+Overfull \hbox (19.84166pt too wide) detected at line 696
+\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]\OT1/c
+mr/m/n/12 ) \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it
+/12 x[]\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 j \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 j
+\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 ((\OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 ) \OMS/
+cmsy/m/n/12   \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 b\OT1/cmr/m/n
+/12 ) + \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 b\OT1/cmr/m/n/12 ) 
+\OMS/cmsy/m/n/12   \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]\OT1/
+cmr/m/n/12 )\OMS/cmsy/m/n/12 j  j\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 ((\OML/cmm/
+m/it/12 x[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 f\OT1/cmr/m/n/
+12 (\OML/cmm/m/it/12 b\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 j \OT1/cmr/m/n/12 + \OM
+S/cmsy/m/n/12 j\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 b\OT1/cmr/m/
+n/12 ) \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x
+[]\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 j
+ []
+
+
+Overfull \hbox (36.24196pt too wide) detected at line 708
+\OMS/cmsy/m/n/12 9\OML/cmm/m/it/12 " > \OT1/cmr/m/n/12 0 \OMS/cmsy/m/n/12 8\OML
+/cmm/m/it/12  > \OT1/cmr/m/n/12 0\OMS/cmsy/m/n/12 9f\OML/cmm/m/it/12 x[]; x[]\
+OMS/cmsy/m/n/12 g  \OML/cmm/m/it/12 X \OT1/cmr/m/n/12 : \OMS/cmsy/m/n/12 j\OML
+/cmm/m/it/12 x[] \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 x[]\OMS/cmsy/m/n/12 j \OML
+/cmm/m/it/12 <  \OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/
+m/it/12 x[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12   \OML/cmm/m/it/12 f\OT1/cmr/m/n/
+12 (\OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 )\OMS/cmsy/m/n/12 j  \OML/cmm/m/it/12 
+"[]
+ []
+
+[20] [21] [22] (document.aux) ) 
 Here is how much of TeX's memory you used:
- 3558 strings out of 492452
- 41410 string characters out of 3138188
- 115893 words of memory out of 3000000
- 7893 multiletter control sequences out of 15000+200000
- 20626 words of font info for 57 fonts, out of 3000000 for 9000
+ 3561 strings out of 492453
+ 41502 string characters out of 3138201
+ 116095 words of memory out of 3000000
+ 7894 multiletter control sequences out of 15000+200000
+ 21434 words of font info for 58 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,12n,31p,593b,671s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,12n,31p,592b,671s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Lenovo\AppData\Local\MiKTeX\2.9\fonts
 /pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\Lenovo\AppData\Local\MiKTeX\
 2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\Lenovo\AppData\Loca
 l\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\Lenovo\App
 Data\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati1200.pk> <C:\Users\L
 enovo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1728.pk> <C
-:\Users\Lenovo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm14
-40.pk> <C:\Users\Lenovo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi6
-00\larm2074.pk><E:/MikTex/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/MikTex/
-fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/MikTex/fonts/type1/public/amsfont
-s/cm/cmmi6.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/MikTex/f
-onts/type1/public/amsfonts/cm/cmr12.pfb><E:/MikTex/fonts/type1/public/amsfonts/
-cm/cmr6.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/MikTex/fonts
-/type1/public/amsfonts/cm/cmsy10.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/
-cmsy8.pfb><E:/MikTex/fonts/type1/public/amsfonts/latxfont/line10.pfb><E:/MikTex
-/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on document.pdf (17 pages, 251263 bytes).
+:\Users\Lenovo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm10
+95.pk> <C:\Users\Lenovo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi6
+00\larm1440.pk> <C:\Users\Lenovo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh
+-t2a/dpi600\larm2074.pk><E:/MikTex/fonts/type1/public/amsfonts/cm/cmex10.pfb><E
+:/MikTex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/MikTex/fonts/type1/publi
+c/amsfonts/cm/cmmi6.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:
+/MikTex/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/MikTex/fonts/type1/public/
+amsfonts/cm/cmr6.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/Mik
+Tex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/MikTex/fonts/type1/public/ams
+fonts/cm/cmsy6.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmsy8.pfb><E:/MikT
+ex/fonts/type1/public/amsfonts/latxfont/line10.pfb><E:/MikTex/fonts/type1/publi
+c/amsfonts/symbols/msbm10.pfb>
+Output written on document.pdf (23 pages, 293139 bytes).
 PDF statistics:
- 403 PDF objects out of 1000 (max. 8388607)
+ 466 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
