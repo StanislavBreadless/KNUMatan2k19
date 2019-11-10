@@ -64,7 +64,7 @@ $$x_n \to 2,\ x_n \neq 2 \Rightarrow f(x_n) = 0 \to 0 \Rightarrow \lim_{x \to 2}
 
 \vspace{5mm}
 
-\textit{Означення.} Якщо $\exists \{ x_n \}_{n=1}^{\infty} : x_n \in D_f,\ x_n \to x_0$ та $f(x_n) \to l$, то число $l$ називається частковою границею функції у точці $x_0$.
+\textit{Означення.} Якщо $\exists \{ x_n \}_{n=1}^{\infty} : x_n \in D_f,\ x_n \to x_0$ та $f(x_n) \to l$, то число $l$ називається \textbf{частковою границею} функції у точці $x_0$.
 
 \textit{Приклад:}
 $$f(x) = \sin \frac{1}{x}$$
@@ -76,10 +76,12 @@ $$x_n = \frac{1}{2\pi  n + \frac{\pi}{2}} \to 0,\ \forall n \ f(x_n) = 1  \Right
 
 Всі числа з інтервалу $[-1;1]$ є частковими границями функції $f(x)$ при $x \to 0$.
 
+\vspace{5mm}
+
 \textbf{Означення границі функції за Коші:}
 
 $$\lim_{x \to x_0} f(x) = \alpha \Longleftrightarrow \forall \varepsilon > 0 \ \exists \delta > 0 : \ \forall x \in D_f,\ x, \alpha \in \mathbb{R}$$
-$$ 0 < |x - x_0| < \delta \Longrightarrow |f(x) - \alpha| < \varepsilon$$
+$$ 0 < |x - x_0| < \delta,\ x \neq x_0 \Longrightarrow |f(x) - \alpha| < \varepsilon$$
 
 \textit{Зауваження.} Означення наведене вище працює для дійсного числа $x_0$. Означення для нескінченності у загальному випадку виглядає так:
 
@@ -676,7 +678,7 @@ $$x_n  - y_n \to 0,\ n \to \infty \Longrightarrow f(x_n) - f(y_n) \to 0, n \to \
 
 \vspace{3mm}
 
-\textbf{Теорема. Лінійна властивість рівномірної неперервності.} $f$ і $g$ --- рівномірно меперервні на $X \subset D_f = D_g \Longrightarrow \forall \alpha, \beta \in \mathbb{R}\ \alpha f + \beta g$ --- рівномірно неперервна на $X$.
+\textbf{Теорема. Лінійна властивість рівномірної неперервності.} $f$ і $g$ --- рівномірно неперервні на $X \subset D_f = D_g \Longrightarrow \forall \alpha, \beta \in \mathbb{R}\ \alpha f + \beta g$ --- рівномірно неперервна на $X$.
 
 \textbf{Доведення.} Очевидно з означення за Коші.
 
