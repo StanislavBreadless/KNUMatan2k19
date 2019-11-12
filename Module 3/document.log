@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.1)  11 NOV 2019 16:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.1)  12 NOV 2019 16:14
 entering extended mode
 **./document.tex
 (document.tex
@@ -191,34 +191,102 @@ Overfull \hbox (1.21277pt too wide) in paragraph at lines 51--52
 T2A/cmr/m/n/12 Нехай да-
  []
 
-[1] [2] (document.aux) ) 
+[1] [2] [3] [4]
+
+LaTeX Warning: Command \cyrl invalid in math mode on input line 169.
+
+Missing character: There is no л in font cmr8!
+
+LaTeX Warning: Command \cyrp invalid in math mode on input line 171.
+
+Missing character: There is no п in font cmr8!
+
+LaTeX Warning: Command \cyrl invalid in math mode on input line 180.
+
+Missing character: There is no л in font cmr8!
+
+LaTeX Warning: Command \cyrp invalid in math mode on input line 181.
+
+Missing character: There is no п in font cmr8!
+
+LaTeX Warning: Command \cyrl invalid in math mode on input line 184.
+
+Missing character: There is no л in font cmr8!
+
+LaTeX Warning: Command \cyrp invalid in math mode on input line 185.
+
+Missing character: There is no п in font cmr8!
+[5]
+
+LaTeX Warning: Command \cyrl invalid in math mode on input line 191.
+
+
+LaTeX Warning: Command \cyrp invalid in math mode on input line 191.
+
+
+LaTeX Warning: Command \cyrl invalid in math mode on input line 191.
+
+
+LaTeX Warning: Command \cyrp invalid in math mode on input line 191.
+
+Missing character: There is no л in font cmr8!
+Missing character: There is no п in font cmr8!
+Missing character: There is no л in font cmr8!
+Missing character: There is no п in font cmr8!
+
+Overfull \hbox (75.37617pt too wide) detected at line 195
+\OMS/cmsy/m/n/12 ([]) 9 [] []\OML/cmm/m/it/12 ;  \OMS/cmsy/m/n/12 9 [] []\OML/c
+mm/m/it/12 ; [] [] \OT1/cmr/m/n/12 = [] []
+ []
+
+
+LaTeX Warning: Command \cyrp invalid in math mode on input line 196.
+
+
+LaTeX Warning: Command \cyrl invalid in math mode on input line 196.
+
+
+LaTeX Warning: Command \cyrp invalid in math mode on input line 196.
+
+
+LaTeX Warning: Command \cyrl invalid in math mode on input line 196.
+
+Missing character: There is no п in font cmr8!
+Missing character: There is no л in font cmr8!
+Missing character: There is no п in font cmr8!
+Missing character: There is no л in font cmr8!
+
+LaTeX Warning: Command \cyrl invalid in math mode on input line 200.
+
+Missing character: There is no л in font cmr8!
+[6] (document.aux) ) 
 Here is how much of TeX's memory you used:
  3518 strings out of 492453
  40950 string characters out of 3138201
- 114095 words of memory out of 3000000
+ 116095 words of memory out of 3000000
  7860 multiletter control sequences out of 15000+200000
  17435 words of font info for 51 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,7n,31p,337b,671s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Lenovo\AppData\Local\MiKTeX\2.9\fonts/pk/ljf
-our/lh/lh-t2a/dpi600\lati1200.pk> <C:\Users\Lenovo\AppData\Local\MiKTeX\2.9\fon
-ts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\Lenovo\AppData\Local\MiKTe
-X\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\Lenovo\AppData\Lo
-cal\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\Lenovo\A
-ppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1728.pk> <C:\Users
-\Lenovo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1095.pk> 
-<C:\Users\Lenovo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm
-1440.pk> <C:\Users\Lenovo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dp
-i600\larm2074.pk><E:/MikTex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/MikTe
-x/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/MikTex/fonts/type1/public/amsfon
-ts/cm/cmr12.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmr6.pfb><E:/MikTex/f
-onts/type1/public/amsfonts/cm/cmr8.pfb><E:/MikTex/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmsy6.pfb><E:/MikTex/fon
-ts/type1/public/amsfonts/cm/cmsy8.pfb><E:/MikTex/fonts/type1/public/amsfonts/sy
-mbols/msbm10.pfb>
-Output written on document.pdf (3 pages, 167377 bytes).
+ 30i,8n,31p,337b,671s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Lenovo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/
+lh/lh-t2a/dpi600\lati1200.pk> <C:\Users\Lenovo\AppData\Local\MiKTeX\2.9\fonts/p
+k/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\Lenovo\AppData\Local\MiKTeX\2.
+9\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\Lenovo\AppData\Local\
+MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\Lenovo\AppDa
+ta\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1728.pk> <C:\Users\Len
+ovo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1095.pk> <C:\
+Users\Lenovo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1440
+.pk> <C:\Users\Lenovo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600
+\larm2074.pk><E:/MikTex/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/MikTex/fo
+nts/type1/public/amsfonts/cm/cmmi12.pfb><E:/MikTex/fonts/type1/public/amsfonts/
+cm/cmmi8.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/MikTex/fon
+ts/type1/public/amsfonts/cm/cmr6.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/
+cmr8.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/MikTex/fonts/
+type1/public/amsfonts/cm/cmsy6.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cm
+sy8.pfb><E:/MikTex/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on document.pdf (7 pages, 199269 bytes).
 PDF statistics:
- 315 PDF objects out of 1000 (max. 8388607)
+ 358 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

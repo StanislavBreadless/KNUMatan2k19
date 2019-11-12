@@ -76,9 +76,129 @@ $$\lim_{x \to x_0} \frac{(\alpha f + \beta g)(x) - (\alpha f + \beta g)(x_0)}{x 
 $$\lim_{x \to x_0} \frac{ \alpha f(x) - \alpha f(x_0)}{x - x_0} + \frac{\beta g(x) - \beta g (x_0)}{x - x_0} = $$
 $$\lim_{x \to x_0} \alpha \frac{ f(x) - f(x_0)}{x - x_0} + \lim_{x \to x_0}\beta \frac{g(x) - g (x_0)}{x - x_0}  = \alpha f'(x_0) + \beta g'(x_0)$$
 
+\textbf{Теорема. Похідна добутку.} Нехай $f$ і $g$ диференційовані в точці $x_0$. 
 
+Тоді функція $f \cdot g$ теж диференційована в точці $x_0$, при чому справедливе наступне співвідношення:
+$$(f \circ g)' (x_0) = f'(x_0)g(x_0) + f(x_0) g'(x_0)$$
 
+\textbf{Доведення.} За означенням:
 
+$$\lim_{x \to x_0} \frac{f(x)g(x) - f(x_0)g(x_0)}{x - x_0} = $$
+$$= \lim_{x \to x_0} \frac{f(x)g(x) - f(x)g(x_0) + f(x)g(x_0) - f(x_0)g(x_0)}{x - x_0} = $$
+$$= \lim_{x \to x_0} \frac{f(x)(g(x) - g(x_0))}{x - x_0} + \frac{g(x_0)(f(x) - f(x_0))}{x - x_0} = $$
+
+Оскільки $f$ --- диференційована в точці $x_0$, то $\exists \lim\limits_{x \to x_0} \frac{f(x) - f(x_0)}{x - x_0} = f'(x_0)$.
+
+Абсолютно аналогічно $\exists \lim\limits_{x \to x_0} \frac{g(x) - g(x_0)}{x - x_0} = g'(x_0)$.
+
+Окрім того $f$ --- диференційована в точці $x_0$, а значить $f$ --- неперервна в точці $x_0$, а значить:
+$$\lim_{x \to x_0} f(x) = f(x_0)$$
+
+Отже:
+
+$$\lim_{x \to x_0} \frac{f(x)(g(x) - g(x_0))}{x - x_0} + \frac{g(x_0)(f(x) - f(x_0))}{x - x_0} = $$
+$$= f(x_0) g'(x_0) + g(x_0) f'(x_0)$$
+
+\textbf{Теорема. Похідна частки.} Нехай $f$ і $g$ диференційовані в точці $x_0$ і $g(x_0) \neq 0$.
+
+Тоді, $\frac{f}{g}$ теж диференційована в точці $x_0$ і $\Big(\frac{f}{g} \Big)'(x_0) = \frac{f'(x_0) g(x_0) - f(x_0)g'(x_0)}{g^2(x_0)}$
+
+\textbf{Доведення.} Аналогічно. Це доведення на дз :).
+
+\textit{Приклад.} Обчислити похідну від $f$ від функції $f$ в точці $x_0$.
+\begin{enumerate}
+
+\item $f(x) = x^3$.
+$$f'(x_0) = \lim_{x\to x_0}\frac{f(x) - f(x_0)}{x - x_0} = \lim_{x\to x_0}\frac{x^3 - x_0^3}{x - x_0} = \ldots = 3 x_0^2$$
+
+\item $f(x) = \begin{cases} x^3,& x \neq 2 \\ 8, & x = 2\end{cases}$
+$$f'(x_0) = \lim_{x \to x_0}\frac{f(x) - f(x_0)}{x - x_0}$$
+\begin{enumerate}
+\item $x_0 = 2$. $f'(x_0) = \frac{x^3 - 8}{x - 2} = 3 \cdot 4 = 12.$
+\item $x_0 \neq 2$. $\lim\limits_{x \to x_0} \frac{x^3 - x_0^3}{x - x_0} = 3 x_0^2$. 
+\end{enumerate}
+
+\item $f(x) = \begin{cases} x^3,& x \neq 2 \\ 7, & x = 2\end{cases}$
+$$f'(x_0) = \lim_{x \to x_0}\frac{f(x) - f(x_0)}{x - x_0}$$
+\begin{enumerate}
+\item $x_0 \neq 2$. $\lim\limits_{x \to x_0} \frac{x^3 - x_0^3}{x - x_0} = 3 x_0^2$. 
+\item $x_0 = 2$. $f'(x_0) = \lim\limits_{x\to 2}\frac{x^3 - 7}{x - 2} = \lim\limits_{x\to 2}\frac{8 - 7}{2 - 2} = \lim\limits_{x\to 2}\frac{1}{0} = +\infty$.
+
+Похідна не може дорівнювати нескінченності, отже $\nexists f'(2)$. 
+\end{enumerate}
+
+\item $f(x) = \begin{cases} x^3,& x \geq 2 \\ 12x - 16, & x < 2\end{cases}$
+
+Як \textbf{не треба} робити:
+$$f'(x) = \begin{cases} 3 x^2,& x \geq 2 \\ 12, & x < 2\end{cases}$$
+Як \textbf{треба} робити:
+
+\vspace{1mm}
+
+Розглядаємо $3$ випадки:
+
+\begin{enumerate}
+\item $x_0 > 2$.
+
+$$\lim_{x \to x_0}\frac{f(x) - f(x_0)}{x - x_0} = \lim_{x \to x_0}\frac{x^3 - x_0^3}{x - x_0} = 2 x_0^2$$
+
+\item $x_0 < 2$.
+
+$$\lim_{x \to x_0}\frac{f(x) - f(x_0)}{x - x_0} = 12$$
+
+\item $x = 2$.
+
+$$\lim_{x \to x_0}\frac{f(x) - f(2)}{x - 2} = \lim_{x \to 2+0}\frac{f(x) - f(2)}{x - 2} = \lim_{x \to 2-0}\frac{f(x) - f(2)}{x - 2} = 12$$
+\end{enumerate}
+
+Отже, функція диференційована на всіх дійсній прямій.
  
+\end{enumerate}
+
+\textbf{Теорема. (Про диференційованість оберненої функції)}. Формулювання і доведення на додому.
+
+\textit{Зауваженн.} Функція $f$ називається диференційованою на множині $A$ якщо $f$ має 
+похідну в кожній точці $x_0 \in A$. Це позначається як $f \in D(A)$, де $D(A)$ --- множина диференційованих на $A$ функцій. 
+
+\begin{center}
+\textbf{\largeОдносторонні похідні}
+\end{center}
+
+Нехай $x_0 \in (D_f \cap (-\infty, x_0))' \cap (D_f \cap (x_0, +\infty))'\cap D_f$. Це рівносильно тому, що 
+$$\exists \{ x_n\}_{n=1}^{\infty} \in D_f : x_n < x_0,\ x_n \to x_0, n \to \infty $$
+Границя $\lim\limits_{x\to x_0-}\frac{f(x) - f(x_0)}{x - x_0}$ називається лівосторонньою похідною $f$ в точці $x_0$. Позначаємо її як $f'_{л}(x)$.
+
+Аналогічно, $f'_{п} (x_0) = \lim\limits_{x \to x_0+} \frac{f(x) - f(x_0)}{x - x_0}$
+
+\vspace{3mm}
+
+\textit{Приклади:}
+
+\begin{enumerate}
+
+\item $f(x) = \begin{cases} 0, & x \leq 0 \\ 1, & x > 1\end{cases}$
+$$f'_{л}(x_0) = \lim_{x \to x_0} \frac{0 - 0}{x - 0} = 0$$
+$$f'_{п}(x_0) = \lim_{x \to x_0} \frac{1 - 0}{x - 0} = +\infty \Longrightarrow \nexists f'_{n}(x_0)$$
+
+\item $f(x) = \begin{cases} 0, & x \leq 0 \\ x, & x > 1\end{cases}$
+$$f'_{л}(x_0) = \lim_{x \to x_0} \frac{0 - 0}{x - 0} = 0$$
+$$f'_{п}(x_0) = \lim_{x \to x_0} \frac{x - 0}{x - 0} = 1$$
+\end{enumerate}
+
+\textbf{Теорема. (Критерій диференційованості}.) 
+
+Нехай $x_0 \in (D_f \cap (-\infty, x_0))' \cap (D_f \cap (x_0, +\infty))' \cap x_0 \in D_f$. Тоді:
+$$\exists f'(x_0) \Longleftrightarrow \exists f'_{л} \exists f'_{п}, f'_{л} = f'_{п}$$
+
+\textbf{Доведення.} 
+$$\exists f'(x_0) \Longrightarrow \lim_{x \to x_0}\frac{f(x) - f(x_0)}{x - x_0} \Longleftrightarrow$$
+$$\Longleftrightarrow \exists \lim_{x\to x_0+}\frac{f(x) - f(x_0)}{x - x_0},\ \exists \lim_{x\to x_0-}\frac{f(x) - f(x_0)}{x - x_0}, \lim_{x\to x_0+}\frac{f(x) - f(x_0)}{x - x_0} = \lim_{x\to x_0-}\frac{f(x) - f(x_0)}{x - x_0}$$
+$$\Longleftrightarrow \exists f'_{п}(x_0),\ \exists f'_{л}(x_0),\ f'_{п}(x_0) = f'_{л}(x_0)$$
+
+
+\textit{Зауваження.}
+$$f'_{л} \neq \lim_{x\to x_0-}f'(x)$$
+
+
 
 \end{document} 
