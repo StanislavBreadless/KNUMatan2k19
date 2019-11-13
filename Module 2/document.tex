@@ -406,7 +406,7 @@ $$f(x_n) \to f(x_0),\ x_n \to x_0$$
 
 \textit{Зауваження.} $f \in C(\{ x_0\}) \Longrightarrow x_0 \in D_f$. Якщо функція не є неперервною в точці $x_0$, то вона розривна. $x_0$ може не належати $D_f$, але бути розривною. Але тоді треба, щоб $x_0$ була граничною.
 
-\textit{Наприклад:} $f(x) = \sqrt{x}$ Вона не є розривною в точці $x_0= -2$, бо є вона не є граничою.. 
+\textit{Наприклад:} $f(x) = \sqrt{x}$ Вона не є розривною в точці $x_0= -2$, бо вона не є граничою.. 
 
 \textit{Означення.} Нехай $x_0 \in D'_f$ і при цьому $x_0 \notin D_f$. Тоді вважають, що функція $f$ \textbf{має розрив} у точці $x_0$.
 
@@ -636,7 +636,7 @@ $$\varphi(1) = f(1) - 1 < 0$$
 \end{center}
 
 \textbf{Означення рівномірної неперервності за Коші.} $f : \mathbb{R} \to \mathbb{R}$ називається рівномірно неперервною на множині $X \subset D_f$, якщо 
-$$\forall \varepsilon > 0 \ \exists \delta < 0 : \forall \{ x^{'}, x^{''}\} \subset X$$
+$$\forall \varepsilon > 0 \ \exists \delta > 0 : \forall \{ x^{'}, x^{''}\} \subset X$$
 $$|x^{'} - x^{''}| < \delta \Longrightarrow |f(x^{'}) - f(x^{''})| < \varepsilon$$
 
 \textit{Приклад:}
@@ -764,7 +764,7 @@ $$\forall \varepsilon > 0 \ \exists \Delta > 0 : \forall x \geq \Delta > a \ |f(
 $$[a; +\infty] = [a; \Delta] \cup [\Delta; +\infty]$$
 Наша функція рівномірно неперервна на $[a; \Delta]$. Залишилось тільки дізнатись чи є вона такою на $[\Delta; +\infty)$. За теоремою Кантора:
 $$\forall \varepsilon > 0$$
-$$|f(x^{'}) - f(x^{''})| \leq |f(x^{'}) - A| + f(x^{''}) - A| < \varepsilon + \varepsilon = 2 \varepsilon \textrm{, як тільки:}$$
+$$|f(x^{'}) - f(x^{''})| \leq |f(x^{'}) - A| + |f(x^{''}) - A| < \varepsilon + \varepsilon = 2 \varepsilon \textrm{, як тільки:}$$
 $$|x^{'} - x^{''}| < \delta \ \forall x^{'}, x^{''} \in [\Delta; +\infty]$$
 Отже, на $[\Delta; +\infty] \ f$ рівномірно неперервна.
 
