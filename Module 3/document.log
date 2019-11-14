@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.1)  12 NOV 2019 16:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.1)  14 NOV 2019 20:59
 entering extended mode
 **./document.tex
 (document.tex
@@ -259,34 +259,60 @@ Missing character: There is no ë in font cmr8!
 LaTeX Warning: Command \cyrl invalid in math mode on input line 200.
 
 Missing character: There is no ë in font cmr8!
-[6] (document.aux) ) 
+[6] [7] [8]
+Overfull \hbox (21.65358pt too wide) detected at line 308
+\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[] [] x\OT1/cmr/m/n/12 )[] = \OML/cmm/m/it/1
+2 C[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 )[] [] \OML/cmm/m/it/
+12 x \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 C[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[
+]\OT1/cmr/m/n/12 )[]([] \OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )[] + \OML/cmm/m/it/1
+2 C[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 )[]([] \OML/cmm/m/it/
+12 x\OT1/cmr/m/n/12 )[] + [] +
+ []
+
+
+Overfull \hbox (26.21443pt too wide) detected at line 309
+\OT1/cmr/m/n/12 + [] + \OML/cmm/m/it/12 C[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[
+]\OT1/cmr/m/n/12 )[]([] \OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )[] + \OML/cmm/m/it/1
+2 C[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 )[]([] \OML/cmm/m/it/
+12 x\OT1/cmr/m/n/12 )[] + \OML/cmm/m/it/12 C[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12
+ x[]\OT1/cmr/m/n/12 )[]([] \OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )[]+
+ []
+
+[9]
+Overfull \hbox (3.67743pt too wide) detected at line 321
+\OML/cmm/m/it/12 C[][] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 C[][] \OT1/cmr/m/n/12
+ + \OML/cmm/m/it/12 C[][]
+ []
+
+[10] [11] [12] [13] (document.aux) ) 
 Here is how much of TeX's memory you used:
- 3518 strings out of 492453
- 40950 string characters out of 3138201
+ 3522 strings out of 492453
+ 40992 string characters out of 3138201
  116095 words of memory out of 3000000
- 7860 multiletter control sequences out of 15000+200000
- 17435 words of font info for 51 fonts, out of 3000000 for 9000
+ 7862 multiletter control sequences out of 15000+200000
+ 19041 words of font info for 53 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  30i,8n,31p,337b,671s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Lenovo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/
-lh/lh-t2a/dpi600\lati1200.pk> <C:\Users\Lenovo\AppData\Local\MiKTeX\2.9\fonts/p
-k/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\Lenovo\AppData\Local\MiKTeX\2.
-9\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\Lenovo\AppData\Local\
-MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Users\Lenovo\AppDa
-ta\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1728.pk> <C:\Users\Len
-ovo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1095.pk> <C:\
-Users\Lenovo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1440
-.pk> <C:\Users\Lenovo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600
-\larm2074.pk><E:/MikTex/fonts/type1/public/amsfonts/cm/cmex10.pfb><E:/MikTex/fo
-nts/type1/public/amsfonts/cm/cmmi12.pfb><E:/MikTex/fonts/type1/public/amsfonts/
-cm/cmmi8.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmr12.pfb><E:/MikTex/fon
-ts/type1/public/amsfonts/cm/cmr6.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/
-cmr8.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><E:/MikTex/fonts/
-type1/public/amsfonts/cm/cmsy6.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cm
-sy8.pfb><E:/MikTex/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on document.pdf (7 pages, 199269 bytes).
+ <C:\Users\Lenovo\AppData\Local\MiKTeX\2.9\
+fonts/pk/ljfour/lh/lh-t2a/dpi600\lati1200.pk> <C:\Users\Lenovo\AppData\Local\Mi
+KTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\Lenovo\AppData
+\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\Lenov
+o\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <C:\Us
+ers\Lenovo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1728.p
+k> <C:\Users\Lenovo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\l
+arm1095.pk> <C:\Users\Lenovo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a
+/dpi600\larm1440.pk> <C:\Users\Lenovo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/
+lh/lh-t2a/dpi600\larm2074.pk><E:/MikTex/fonts/type1/public/amsfonts/cm/cmex10.p
+fb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/MikTex/fonts/type1/
+public/amsfonts/cm/cmmi8.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmr12.pf
+b><E:/MikTex/fonts/type1/public/amsfonts/cm/cmr6.pfb><E:/MikTex/fonts/type1/pub
+lic/amsfonts/cm/cmr8.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+E:/MikTex/fonts/type1/public/amsfonts/cm/cmsy6.pfb><E:/MikTex/fonts/type1/publi
+c/amsfonts/cm/cmsy8.pfb><E:/MikTex/fonts/type1/public/amsfonts/symbols/msbm10.p
+fb>
+Output written on document.pdf (14 pages, 236616 bytes).
 PDF statistics:
- 358 PDF objects out of 1000 (max. 8388607)
+ 419 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
