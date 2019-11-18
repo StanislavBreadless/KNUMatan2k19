@@ -25,40 +25,42 @@
 Нехай $f : \mathbb{R} \to \mathbb{R}$ --- деяка функція однієї змінної, $x_0 \in D_f,\ x_0 \in (D_f)^{'}$ .
 
 \textbf{Означення.} Якщо $\exists \lim\limits_{x \to x_0} \frac{f(x) - f(x_0)}{x - x_0}$, то функція $f$ називається 
-\textbf{диференційованою} в точці $x_0$, а сама границя називається \textbf{похідною} в точці $x_0$. І позначається $f'(x)$ або $\frac{d f(x)}{d x}$.
+\textbf{диференційованою} в точці $x_0$, а сама границя називається \textbf{похідною функції} $f$ в точці $x_0$. І позначається $f'(x_0)$ або $\frac{d f(x_0)}{d x}$.
 
 \vspace{3mm}
 
-\textit{Зауваження 1.} Для функції однієї змінної ми ототожнили диференційованість та існування похідної.
+\textit{Зауваження 1.} Для функції однієї змінної ми ототожнили диференційованість та існування похідної, що не завжди є правдою для функцій багатьох змінних.
 
 \textit{Зауваження 2.} $$x - x_0 = \Delta x$$
 $$f'(x_0) = \lim_{\Delta x \to 0} \frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x}$$
-$$f(x_0 + \Delta x) - f(x_0) = \Delta f(x)$$
+$$f(x_0 + \Delta x) - f(x_0) = \Delta f(x_0)$$
 Отже, похідна дорівнює відношенню зміни приросту функції до приросту аргументу, що породжує цей приріст.
 
-\textit{Зауваження 3.} 
+\textit{Зауваження 3.} Із теорії границі функції, якщо функція $f$ є диференційованою в точці $x_0$, то:
 $$f'(x_0) = \lim_{x \to x_0} \frac{f(x) - f(x_0)}{x - x_0} \Longleftrightarrow \frac{f(x) - f(x_0)}{x - x_0} = f'(x_0) + o(1)$$
 $$f(x) - f(x_0) = f'(x_0)(x-x_0) + o(x-x_0)$$
 Отже, якщо має місце рівність:
 $$f(x) - f(x_0) = A (x - x_0) + o(x - x_0) \Longrightarrow \exists f'(x_0) = A$$
 
-\textbf{Теорема. (Необхідна умова диференційованості).} Функція $f$ є диференційованою в $x_0$ тільки тоді, коли $f$ --- неперервна в точці $x_0$.
+\textbf{Теорема. (Необхідна умова диференційованості).} Функція $f$ є диференційованою в $x_0$ тільки тоді, коли $f$ --- неперервна в точці $x_0$. (Але не завжди неперервна функція є диференційованою)
 
 \textbf{Доведення.} Щоб існувала похідна треба, щоб
 $$f(x) - f(x_0) \to 0,\to x \to x_0$$.
 З цього випливає, що $f$ неперервна в точці $x_0$.
 
-\textbf{Теорема. (Диференційованість композиції функцій).}  Нехай дано функції $f$ і $g$. точка $x_0 \in D_{f \circ g},\ x_0 \in (D_{f \circ g})'$.
+\vspace{5mm}
+
+\textbf{Теорема. (Диференційованість композиції функцій).}  Нехай дано функції $f$ і $g$. Точка $x_0 \in D_{f \circ g},\ x_0 \in (D_{f \circ g})'$.
 
 Якщо $g$ диференційована в точці $x_0$, а $f$ диференційована в точці $y_0 = g(x_0)$, то $f \circ g$ диференційована в точці $x_0$ і має місце рівність:
-$$(f \circ g)' (x_0) = f'(g(y_0)) g'(x_0)$$
+$$(f \circ g)' (x_0) = f'(y_0) g'(x_0)$$
 
 \textbf{Доведення.} 
 $$(f \circ g) (x) - (f \circ g) (x_0) = f(g(x)) - f(g(x_0)) = f(y) - f(y_0) =$$ 
 $$= f'(y_0)(y - y_0) + o(y - y_0) = f'(y_0)(g(x) - g(x_0)) + o(y - y_0) = $$
 $$= f'(y_0)(g'(x_0)(x - x_0) + o(x - x_0)) + o(y - y_0) = $$
-$$= f'(y_0)(g'(x_0)(x - x_0)(1 + o(1))) + o(g(x) - g(x_0)) = $$
-$$= f'(y_0)(g'(x_0)(x - x_0)(1 + o(1))) + o(g(x_0)(x - x_0) + o(x - x_0))$$
+$$= f'(y_0)(g'(x_0)(x - x_0) + o(x - x_0)) + o(g(x) - g(x_0)) = $$
+$$= f'(y_0)(g'(x_0)(x - x_0) + o(x - x_0)) + o(g(x_0)(x - x_0) + o(x - x_0))$$
 
 Отже,
 
@@ -67,7 +69,7 @@ $$=\lim_{x \to x_0}\frac{f'(y_0)(g'(x_0)(x - x_0)(1 + o(1))) + o(g(x_0)(x - x_0)
 $$=\lim_{x \to x_0}f'(y_0)(g'(x_0)(1 + o(1))) + o(g(x_0) + o(1)) = $$
 $$=\lim_{x \to x_0}f'(y_0)g'(x_0)(1 + o(1)) + o(1) = f'(y_0)g'(x_0)$$
 
-\textbf{Теорема. (Лінійність похідної).} Нехай $f$ і $g$ --- диференційовані в точці $x_0$, $\alpha,\beta \in \mathbb{R}$, то:
+\textbf{Теорема. (Лінійність похідної).} Нехай $f$ і $g$ --- диференційовані в точці $x_0$. Тоді $\forall \alpha,\beta \in \mathbb{R}$:
 $$(\alpha f + \beta g)' (x_0) = \alpha f'(x_0) + \beta g'(x_0)$$
 
 \textbf{Доведення.} 
@@ -78,8 +80,8 @@ $$\lim_{x \to x_0} \alpha \frac{ f(x) - f(x_0)}{x - x_0} + \lim_{x \to x_0}\beta
 
 \textbf{Теорема. Похідна добутку.} Нехай $f$ і $g$ диференційовані в точці $x_0$. 
 
-Тоді функція $f \cdot g$ теж диференційована в точці $x_0$, при чому справедливе наступне співвідношення:
-$$(f \circ g)' (x_0) = f'(x_0)g(x_0) + f(x_0) g'(x_0)$$
+Тоді функція $f \cdot g$ теж диференційована в точці $x_0$, причому справедливе наступне співвідношення:
+$$(f \cdot g)' (x_0) = f'(x_0)g(x_0) + f(x_0) g'(x_0)$$
 
 \textbf{Доведення.} За означенням:
 
@@ -140,13 +142,13 @@ $$f'(x) = \begin{cases} 3 x^2,& x \geq 2 \\ 12, & x < 2\end{cases}$$
 \begin{enumerate}
 \item $x_0 > 2$.
 
-$$\lim_{x \to x_0}\frac{f(x) - f(x_0)}{x - x_0} = \lim_{x \to x_0}\frac{x^3 - x_0^3}{x - x_0} = 2 x_0^2$$
+$$\lim_{x \to x_0}\frac{f(x) - f(x_0)}{x - x_0} = \lim_{x \to x_0}\frac{x^3 - x_0^3}{x - x_0} = 3 x_0^2$$
 
 \item $x_0 < 2$.
 
 $$\lim_{x \to x_0}\frac{f(x) - f(x_0)}{x - x_0} = 12$$
 
-\item $x = 2$.
+\item $x_0 = 2$.
 
 $$\lim_{x \to x_0}\frac{f(x) - f(2)}{x - 2} = \lim_{x \to 2+0}\frac{f(x) - f(2)}{x - 2} = \lim_{x \to 2-0}\frac{f(x) - f(2)}{x - 2} = 12$$
 \end{enumerate}
@@ -166,38 +168,39 @@ $$\lim_{x \to x_0}\frac{f(x) - f(2)}{x - 2} = \lim_{x \to 2+0}\frac{f(x) - f(2)}
 
 Нехай $x_0 \in (D_f \cap (-\infty, x_0))' \cap (D_f \cap (x_0, +\infty))'\cap D_f$. Це рівносильно тому, що 
 $$\exists \{ x_n\}_{n=1}^{\infty} \in D_f : x_n < x_0,\ x_n \to x_0, n \to \infty $$
-Границя $\lim\limits_{x\to x_0-}\frac{f(x) - f(x_0)}{x - x_0}$ називається лівосторонньою похідною $f$ в точці $x_0$. Позначаємо її як $f'_{л}(x)$.
+Границя $\lim\limits_{x\to x_0-}\frac{f(x) - f(x_0)}{x - x_0}$ називається лівосторонньою похідною $f$ в точці $x_0$. Позначаємо її як $f'_{\textnormal{л}}(x)$.
 
-Аналогічно, $f'_{п} (x_0) = \lim\limits_{x \to x_0+} \frac{f(x) - f(x_0)}{x - x_0}$
+Аналогічно, $f'_{\textnormal{п}} (x_0) = \lim\limits_{x \to x_0+} \frac{f(x) - f(x_0)}{x - x_0}$
 
 \vspace{3mm}
 
 \textit{Приклади:}
 
+
 \begin{enumerate}
 
 \item $f(x) = \begin{cases} 0, & x \leq 0 \\ 1, & x > 1\end{cases}$
-$$f'_{л}(x_0) = \lim_{x \to x_0} \frac{0 - 0}{x - 0} = 0$$
-$$f'_{п}(x_0) = \lim_{x \to x_0} \frac{1 - 0}{x - 0} = +\infty \Longrightarrow \nexists f'_{n}(x_0)$$
+$$f'_{\textnormal{л}}(x_0) = \lim_{x \to x_0} \frac{0 - 0}{x - 0} = 0$$
+$$f'_{\textnormal{п}}(x_0) = \lim_{x \to x_0} \frac{1 - 0}{x - 0} = +\infty \Longrightarrow \nexists f'_{n}(x_0)$$
 
-\item $f(x) = \begin{cases} 0, & x \leq 0 \\ x, & x > 1\end{cases}$
-$$f'_{л}(x_0) = \lim_{x \to x_0} \frac{0 - 0}{x - 0} = 0$$
-$$f'_{п}(x_0) = \lim_{x \to x_0} \frac{x - 0}{x - 0} = 1$$
+\item $f(x) = \begin{cases} 0, & x \leq 0 \\ x, & x > 0\end{cases}$
+$$f'_{\textnormal{л}}(x_0) = \lim_{x \to x_0} \frac{0 - 0}{x - 0} = 0$$
+$$f'_{\textnormal{п}}(x_0) = \lim_{x \to x_0} \frac{x - 0}{x - 0} = 1$$
 \end{enumerate}
 
 \textbf{Теорема. (Критерій диференційованості}.) 
 
-Нехай $x_0 \in (D_f \cap (-\infty, x_0))' \cap (D_f \cap (x_0, +\infty))' \cap x_0 \in D_f$. Тоді:
-$$\exists f'(x_0) \Longleftrightarrow \exists f'_{л} \exists f'_{п}, f'_{л} = f'_{п}$$
+Нехай $x_0 \in (D_f \cap (-\infty, x_0))' \cap (D_f \cap (x_0, +\infty))' \cap D_f$. Тоді:
+$$\exists f'(x_0) \Longleftrightarrow \exists f'_{\textnormal{л}} \exists f'_{\textnormal{п}}, f'_{\textnormal{л}} = f'_{\textnormal{п}}$$
 
 \textbf{Доведення.} 
 $$\exists f'(x_0) \Longrightarrow \lim_{x \to x_0}\frac{f(x) - f(x_0)}{x - x_0} \Longleftrightarrow$$
 $$\Longleftrightarrow \exists \lim_{x\to x_0+}\frac{f(x) - f(x_0)}{x - x_0},\ \exists \lim_{x\to x_0-}\frac{f(x) - f(x_0)}{x - x_0}, \lim_{x\to x_0+}\frac{f(x) - f(x_0)}{x - x_0} = \lim_{x\to x_0-}\frac{f(x) - f(x_0)}{x - x_0}$$
-$$\Longleftrightarrow \exists f'_{п}(x_0),\ \exists f'_{л}(x_0),\ f'_{п}(x_0) = f'_{л}(x_0)$$
+$$\Longleftrightarrow \exists f'_{\textnormal{п}}(x_0),\ \exists f'_{\textnormal{л}}(x_0),\ f'_{\textnormal{п}}(x_0) = f'_{\textnormal{л}}(x_0)$$
 
 
 \textit{Зауваження.}
-$$f'_{л} \neq \lim_{x\to x_0-}f'(x)$$
+$$f'_{\textnormal{л}}(x_0) \neq \lim_{x\to x_0-}f'(x)$$
 
 \vspace{5mm}
 
@@ -205,7 +208,7 @@ $$f'_{л} \neq \lim_{x\to x_0-}f'(x)$$
 $$\begin{cases} y = \varphi(t) \\ x = \Psi(t) \end{cases}$$
 $$y(x) = \varphi( \Psi^{-1} (x))$$
 Часом виразити $y$ через $x$ може бути просто, як тут:
-$$\begin{cases} y = t^3 \\ x = t^5\end{cases} \Longleftrightarrow y = x^{\frac{3}{5}}$$
+$$\begin{cases} y = t^3 \\ x = t^5\end{cases} \Longrightarrow y = x^{\frac{3}{5}}$$
 Але буває, що не дуже просто:
 $$\begin{cases} y = t^3 \\ x = t^5+t\end{cases} \Longleftrightarrow y = ???$$
 
@@ -246,7 +249,7 @@ $$y_x' = \frac{2 \cos t (- \sin t)}{2 \sin t \cos t} = -1$$
 
 Кажуть, що порядок похідної є вищим, якщо цей порядок більше за $1$.
 
-Нехай $f \ in D((a,b))$. Припустимо, що $f'$ є диференційованою в точці $x_0 \in (a,b)$. Тоді функція $f$ є двічі диференційованою в точці $x_0$, а 
+Нехай $f \in D((a,b))$. Припустимо, що $f'$ є диференційованою в точці $x_0 \in (a,b)$. Тоді функція $f$ є двічі диференційованою в точці $x_0$, а 
 число $(f')'(x_0)$ називається \textbf{другою похідною функції} $f$ в точці $x_0$. Вона позначається як $f''(x_0)$.
 
 \vspace{3mm}
@@ -307,7 +310,7 @@ $$(f g)^{(n)} = \sum_{k = 0}^{n} C_n^k \cdot f^{(n-k)} \cdot g^{(k)}$$
 
 $$(x^2 \ln x)^{(n)} = C_n^0 (x^2)^{(n)} \ln x + C_n^1 (x^2)^{(n-1)} (\ln x)^{(1)} + C_n^2 (x^2)^{(n-2)} (\ln x)^{(2)} + \ldots + $$
 $$+ \ldots + C_n^{n-3} (x^2)^{(3)} (\ln x)^{(n - 3)} + C_n^{n-2} (x^2)^{(2)} (\ln x)^{(n - 2)} + C_n^{n-1} (x^2)^{(1)} (\ln x)^{(n - 1)} + $$
-$$+ C_n^{n} (x^2)^{(2)} (\ln x)^{(n - 2)}$$
+$$+ C_n^{n} (x^2)^{(0)} (\ln x)^{(n)}$$
 
 Тепер варто помітити, що:
 
@@ -325,7 +328,7 @@ $$C_n^{n-2}  \frac{2 (-1)^{n-3}(n-3)!}{x^{n-2}} + C_n^{n-1}  \frac{2x (-1)^{n-2}
 $$(\frac{1}{a-x})^{(0)} = \frac{1}{a-x}$$
 $$(\frac{1}{a-x})^{(1)} = \frac{1}{(a-x)^2}$$
 $$(\frac{1}{a-x})^{(2)} = \frac{2}{(a-x)^3}$$
-$$(\frac{1}{a-x})^{(n} = \frac{n!}{(a-x)^{n+1}}$$
+$$(\frac{1}{a-x})^{(n)} = \frac{n!}{(a-x)^{n+1}}$$
 
 \item Обчислити $n$-ту похідну від $f(x) = \frac{1}{x^2 - 3x + 2}$.
 
@@ -342,7 +345,9 @@ $$f^{(n)} = \sum_{k = 0}^{n} C_n^k \Big( \frac{(n-k)!}{(1-x)^{n-k+1}}\Big) \Big(
 Цікавий факт: конкретно у цьому завданні можна було зробити набагато простіше:
 
 $$f(x) = \frac{1}{1-x} \cdot \frac{1}{2 - x} = \frac{1}{1-x} - \frac{1}{2-x}$$
-$$f^{n}(x) = \frac{n!}{(1-x)^{n+1}} - \frac{n!}{(2-x)^{n+1}}$$
+$$f^{(n)}(x) = \frac{n!}{(1-x)^{n+1}} - \frac{n!}{(2-x)^{n+1}}$$
+
+\end{enumerate}
 
 \vspace{2mm}
 
@@ -378,7 +383,7 @@ $$\exists \lim_{x \to x_0}\frac{f(x) - f(x_0)}{x - x_0}$$
 
 Нехай $x - x_0 = \Delta x$. Тоді:
 
-$$\exists \lim_{x \to x_0}\frac{f(x) - f(x-0)}{x - x_0} = \lim_{\Delta x \to 0} \frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x} = f'(x)$$
+$$\exists \lim_{x \to x_0}\frac{f(x) - f(x_0)}{x - x_0} = \lim_{\Delta x \to 0} \frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x} = f'(x)$$
 
 $$\frac{f(x_0 + \Delta x) - f(x_0)}{\Delta x} = f'(x_0) + o(1)$$
 
@@ -399,7 +404,7 @@ $$f(x) = x^3,\ x_0 = 1$$
 $$f'(x_0) = 3$$
 $$d_{x_0}f(h) = 3h$$
 
-\textit{Геометричний зміст диференціалу.} Диференціал задає рівняння прямої, яка паральна дотичній до графіку функції у точці $x_0$ і проходить через центр координат.
+\textit{Геометричний зміст диференціалу.} Диференціал задає рівняння прямої, яка паральна дотичній до графіку функції у точці $x_0$ і проходить через початок координат.
 
 \vspace{5mm}
 
@@ -420,14 +425,165 @@ $$d_{x_0} g = g'(x_0) \cdot d_{x_0} x$$
 
 $$dg = g'(x_0)dx$$ 
 
+\textit{Зауваження.} Диференціал функції $f$ у точці $x_0$ $d_{x_0} f$ ще позначають $df|_{x_0},\ df(x_0)$.
+
+Інколи точку $x_0$ взагалі не пишуть і пишуть просто $df$.
+
+\vspace{3mm}
+
+\textit{Зауваження.} З теореми про лінійність похідної, похідної частки, добутку та суперпозиції випливають наступні правила дій з диференцалом:
+$$d(f \pm g) = df \pm dg$$
+$$d(f \cdot g) = df \cdot g + f \cdot dg$$
+$$d\Big(\frac{f}{g}\Big) = \frac{df \cdot g - f \cdot dg}{g^2}$$
+Ці властивочті справедливі при виконанні умов відповідних теорем. 
+
+\textit{Приклад:}
+$$f = \ln (e^{u^2} + v)$$
+$$df = d\ln (e^{u^2} + v) = \frac{1}{e^{u^2} + v} \cdot d(e^{u^2} + v) = \frac{d e^{u^2} + dv}{e^{u^2} + v} = $$
+$$= \frac{e^{u^2} \cdot d u^2 + dv}{e^{u^2} + v} = \frac{e^{u^2} \cdot 2 \cdot u \cdot du + dv}{e^{u^2} + v}$$
+
+\textit{Домашнє завдання.} Познайомитися з поняттям подвійної похідної та властивостями другого диференціалу. 
+
+(Лектор сказав, що такого на іспиті не буде і взагалі ця тема буде використана у другому семетрі, тож не зробиши цього багато не втратите.)
+
+\begin{center}
+\textbf{\large Теорема про середні}
+\end{center}
+
+\textit{Означення.} Нехай $x_0 \in D'_f \cap D_f$. 
+
+Функція $f$ має \textbf{локальний максимум} в точці $x_0$, якщо $\exists$ деяких $\varepsilon$-окіл точки $x_0$ $U_{\varepsilon} (x_0 - \varepsilon, x_0 + \varepsilon)$:
+$$\forall x \in U_{\varepsilon} \cap D_f \ f(x) \leq f(x_0)$$
+Аналогічно означається локальний мінімум.
+
+\textit{Означення.} Якщо в точці $x_0$ $f$ має локальний мінімум і при цьому
+$$\forall x \in (U_{\varepsilon} \cap D_f) \setminus \{ x_0\} \ f(x) < f(x_0)$$
+Тоді кажуть, що в точці $x_0$ $f$ має \textbf{строгий локальний максимум}.
+
+\textbf{Теорема Ферма.} Нехай $x_0 \in (D_f \cap (-\infty, x_0))' \cap (D_f \cap (x_0, +\infty))' \cap D_f$.
+
+Якщо $f$ має локальний екстремум (тобто мінімум або максимум) в точці $x_0$ і є диференційованою в точці $x_0$, то $f'(x_0) = 0$.
+
+\textbf{Доведення.} Згідно критерію диференційованості:
+$$\exists f'(x_0) \Longleftrightarrow \exists f'_{\textnormal{л}}(x_0), f'_{\textnormal{п}}(x_0), f'_{\textnormal{л}}(x_0) = f'_{\textnormal{п}}(x_0)$$
+$$\lim_{x \to x_0-}\frac{f(x) - f(x_0)}{x - x_0} = \lim_{x \to x_0+}\frac{f(x) - f(x_0)}{x - x_0}$$
+Розглянемо випадок, коли $f$ має локальний мінімум. Випадок з максимумом доводиться аналогічно.
+
+Якщо $f$ має локальний мінімум в точці $x_0$, то:
+$$\forall x \in U_{\varepsilon} \cap D-f$$
+$$f(x_0) \leq f(x) \Longrightarrow f(x) - f(x_0) \geq 0$$
+При $x \to x_0-$:
+$$x - x_0 < 0$$
+$$f(x) - f(x_0) \geq 0,\ \textrm{отже:}$$
+$$\frac{f(x) - f(x_0)}{x - x_0} \leq 0, \textrm{для } \forall x \in (U_{\varepsilon} \cap D_f),\ \textrm{отже:}$$
+$$\lim_{x\to x_0-} \frac{f(x) - f(x_0)}{x - x_0} \leq 0$$
+Аналогічно 
+$$\lim_{x\to x_0+} \frac{f(x) - f(x_0)}{x - x_0} \geq 0$$
+$$0 \geq \lim_{x\to x_0-} \frac{f(x) - f(x_0)}{x - x_0} = \lim_{x\to x_0+} \frac{f(x) - f(x_0)}{x - x_0} \geq 0$$
+Отже:
+$$\lim_{x\to x_0-} \frac{f(x) - f(x_0)}{x - x_0} = \lim_{x\to x_0+} \frac{f(x) - f(x_0)}{x - x_0} = 0 \Longrightarrow$$
+$$f'(x_0) = 0$$
+
+\textit{Зауваження.} Зворотнє твердження не є правдивим. Наприклад функція $f = x^3$ не має екстремуму в $x_0 = 0$, але $f'(0) = 0$.
+
+\textbf{Теорема Ролля.} Нехай $f \in C([a,b])\cap D((a,b))$.
+$$\textrm{Якщо } f(a) = f(b), \textrm{ то} \exists \xi \in (a,b) : f^{*}(\xi) = 0$$
+\textbf{Доведення.} Використаємо теорему Вейершрасса. Тоді $f$ досягає на $[a,b]$ свого максимального і мінімального значення. Нехай
+$$f(x^*) = \max_{x \in [a,b]}f(x)$$
+$$f(x_*) = \min_{x \in [a,b]}f(x)$$
+Якщо хоча б одне з цих чисел $x^*, x_*$ потрапляє на інтервал $(a,b)$, то виконано всі умови теореми Ферма, а оте $f'$ в цій точці дорівнює нулю за теоремою Ферма.
+
+Якщо обидві точки не належать інтервалу $(a,b)$, то $\{ x^*, x_*\} \subset \{ a,b\}$.
+
+Зважаючи, що $f(a) = f(b)$, тоді 
+$$f(x^*) = f(x_*) \Longrightarrow f \textrm{ є сталою на $(a,b)$}$$
+Тоді $\forall \xi \in (a,b)\ f(\xi) = 0$
+
+\vspace{3mm}
+
+\textit{Приклад:}
+Нехай $f \in D([0,1])$ і $f(0) = f(1) = 0$. Тоді $\forall \alpha \in \mathbb{R}$ рівняння 
+$$f'(x) + \alpha f(x) = 0$$
+Має розв'язок на $[0,1]$.
+\textit{Доведення.} Розглянемо функцію
+$$F(x) = e^{\alpha x}f(x)$$
+$$F(0) = 0,\ F(1) = 0$$
+Тоді за теоремою Ролля $\exists \xi \in [a,b]$:
+$$F'(\xi) = 0$$
+$$F'(x) = e^{\alpha x}\cdot f'(x) + \alpha e^{\alpha x} \cdot f(x)$$
+$$e^{\alpha x}\cdot f'(x) + \alpha e^{\alpha x} \cdot f(x) = 0$$
+Поділимо вираз на $e^{\alpha x}$.
+$$f'(x) + \alpha f(x) = 0$$
+
+\vspace{3mm}
+
+\textbf{Теорема Дарбу}. Нехай $f \in C([a,b])\cap D([a,b])$ і $f'_{\textnormal{п}}(a) \cdot f'_{\textnormal{л}}(b) < 0$. Тоді $\exists \xi : f'(\xi) = 0$.
+
+\textbf{Доведення.} Використаємо теорему Вейершрасса. Тоді $f$ досягає на $[a,b]$ свого максимального і мінімального значення. Нехай
+$$f(x^*) = \max_{x \in [a,b]}f(x)$$
+$$f(x_*) = \min_{x \in [a,b]}f(x)$$
+Якщо хоча б одне з цих чисел $x^*, x_*$ потрапляє на інтервал $(a,b)$, то виконано всі умови теореми Ферма, а оте $f'$ в цій точці дорівнює нулю за теоремою Ферма.
+
+Якщо обидві точки не належать інтервалу $(a,b)$, то $\{ x^*, x_*\} \subset \{ a,b\}$. 
+
+Тепер у нас можливі два випадки:
+\begin{itemize}
+
+\item Якщо $x^* = x_*$, то за теоремою Ролля все працює.
+\item Якщо $x^* \neq x_*$.
+
+Нехай $x^* = a,\ x_* = b$, тоді:
+
+$$f'_{\textnormal{п}}(a) = \lim_{x \to a+}\frac{f(x) - f(a)}{x - a}$$
+$$x - a > 0,\ f(x) - f(a) \leq 0 \Longrightarrow $$
+$$f'_{\textnormal{п}}(a) = \lim_{x \to a+}\frac{f(x) - f(a)}{x - a} \leq 0$$
+Аналогічно
+$$f'_{\textnormal{л}}(b) = \lim_{x \to b-}\frac{f(x) - f(b)}{x - b} \leq 0$$
+Виходить, що:
+$$f'_{\textnormal{п}}(a) \cdot f'_{\textnormal{л}}(b) \geq 0$$
+Що суперечить умові.
+
+\end{itemize}
+
+\vspace{5mm}
+
+\textbf{Теорема про проміжні значення похідної.} Нехай $f \in D([a,b])$. Тоді $f'$ приймає всі значення між $f'_{\textnormal{п}}(a)$ та $f'_{\textnormal{л}}(b)$.
+
+\textbf{Доведення.} Нехай $\alpha$ --- деяке число між $f'_{\textnormal{п}}(a)$ та $f'_{\textnormal{л}}(b)$. Розглянемо
+$$F(x) = f(x) - \alpha \cdot x$$
+$$F \in D([a,b])$$
+$$F'_{\textnormal{п}}(a) = f'_{\textnormal{п}}(a) - \alpha < 0$$ 
+$$F'_{\textnormal{л}}(b) = f'_{\textnormal{л}}(b) - \alpha > 0$$
+Отже, ми точно знаємо, що
+$$F'_{\textnormal{п}}(a) \cdot F'_{\textnormal{л}}(b) < 0$$
+Отже, всі умови теореми Дарбу виконано, отже:
+$$\exists \xi : F'(\xi) = 0 \Longrightarrow f'(\xi) - \alpha = 0 \Longrightarrow f'(\xi) = \alpha$$
 
 
+\textbf{Теорема Лагранжа.} Нехай $f \in C([a,b]) \cap D((a,b))$. 
+$$\textrm{Тоді } \exists \xi \in (a,b):$$
+$$f'(\xi) = \frac{f(b) - f(a)}{b - a}$$
+\textbf{Доведення.} Розглянемо функцію 
+$$F(x) = f(x) - \frac{f(b) - f(a)}{b - a}x$$
+$$F \in C([a,b])\cap D((a,b))$$
+$$F(a) = f(a) - \frac{f(a) - f(b)}{b - a} \cdot a = $$
+$$\frac{bf(a) - a f(a) - a f(b) + f(a) a}{b - a} = $$
+$$\frac{b f(a) - a f(b)}{b - a}$$
+Аналогічними перетвореннями отримуємо
+$$F(b) = \frac{-f(b) a + f(a) b}{b - a}$$
+$$\textrm{Виходить, що }F(a) = F(b)$$
+Отже, за теоремою Ролля $\exists \xi \in (a,b) : F'(\xi) = 0$
+$$F'(\xi) = f'(\xi) - \frac{f(b) - f(a)}{b - a} = 0 \Longrightarrow$$
+$$f'(\xi) = \frac{f(b) - f(a)}{b - a}$$
 
+\textit{Наслідок.} Нехай $f \in D([a,b])$ і $\forall x \in (a,b) \ f'(x) = 0$, тоді 
+$$f = const \textrm{ на $(a,b)$}$$
 
+\textit{Доведення.} $\forall x_1, x_2 \in (a,b)$.
 
-
-
-
-\end{enumerate}
+Використаємо теорему Лагранжа для $[x_1, x_2]$
+$$\textrm{Тоді } \exists \xi \in (x_1, x_2):$$
+$$\frac{f(x_1) - f(x_2)}{x_1 - x_2} = f'(\xi)$$
+$$f'(\xi) = 0 \Longrightarrow f(x_1) - f(x_2) = 0 \Longrightarrow f(x_1) = f(x_2)$$
 
 \end{document} 
