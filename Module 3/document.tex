@@ -595,4 +595,142 @@ $$\textrm{Тоді } \exists \xi \in (x_1, x_2):$$
 $$\frac{f(x_1) - f(x_2)}{x_1 - x_2} = f'(\xi)$$
 $$f'(\xi) = 0 \Longrightarrow f(x_1) - f(x_2) = 0 \Longrightarrow f(x_1) = f(x_2)$$
 
+\textit{Приклад.} Довести, що для $\forall x_1, x_2 \in \mathbb{R}$ 
+$$|\arctg x - \arctg y| \leq |x-y|$$
+
+$f(x) = \arctg x$ задовольняє усі умови теореми Лагранжа на $[x,y]$. Тоді:
+$$\exists \xi \in (x,y):$$
+$$\frac{\arctg x - \arctg y}{x - y} = (\arctg x)'|_{x = \xi} = \frac{1}{1 + \xi^2}$$
+$$\Big| \frac{\arctg x - \arctg y}{x - y}\Big| = \frac{1}{1 + \xi^2} \leq 1$$
+Домноживши обидвы частини на $|x - y|$ отримаємо:
+$$|\arctg x -\arctg y| \leq |x-y|$$
+
+\textit{Геометрична інтерпретація теореми Лагранжа.} Якщо $f \in C([a,b]) \cap D((a,b))$, то завжди можна провести дотичну до функції $f$, паралельну до відрізка, о сполучає точки $(a, f(a))$ та $(b, f(b))$.
+
+\vspace{3mm}
+
+\textbf{Теорема Коші.}  
+Нехай $f, g \in C([a,b]) \cap D((a,b))$. Тоді $\exists \xi \in (a,b):$
+$$(f(b) - f(a))g'(\xi) = (g(a) = g(b))f'(\xi)$$
+\textbf{Доведення.} Розглянемо допоміжну функцію 
+$$F(x) = (f(b) - f(a))g(x) - (g(b) - g(a))f(x)$$
+\begin{enumerate}
+\item $F \in C([a,b])\cap D((a,b))$
+\item $F(a) = (f(b) - f(a))g(a) - (g(b) - g(a))f(a) = f(b)g(a) - f(a)g(a) + f(a)g(a) - g(b)f(a) = f(b)g(a) - g(b)f(a)$
+
+\vspace{1mm}
+
+$F(b) = (f(b) - f(a))g(b) - (g(b) - g(a))f(b) = f(b)g(b) - f(a)g(b) + f(b)g(a) - g(b)f(b) = f(b)g(a) - g(b)f(a)$
+Отже, $F(a) = F(b)$.
+\end{enumerate}
+
+Тоді за теоремою Ролля 
+$$\exists \xi : F'(\xi) = 0$$
+$$(f(b) - f(a))g'(\xi) - (g(b) - g(a))f'(\xi) = 0 \Longleftrightarrow$$
+$$(f(b) - f(a))g'(\xi) = (g(b) - g(a))f'(\xi) $$
+
+\textit{Наслідок.} Якщо в умовах теореми Коші $\forall x \in (a,b) \ g'(x) \neq 0$, то
+$$\frac{f(b) - f(a)}{g(b) - g(a)} = \frac{f'(\xi)}{g'(\xi)}$$
+Чому у нас не буде раптом ділення на нуль?
+
+Очевидно, що з $\forall x \in (a,b) \ g'(x) \neq 0$ слідує те, що $g'(\xi) \neq 0$.
+
+Подивимось на $g(b) - g(a)$. Якби $g(b) - g(a) = 0$, то за теоремою Ролля $\exists c \in (a,b) : g'(c) = 0$, що суперечить умові.
+
+\textbf{Теорема про неперервність похідної.} Нехай $f \in (D((a,b))\setminus \{x_0\})$, $f \in C((a,b))$, $x_0 \in (a,b)$.
+
+$$\textrm{Якщо } \exists \lim_{x \to x_0}f'(x) = \lambda \Longrightarrow \exists f'(x_0) = \lambda$$
+
+\textbf{Доведення.} Розглянемо проміжки $[x_0, x]$, $[x, x_0]$.
+
+\begin{itemize}
+\item Розглянемо $[x_0, x]$. За теоремою Лагранжа:
+$$\exists \xi \in [x_0, x]: f'(\xi) = \frac{f(x) - f(x_0)}{x - x_0}$$
+$$x_0 < \xi < x$$
+Тож при $x \to x_0$, $\xi \to x_0$. Отже:
+$$f'(\xi) \to \lambda \Longrightarrow$$
+$$\Longrightarrow \exists \lim_{x \to x_0+}\frac{f(x) - f(x_0)}{x - x_0} = \lambda$$
+\item Аналогічно, розглядаючи проміжок $[x, x_0]$ доводимо, що 
+$$\exists \lim_{x\to x_0 - }\frac{f(x) - f(x_0)}{x - x_0} = \lambda$$
+
+\end{itemize}
+\textbf{Теорема. Типи розривів похідної.}
+
+Нехай $f \in D((a,b))$ тоді $\forall x \in (a,b)$.
+
+$f'$ або є неперервною в точці $x$ або має розрив другого роду.
+
+\textbf{Доведення.} Розглянемо
+$$f'(x_0+0),\ f'(x_0-0)$$
+\begin{enumerate}
+\item Якщо $f'(x - 0)$ або $f'(x + 0)$ не існує або дорівнює нескінченності, то $f'$ має розрив другого роду.
+
+\item Якщо $\exists f'(x - 0)$ і $\exists f'(x + 0)$.
+
+Тоді за попередньою теоремою
+$$\exists f_{\textrm{л}}'(x) = \lim_{x\to x_0-}f'(x),\ \exists f_{\textrm{п}}'(x) = \lim_{x\to x_0+}f'(x)$$
+
+\begin{itemize}
+\item Якщо $f_{\textrm{л}}'(x) \neq f_{\textrm{п}}'(x)$. Тоді $\nexists f(x_0)$. Протиріччя.
+\item Якщо $f_{\textrm{л}}'(x) = f_{\textrm{п}}'(x) \Longrightarrow \exists \lim\limits_{x\to x_0} f'(x)$. Тоді за попередньою теоремою 
+$\exists f'(x) = \lim\limits_{x \to x_0}f'(x)$. Отже, $f'$ --- неперервна в точці $x_0$. 
+\end{itemize}
+\end{enumerate}
+
+\textit{Приклад.} 
+$$f(x) = \begin{cases} x^2 \sin \frac{1}{x}, & x \neq 0 \\
+				0, x = 0\end{cases}$$
+При $x \neq 0$:
+$$f'(x) = 2x \sin \frac{1}{x} - \cos \frac{1}{x},\ x\neq 0$$
+Інакше:
+$$f'(0) = \lim_{x \to 0}\frac{f(x) - f(0)}{x - 0} = \lim_{x\to 0}\frac{x^2 \sin \frac{1}{x}}{x} = $$
+$$= \lim_{x\to 0}x \sin \frac{1}{x} = 0$$
+Чи буде $f'$ неперервна в точці $x_0$?
+$$\lim_{x \to 0}f'(x) = \lim_{x\to 0 }(2x \sin frac{1}{x} - \cos \frac{1}{x}) = -\lim_{x\to 0}\cos \frac{1}{x} = $$
+$$-\lim_{y \to \infty} \cos y \textrm{ --- не існує}$$
+Отже $f'(x)$ має розрив другого роду у точці $0$.
+
+\textbf{Правило Лопіталя.} Нехай $f,g : (a,b) \to \mathbb{R}$.
+
+\textbf{Теорема.} Нехай $f,g \in D((a,b))$ і прицьому:
+\begin{enumerate}
+\item $$\lim_{x\to a+}f(x) = \lim_{x \to a+}g(x) = 0$$ 
+\item
+$$\exists \lim_{x\to a+}\frac{f'(x)}{g'(x)} = \lambda \in \mathbb{R}$$
+\item 
+$$g'(x) \neq 0 \ \forall x \in (a,b)$$
+\end{enumerate}
+$$\textrm{Тоді} \exists \lim_{x\to a+}\frac{f(x)}{g(x)} = \lambda$$
+
+\textbf{Доведення.} Доозначимо функції $f$ і  $g$ у точці $a$. Розглянемо 
+$$F(x) = \begin{cases} 0,& x = a \\
+						f(x),& x \in (a,b)\end{cases}$$
+Аналогічно
+$$G(x) = \begin{cases} 0,& x = a \\
+						g(x),& x \in (a,b)\end{cases}$$
+$F$ та $G$ задовольняють умови наслідку з теореми Коші на проміжку $[a,x]$, $x \in (a,b)$. Тоді $\exists \xi:$
+$$\frac{F(x) - F(a)}{G(x) - G(a)} = \frac{F'(\xi)}{G'(\xi)} \Longrightarrow \frac{f(x)}{g(x)} = \frac{f'(\xi)}{g'(\xi)}$$
+$$x \to a+,\ a < \xi < x, \Longrightarrow \xi \to a+ \Longrightarrow $$
+$$\Longrightarrow \exists \lim_{\xi \to a+}\frac{f'(\xi)}{g'(\xi)} \Longrightarrow \exists \lim_{x\to a+}\frac{f(x)}{g(x)} = \lambda$$
+\textit{Зауважте,} що слідування йде тільки в одну сторону.
+
+\vspace{3mm}
+
+Аналогічна теорема при $x \to +\infty$:
+\textbf{Теорема.} $f,g : [a, +\infty] \to \mathbb{R},\ f,g \in D((a, +\infty))$.
+\begin{enumerate}
+\item $$\exists \lim_{x \to +\infty}f(x) = \lim_{x\to +\infty}g(x) = 0$$
+\item $$\exists \lim_{x\to +\infty}\frac{f'(x)}{g'(x)} = \lambda$$
+\item $$\forall x \in (a, +\infty) g'(x) \neq 0$$
+\end{enumerate}  
+$$\textrm{Тоді } \exists \lim_{x\to +\infty}\frac{f(x)}{g(x)} = \lambda$$
+
+\textit{Зауваження.} Умову $\lim f = \lim g = 0$ можна замінити на $\lim f = \lim g = \infty$ і правило Лопіталя теж буде виконуватись. Головне, щоб функції прямували до $0$ або $\infty$ одночасно.
+
+\textit{Приклад:}
+\begin{itemize}
+\item $$\lim_{x\to 0}\frac{\sin x}{e^x - 1} = \lim_{x\to 0}\frac{\cos x}{e^x} - 1$$
+\item $$\lim_{x\to +\infty}\frac{e^x}{x} = \lim_{x \to +\infty}\frac{e^x}{1} = +\infty$$
+\item $$\lim_{x\to 0}x \ln x = \lim_{x \to 0}\frac{\ln x}{\frac{1}{x}} = \lim_{x\to 0}\frac{\frac{1}{x}}{\frac{-1}{x^2}} = \lim_{x\to 0}(-x) = 0$$
+\end{itemize}
 \end{document} 

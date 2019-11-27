@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.1)  18 NOV 2019 16:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.1)  27 NOV 2019 17:53
 entering extended mode
 **./document.tex
 (document.tex
@@ -185,20 +185,20 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 15.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{C:/Users/Lenovo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-Overfull \hbox (1.21277pt too wide) in paragraph at lines 53--54
+{C:/Users/Lenovo/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [1]
+Overfull \hbox (1.21277pt too wide) in paragraph at lines 55--56
 []\T2A/cmr/bx/n/12 Теорема. (Ди-фе-рен-цiй-о-ванiсть ком-по-зи-цiЁ функ-цiй). \
 T2A/cmr/m/n/12 Нехай да-
  []
 
-[1] [2] [3] [4] [5]
-Overfull \hbox (75.37617pt too wide) detected at line 198
+[2] [3] [4] [5]
+Overfull \hbox (75.37617pt too wide) detected at line 206
 \OMS/cmsy/m/n/12 ([]) 9 [] []\OML/cmm/m/it/12 ;  \OMS/cmsy/m/n/12 9 [] []\OML/c
 mm/m/it/12 ; [] [] \OT1/cmr/m/n/12 = [] []
  []
 
 [6] [7] [8]
-Overfull \hbox (21.65358pt too wide) detected at line 311
+Overfull \hbox (21.65358pt too wide) detected at line 319
 \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[] [] x\OT1/cmr/m/n/12 )[] = \OML/cmm/m/it/1
 2 C[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 )[] [] \OML/cmm/m/it/
 12 x \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 C[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[
@@ -208,7 +208,7 @@ Overfull \hbox (21.65358pt too wide) detected at line 311
  []
 
 
-Overfull \hbox (26.21443pt too wide) detected at line 312
+Overfull \hbox (26.21443pt too wide) detected at line 320
 \OT1/cmr/m/n/12 + [] + \OML/cmm/m/it/12 C[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[
 ]\OT1/cmr/m/n/12 )[]([] \OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )[] + \OML/cmm/m/it/1
 2 C[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x[]\OT1/cmr/m/n/12 )[]([] \OML/cmm/m/it/
@@ -217,67 +217,74 @@ Overfull \hbox (26.21443pt too wide) detected at line 312
  []
 
 [9]
-Overfull \hbox (3.67743pt too wide) detected at line 324
+Overfull \hbox (3.67743pt too wide) detected at line 332
 \OML/cmm/m/it/12 C[][] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 C[][] \OT1/cmr/m/n/12
  + \OML/cmm/m/it/12 C[][]
  []
 
 [10]
-Overfull \hbox (6.30244pt too wide) in paragraph at lines 354--355
+Overfull \hbox (6.30244pt too wide) in paragraph at lines 362--363
 []\T2A/cmr/m/n/12 Як об-чис-ли-ти по-хiд-ну ви-що-го по-ряд-ку вiд па-ра-мет-ри
 ч-но за-да-ноЁ функ-
  []
 
 [11]
-Overfull \hbox (0.70944pt too wide) in paragraph at lines 407--408
+Overfull \hbox (0.70944pt too wide) in paragraph at lines 415--416
 []\T2A/cmr/m/it/12 Геометричний змiст ди-фе-рен-цiа-лу. \T2A/cmr/m/n/12 Ди-фе-р
 ен-цiал за-да№ рiв-нян-ня пря-
  []
 
 [12] [13] [14]
-Overfull \hbox (0.3213pt too wide) in paragraph at lines 487--488
+Overfull \hbox (0.3213pt too wide) in paragraph at lines 496--497
 []\T2A/cmr/m/it/12 Зауваження. \T2A/cmr/m/n/12 Зво-рот-н№ твер-джен-ня не № пра
 в-ди-вим. На-при-клад функ-
  []
 
 [15]
 LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 5
-32.
+41.
  (E:\MikTex\tex/latex/base\omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 532.
- [16] [17] [18] (document.aux) ) 
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 541.
+ [16] [17]
+Overfull \hbox (1.8287pt too wide) in paragraph at lines 608--609
+[]\T2A/cmr/m/it/12 Геометрична iн-тер-пре-та-цiя тео-ре-ми Лагран-жа. \T2A/cmr/
+m/n/12 Як-що $\OML/cmm/m/it/12 f \OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 C\OT1/cmr/
+m/n/12 ([\OML/cmm/m/it/12 a; b\OT1/cmr/m/n/12 ]) \OMS/cmsy/m/n/12 \
+ []
+
+[18] [19] [20] [21] [22] [23] (document.aux) ) 
 Here is how much of TeX's memory you used:
  3545 strings out of 492453
  41299 string characters out of 3138201
- 116095 words of memory out of 3000000
+ 116096 words of memory out of 3000000
  7880 multiletter control sequences out of 15000+200000
  19686 words of font info for 56 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 30i,8n,31p,379b,671s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Lenovo\AppData\Local\MiKTeX\2.9\font
-s/pk/ljfour/lh/lh-t2a/dpi600\larm0800.pk> <C:\Users\Lenovo\AppData\Local\MiKTeX
-\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati1200.pk> <C:\Users\Lenovo\AppData\Loc
-al\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\Users\Lenovo\Ap
-pData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.pk> <C:\Users\
-Lenovo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1440.pk> <
-C:\Users\Lenovo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1
-728.pk> <C:\Users\Lenovo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi
-600\larm1095.pk> <C:\Users\Lenovo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/l
-h-t2a/dpi600\larm1440.pk> <C:\Users\Lenovo\AppData\Local\MiKTeX\2.9\fonts/pk/lj
-four/lh/lh-t2a/dpi600\larm2074.pk><E:/MikTex/fonts/type1/public/amsfonts/cm/cme
-x10.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/MikTex/fonts/t
-ype1/public/amsfonts/cm/cmmi8.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmr
-12.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmr6.pfb><E:/MikTex/fonts/type
-1/public/amsfonts/cm/cmr8.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmsy6.pfb><E:/MikTex/fonts/type1/
-public/amsfonts/cm/cmsy8.pfb><E:/MikTex/fonts/type1/public/amsfonts/symbols/msb
-m10.pfb>
-Output written on document.pdf (19 pages, 258247 bytes).
+ 30i,8n,31p,472b,671s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Lenovo\AppData\Local\M
+iKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm0800.pk> <C:\Users\Lenovo\AppDat
+a\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\lati1200.pk> <C:\Users\Leno
+vo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\labx1200.pk> <C:\U
+sers\Lenovo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm1200.
+pk> <C:\Users\Lenovo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\
+labx1440.pk> <C:\Users\Lenovo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/lh/lh-t2
+a/dpi600\labx1728.pk> <C:\Users\Lenovo\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour
+/lh/lh-t2a/dpi600\larm1095.pk> <C:\Users\Lenovo\AppData\Local\MiKTeX\2.9\fonts/
+pk/ljfour/lh/lh-t2a/dpi600\larm1440.pk> <C:\Users\Lenovo\AppData\Local\MiKTeX\2
+.9\fonts/pk/ljfour/lh/lh-t2a/dpi600\larm2074.pk><E:/MikTex/fonts/type1/public/a
+msfonts/cm/cmex10.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><E:/
+MikTex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><E:/MikTex/fonts/type1/public/a
+msfonts/cm/cmr12.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmr6.pfb><E:/Mik
+Tex/fonts/type1/public/amsfonts/cm/cmr8.pfb><E:/MikTex/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb><E:/MikTex/fonts/type1/public/amsfonts/cm/cmsy6.pfb><E:/MikTe
+x/fonts/type1/public/amsfonts/cm/cmsy8.pfb><E:/MikTex/fonts/type1/public/amsfon
+ts/symbols/msbm10.pfb>
+Output written on document.pdf (24 pages, 275872 bytes).
 PDF statistics:
- 446 PDF objects out of 1000 (max. 8388607)
+ 467 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
