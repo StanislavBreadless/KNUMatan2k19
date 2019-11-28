@@ -733,4 +733,145 @@ $$\textrm{Тоді } \exists \lim_{x\to +\infty}\frac{f(x)}{g(x)} = \lambda$$
 \item $$\lim_{x\to +\infty}\frac{e^x}{x} = \lim_{x \to +\infty}\frac{e^x}{1} = +\infty$$
 \item $$\lim_{x\to 0}x \ln x = \lim_{x \to 0}\frac{\ln x}{\frac{1}{x}} = \lim_{x\to 0}\frac{\frac{1}{x}}{\frac{-1}{x^2}} = \lim_{x\to 0}(-x) = 0$$
 \end{itemize}
+
+\begin{center}
+\textbf{Формула Тейлора}
+\end{center}
+
+Нехай $f : (a,b) \to \mathbb{R},\ D_f = (a,b)$.
+
+Многочлен
+
+$$P_{n,x}(x_0) = \sum_{k = 0}{n}\frac{f^{(k)}(x)}{k!} \cdot (x-x_0)^k = $$
+$$= f(x_0) + \frac{f'(x_0)}{1!} + \frac{f''(x_0)}{2!}(x-x_0)^2 + \ldots + \frac{f^{(n)}(x_0)}{n!} (x-x_0)^n$$
+
+називається \textbf{многочленом Тейлора} $n$-того порядку для функції $f$ в точці $x_0$.
+
+$$r(x) = f(x) - P(x)$$
+Називається \textbf{залишковим членом}.
+
+$$f(x) = P(x) + r(x)$$
+
+\textbf{Теорема. Формула Тейлора із залишкоим членом у формі Пеано}.
+
+Нехай $f\in D^{(n)}((a,b)) \cap D^{(n+1)}(\{ x_0\}),\ x_0, x \in (a,b)$. Тоді при $x \to x_0$:
+
+$$r(x) = o((x - x_0)^n)$$
+
+Тобто:
+
+$$f(x) = \sum_{k = 0}{n}\frac{f^{(k)}(x)}{k!} \cdot (x-x_0)^k + o((x - x_0)^n)$$
+
+\textbf{Доведення.}
+
+$$\lim_{x\to x_0}\frac{f(x) - \sum_{k = 0}{n}\frac{f^{(k)}(x)}{k!} \cdot (x-x_0)^k}{(x - x_0)^n} = $$
+$$ = \lim_{x\to x_0}\frac{(f(x) - \sum_{k = 0}{n}\frac{f^{(k)}(x)}{k!} \cdot (x-x_0)^k)'}{((x - x_0)^n)'} $$
+
+$$\Big(\frac{f^{n}(x_0)}{k!} (x - x_0)^k\Big)' = \frac{f^{(k)}(x_0)}{(k-1)!} (x - x_0)^{k-1}\textrm{, отже:}$$
+$$\lim_{x\to x_0}\frac{(f(x) - \sum_{k = 0}{n}\frac{f^{(k)}(x)}{k!} \cdot (x-x_0)^k)'}{((x - x_0)^n)'} = $$
+$$= \lim_{x \to x_0}\frac{f'(x) - f'(x_0) - \frac{f''(x_0)}{1!}(x - x_0) - \ldots - \frac{f^{(n)}(x_0)}{(n-1)!} (x - x_0)^{n-1}}{n(x - x_0)^{n-1}} = $$
+$$= \lim_{x \to x_0}\frac{(f'(x) - f'(x_0) - \frac{f''(x_0)}{1!}(x - x_0) - \ldots - \frac{f^{(n)}(x_0)}{(n-1)!} (x - x_0)^{n-1})'}{(n(x - x_0)^{n-1})'} = $$
+$$= \ldots = \lim_{x \to x_0}\frac{f^{n-1}(x) - f^{n-1}(x_0) - \frac{f^{n}(x_0)}{1} (x - x_0)}{n! (x - x_0)} = $$
+$$= \frac{1}{n!} \lim_{x\to x_0}\Big( \frac{f^{(n-1)}(x) - f^{(n-1)}(x_0)}{x - x_0} - f^{(n)}(x_0)\Big)$$
+Оскільки $f \in D^{(n+1)}(\{ x_0\})$, то:
+$$\exists f^{(n)}(x_0) = \lim_{x\to x_0} \frac{f^{(n-1)}(x) - f^{(n-1)}(x_0)}{x - x_0}$$
+Отже: 
+$$\frac{1}{n!} \lim_{x\to x_0}\Big( \frac{f^{(n-1)}(x) - f^{(n-1)}(x_0)}{x - x_0} - f^{(n)}(x_0)\Big) = $$
+$$\frac{1}{n!} \lim_{x \to x_0}(f^{(n)}(x_0) - f^{(n)}(x_0)) = 0$$
+
+Доведено.
+
+\vspace{3mm}
+
+\textbf{Теорема. Формула Тейлора із залишковим членом у формі Лагранжа.}
+Нехай $f \in D^{(n+1)}((a,b)),\ x,x_0 \in (a,b)$, тоді:
+$$\exists \xi \in (x_0, x):$$
+$$r(x) = \frac{f^({n+1})(\xi)}{(n+1)!}\cdot (x - x_0)^{n+1}$$
+Тобто
+$$f(x) = \sum_{k = 0}{n}\frac{f^{(k)}(x)}{k!} \cdot (x-x_0)^k + \frac{f^({n+1})(\xi)}{(n+1)!}\cdot (x - x_0)^{n+1}$$
+
+\textbf{Теорема. Формула Тейлора із залишковим членом у формі Коші.}
+$$\exists \xi \in (x, x_0):$$
+$$r(x) = \frac{\theta^n}{n!}(x - x_0)^n f^{(n+1)}(\xi)$$
+Що таке $\theta$? 
+Це деяке число, яке належить проміжку $[0,1]$. Завдяки цьому виходить, що:
+$$\theta x_0 + (1-\theta)x \in [x, x_0]$$
+Оскільки $\xi \in (x, x_0)$, то:
+$$\xi = \theta x_0 + (1 - \theta x,\ \theta \in (0,1)$$
+
+\textit{Домашнє завдання:}
+\begin{enumerate}
+\item Виразити $\theta$ через $\xi$ і позбавити форму Коші від неї.
+\item Прочитати доведення цих двух теорем.
+\item Послабити умову теореми.
+\end{enumerate}
+
+\vspace{3mm}
+
+\textit{Приклад:}
+При $x_0 = 0$:
+$$\sin x = x - \frac{x^3}{3!} + r(x),\ x \in [0,1]$$
+$$\sin x = x - \frac{x^3}{3!} + \frac{\sin^{(4)} (\xi)}{4!} x^4 = x - \frac{x^3}{3!} + \frac{\sin \xi}{4!} x^4$$
+$$\sin x - (x - \frac{x^3}{3!}) = \Big|\frac{\sin \xi}{4!} x^4\Big|\leq \frac{1}{24}$$
+
+\begin{center}
+\textbf{Дослідження функцій за допомогою похідних}
+\end{center}
+
+Нехай $f : (a,b) \to \mathbb{R},\ D_f = (a,b)$.
+
+\textbf{Теорема.} Нехай $f \in D((a,b))$. Тоді:
+\begin{enumerate}
+\item $f \nearrow$ (нестрого зростає) на $(a,b)$ $\Longleftrightarrow$ $\forall x \in (a,b)\ f'(x) \geq 0$. 
+\item $f \searrow$ (нестрого спадає) на $(a,b)$ $\Longleftrightarrow$ $\forall x \in (a,b)\ f'(x) \geq 0$.
+\item $f \uparrow$ (строго зростає) на $(a,b)$ $\Longleftarrow$ $\forall x \in (a,b)\ f'(x) \geq 0$.
+\item $f \downarrow$ (строго спадає) на $(a,b)$ $\Longleftarrow$ $\forall x \in (a,b)\ f'(x) \geq 0$.
+\end{enumerate}
+
+\textbf{Доведення.} 
+\begin{enumerate}
+\item $\Longrightarrow$. $\forall x_0 \in (a,b)$:
+$$f'(x) = \lim_{x \to x_0}\frac{f(x) - f(x_0)}{x - x_0}$$
+Оскільки функція нестрого зростає, то при $x > x_0$:
+$$f(x) - f(x_0) \geq 0,\ x - x_0 > 0 \Longrightarrow \lim_{x \to x_0+}\frac{f(x) - f(x_0)}{x - x_0} \geq 0$$
+Аналогічно:
+$$\lim_{x \to x_0-}\frac{f(x) - f(x_0)}{x - x_0} \geq 0$$
+Отже й $f'(x) \geq 0$.
+
+\vspace{2mm}
+
+$\Longleftarrow$. $\forall x_1, x_2 \in (a,b)$:
+Нехай $x_1 < x_2$. За теоремою Лагранжа можна записати наступне:
+$$f(x_2) - f(x_1) = f'(\xi)(x_2 - x_1)$$
+$$\textrm{Оскільки } f'(\xi) \geq 0,\ x_2 - x_1 > 0 \Longrightarrow f(x_2) - f(x_1) = f'(\xi)(x_2 - x_1) \geq 0$$
+Отже, при $x_1 < x_2$ $f(x_2) - f(x_1) \geq 0 \Longleftrightarrow f(x_2) \geq f(x_1)$, що й треба було довести.
+
+\item Доводиться абсолютно аналогічно з попереднім.
+
+\item $\Longleftarrow$. Доводиться аналогічно з $1$. Але, обернена тверждення ($\Longrightarrow$) тепер не є правдою, бо, наприклад:
+$$f(x) = x^3\textrm{--- строго зростнає на $\mathbb{R}$, але:}$$
+$$f'(x) = 2x^2 \Longrightarrow f'(0) = 0$$
+Отже, навіть якщо функція строго зростає, $f'$ все одно може набувати нульове значення.
+\item Абсолютно аналогічно з попереднім.
+\end{enumerate}
+
+\textbf{Означення.} Функція $f$ називається зростаючою в точці $x_0$, якщо:
+$$\exists \varepsilon > 0$$
+$$\forall x \in (x_0, x_0 + \varepsilon)\ f(x) > f(x_0)$$
+$$\forall x \in (x_0 - \varepsilon, x_0)\ f(x) < f(x_0)$$
+
+Аналогічно означується спадна, неспадна та зростаюча функції у точці
+
+\vspace{3mm}
+
+\textbf{Теорема.} Якщо $f'(x_0) > 0$, то функція зростає в точці $x_0$.
+
+\textbf{Доведення.} 
+$$f'(x_0) = \lim_{x \to x_0}\frac{f(x) - f(x_0)}{x - x_0} > 0 \Longrightarrow$$
+$$\exists \varepsilon > 0 : \forall x \in (x_0 - \varepsilon, x_0 + \varepsilon)\ \frac{f(x) - f(x_0)}{x - x_0} > 0$$
+Отже:
+$$x < x_0 \Longrightarrow f(x) - f(x_0) < 0 \Longleftrightarrow f(x) < f(x_0)$$
+$$x > x_0 \Longrightarrow f(x) - f(x_0) > 0 \Longleftrightarrow f(x) > f(x_0)$$
+
+
 \end{document} 
