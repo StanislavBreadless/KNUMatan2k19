@@ -109,7 +109,7 @@ $$= f(x_0) g'(x_0) + g(x_0) f'(x_0)$$
 
 \textbf{Доведення.} Аналогічно. Це доведення на дз :).
 
-\textit{Приклад.} Обчислити похідну від $f$ від функції $f$ в точці $x_0$.
+\textit{Приклад.} Обчислити похідну від функції $f$ в точці $x_0$.
 \begin{enumerate}
 
 \item $f(x) = x^3$.
@@ -282,20 +282,20 @@ $$f^{(n)}(x) = (-1)^{n-1}(n-1)!\frac{1}{x^n}$$
 Якщо $f$ має $n$-ту похідну $f^{(n)}(x)$ у кожній точці проміжку $I$, то кажуть, що $f$ є $n$ разів диференційованою і позначається це так:
 $$f \in D^{(n)}(I)$$
 
-Якщо при цьому $f^{n} \in C(I)$, то кажуть, що $f \in C^{(n)}(I)$, то кажуть, що $f \in C^{(n)}(I)$.
+Якщо при цьому $f^{(n)} \in C(I)$, то кажуть, що $f \in C^{(n)}(I)$.
 
-$$C(I) \subset D(I) \subset C^{(1)}(I) \subset D^{(1)}(I) \subset C^{(2)}(I) \subset \ldots$$
+$$C(I) \supset D(I) \supset C^{(1)}(I) \supset D^{(1)}(I) \supset C^{(2)}(I) \supset \ldots$$
 
 \textit{Домашня робота.} Якщо у функції є похідна, чи обов'язково похідна неперервна?
 
 \vspace{3mm}
 
 Якщо $\forall n \in \mathbb{N}\ \exists f^{(n)}$ на $I$, то кажуть, що $f$ --- нескінченно диференційована на $I$. Позначається так:
-$$f \in C^{\infty}(I)$$
+$$f \in D^{\infty}(I)$$
 
 \begin{center}
 
-\textbf{\large{Дві властивочті $n$-тої похідної}}
+\textbf{\large{Дві властивості $n$-тої похідної}}
 
 \end{center}
 
@@ -611,7 +611,7 @@ $$|\arctg x -\arctg y| \leq |x-y|$$
 
 \textbf{Теорема Коші.}  
 Нехай $f, g \in C([a,b]) \cap D((a,b))$. Тоді $\exists \xi \in (a,b):$
-$$(f(b) - f(a))g'(\xi) = (g(a) = g(b))f'(\xi)$$
+$$(f(b) - f(a))g'(\xi) = (g(a) - g(b))f'(\xi)$$
 \textbf{Доведення.} Розглянемо допоміжну функцію 
 $$F(x) = (f(b) - f(a))g(x) - (g(b) - g(a))f(x)$$
 \begin{enumerate}
@@ -767,7 +767,7 @@ $$f(x) = \sum_{k = 0}{n}\frac{f^{(k)}(x)}{k!} \cdot (x-x_0)^k + o((x - x_0)^n)$$
 $$\lim_{x\to x_0}\frac{f(x) - \sum_{k = 0}{n}\frac{f^{(k)}(x)}{k!} \cdot (x-x_0)^k}{(x - x_0)^n} = $$
 $$ = \lim_{x\to x_0}\frac{(f(x) - \sum_{k = 0}{n}\frac{f^{(k)}(x)}{k!} \cdot (x-x_0)^k)'}{((x - x_0)^n)'} $$
 
-$$\Big(\frac{f^{n}(x_0)}{k!} (x - x_0)^k\Big)' = \frac{f^{(k)}(x_0)}{(k-1)!} (x - x_0)^{k-1}\textrm{, отже:}$$
+$$\Big(\frac{f^{(k)}(x_0)}{k!} (x - x_0)^k\Big)' = \frac{f^{(k)}(x_0)}{(k-1)!} (x - x_0)^{k-1}\textrm{, отже:}$$
 $$\lim_{x\to x_0}\frac{(f(x) - \sum_{k = 0}{n}\frac{f^{(k)}(x)}{k!} \cdot (x-x_0)^k)'}{((x - x_0)^n)'} = $$
 $$= \lim_{x \to x_0}\frac{f'(x) - f'(x_0) - \frac{f''(x_0)}{1!}(x - x_0) - \ldots - \frac{f^{(n)}(x_0)}{(n-1)!} (x - x_0)^{n-1}}{n(x - x_0)^{n-1}} = $$
 $$= \lim_{x \to x_0}\frac{(f'(x) - f'(x_0) - \frac{f''(x_0)}{1!}(x - x_0) - \ldots - \frac{f^{(n)}(x_0)}{(n-1)!} (x - x_0)^{n-1})'}{(n(x - x_0)^{n-1})'} = $$
