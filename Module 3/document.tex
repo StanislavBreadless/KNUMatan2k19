@@ -873,5 +873,132 @@ $$\exists \varepsilon > 0 : \forall x \in (x_0 - \varepsilon, x_0 + \varepsilon)
 $$x < x_0 \Longrightarrow f(x) - f(x_0) < 0 \Longleftrightarrow f(x) < f(x_0)$$
 $$x > x_0 \Longrightarrow f(x) - f(x_0) > 0 \Longleftrightarrow f(x) > f(x_0)$$
 
+\begin{center}
+
+\textbf{\largeДоведення рівностей та нерівностей}
+
+\end{center}
+
+\begin{enumerate}
+\item 
+Довести, що $\forall a,b \ a^2 + b^2 = (a-b)(a+b)$.
+
+Розглянемо функцію $f(x) = x^2 - b^2 - (x-b)(x+b)$. Тепер нам треба довести, що $\forall x\ f(x) = 0$.
+$$f'(x) = 2x - (x+b + x - b) = 2x - 2x = 0 \Longrightarrow f(x) = const \in \mathbb{R}$$
+Тепер нам достатньо перевірити значення функції в будь-якій точці. Нехай це буде точка $b$:
+$$f(b) = b^2 - b^2 - (b-b)(b + b) = 0 - 0 = 0$$
+\item Довести, що
+\begin{itemize}
+\item $\sin x \leq x,\ x > 0$
+\item $e^x > 1 + x + \frac{x^2}{2},\ x > 0$
+\end{itemize}
+
+\begin{itemize}
+\item $f(x) = x - \sin x$	. Треба довести, що $f(x) \geq 0$ для всіх $x > 0$. 
+$$f'(x) = 1 - \cos x \geq 0 \Longrightarrow \textrm{$f(x)$ --- неспадна. Отже:}$$
+$$\min f(x) = f(0)$$
+$$\forall x \geq 0 \ \ f(x) \geq f(0) = 0$$
+\item Треба довести, що $f(x) = e^x - 1 - x - \frac{x^2}{2} > 0,\ x > 0$.
+
+$$f'(x) = e^x - 1 - x $$
+Позначимо нову функцію $g(x)$ наступним чином:
+$$g(x) = e^x - 1 - x$$
+$$g'(x) = e^x - 1 > 0\ \forall x > 0$$
+Це означає, що $g'(x) > 0 \Longrightarrow g(x)$ --- строго монотонно зростаюча на проміжку $(0, +\infty)$.
+
+$$g(x) \in C(\mathbb{R})$$
+$$g(x) > g(0) = 0$$
+Отже $g(x) > 0\ \forall x > 0 \Longrightarrow f'(x) > 0 \ \forall x > 0$.
+$$f(x) \in C(\mathbb{R}),\textrm{ а отже:}$$
+$$f(x) > f(0) = 1 - 1 - 0 - 0 = 0 \ \forall x > 0$$
+\end{itemize}
+\item 
+Довести, що 
+$$\frac{2}{2x + 1} < \ln (1 + \frac{1}{x}),\ x > 0$$
+Є два способи:
+\begin{itemize}
+\item 
+$$f(x) = \ln (1 + \frac{1}{x}) - \frac{2}{2x + 1}$$
+$$\lim_{x \to +\infty}f(x) = 0$$
+Отже, лишилося лише довести, що $f'(x) < 0$ при $x > 0$. Це ми можемо зробити аналогічно з минулими прикладами.
+\item Замінимо $x$ на іншу змінну $y$ наступним чином: 
+$$y = \frac{1}{x} \in (0, +\infty)$$
+$$\frac{2}{\frac{2}{y} + 1} < \ln(1 + y) \Longleftrightarrow \ln(1 + y) > \frac{2y}{2 + y}$$
+$$f(y) = \ln(1 + y) - \frac{2y}{2 + y}$$
+$$f(0) = 0$$
+Отже, нам варто довети, що $f'(y) > 0$ при $y > 0$.
+\end{itemize}
+\end{enumerate}
+\textbf{Означення. } Кажуть, що $f$ змінює знак з $+$ на $-$ в точці $x_0$, якщо:
+$$\exists \varepsilon > 0:$$
+$$\forall x \in (x_0 - \varepsilon, x_0)\ f(x) > 0$$
+$$\forall x \in (x_0, x_0 + \varepsilon)\ f(x) < 0$$
+Аналогічно означується зміна знаку з $-$ на $+$.
+
+\vspace{3mm}
+
+\textit{Наприклад,} 
+\begin{itemize}
+\item 
+$x^3$ змінує знак з мінуса на плюс у точці $0$.  
+\item 
+$\sin x$ змінює знак з плюса на мінус у точці $\frac{\pi}{2}$.
+\item
+Функція $x^2 \sin (\frac{1}{x})$ в точці $x_0 = 0$ не змінює знак, бо ми не можемо визначити точне $\varepsilon$ з означення зміни знаку. Хоча, звичайно, ця функція не є знакосталою.
+\end{itemize}
+
+\vspace{2mm}
+
+\textbf{Означення.} Точка $x_0$ називається стаціонарною, якщо $f'(x_0) = 0$.
+
+\vspace{3mm}
+
+\textbf{Теорема. (Перша достатня умова екстремуму)}.
+Нехай $f \in D(I_{\varepsilon}(x_0))\setminus\{ x_0\}$ і $f \in C(\{ x_0\})$.
+
+Якщо $f'$ в точці $x_0$ змінює знак з мінуса на плюс, то $f$ має в точці $x_0$ локальний мінімум, а якщо $f$ змінює знак з плюса на мінус, то в точці $x_0$ $f$ має локальний максимум.  
+
+\textbf{Доведення.} $\forall x \in I_{\varepsilon}(x_0) \setminus \{ x_0\}$ розглянемо проміжок $[x_0, x]$. За теоремою Лагранжа:
+$$\exists \xi \in (x_0, x):$$
+$$f(x) - f(x_0) = f'(\xi) (x - x_0)$$
+Якщо $x < x_0 \Longrightarrow x - x_0 < 0$, при цьому на проміжку $(x, x_0)$ $f'$ примає значення менше $0$, отже $f'(\xi) < 0$.
+$$f'(\xi) < 0,\ x - x_0 < 0 \Longrightarrow f(x) - f(x_0) = f'(\xi) (x - x_0) > 0$$. Отже, $f(x) > f(x_0)$. 
+
+Аналогічно доводиться, що на проміжку $(x_0, x_0 + \varepsilon)$ $f(x) > f(x_0)$.
+
+Отже, $\forall x \in I_{\varepsilon}(x_0) \setminus \{x_0 \} \ f(x) - f(x_0) > 0$, тобто $x_0$ --- точка локального максимуму.
+
+\textit{Цікавий випадок:}
+До функції
+$$f(x) = \begin{cases} x^2 \sin \frac{1}{x}, & x\neq 0 \\ 
+						0, & x = 0\end{cases}$$
+Дану теорему при $x_0 = 0$ застосувати не можемо, бо не можемо сказати, як вона змінює знак у точці $0$.
+
+\textit{До речі} лектор сказав, що ця функція це якийсь \textbf{жарт}, тож її на модулі \textbf{не буде}.
+
+\vspace{3mm}
+
+\textbf{Теорема. (Друга достатня умова екстремуму).} Нехай в стаціонарній точці $x_0 \ \exists f''(x_0)$.
+\begin{itemize}
+\item Якщо $f''(x_0) > 0$, то в точці $x_0$ функція $f$ має локальний мінімум.
+\item Якщо $f''(x_0) < 0$, то в точці $x_0$ функція $f$ має локальний максимум. 
+\end{itemize} 
+
+\textbf{Доведення.} Доведемо для випадку $f''(x_0) > 0$. Випадок $f''(x_0) < 0$ доводиться аналогічно.
+$$f''(x_0) = \lim_{x \to x_0}\frac{f'(x) - f(x_0)}{x - x_0} > 0$$
+$$\textrm{Якщо для деякої функції $\Phi$}\lim_{x\to x_0} \Phi (x) > 0, \textrm{ то}$$
+$$\exists \varepsilon : \forall x \in I_{\varepsilon}(x_0)\  \Phi(x) > 0$$
+У нашому випадку виходить, що:
+$$\exists \varepsilon : \forall x \in I_{\varepsilon}(x_0)\ \frac{f'(x) - f'(x_0)}{x - x_0} > 0$$
+\begin{itemize}
+\item Якщо $x > x_0$, то $f'(x) - f'(x_0) > 0$
+\item Якщо $x < x_0$, то $f'(x) - f'(x_0) < 0$
+\end{itemize}
+Оскільки $x_0$ --- стаціонарна точка, то $f'(x_0) = 0$, отже:
+\begin{itemize}
+\item Якщо $x > x_0$, то $f'(x) > 0$
+\item Якщо $x < x_0$, то $f'(x) < 0$
+\end{itemize}
+Отже, $f'$ змінює знак з $-$ на $+$ у точці $x_0$. З попередньої теореми отримуємо, що в $f$ має у точці $x_0$ локальний мінімум.
 
 \end{document} 
