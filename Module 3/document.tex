@@ -602,10 +602,10 @@ $f(x) = \arctg x$ задовольняє усі умови теореми Лаг
 $$\exists \xi \in (x,y):$$
 $$\frac{\arctg x - \arctg y}{x - y} = (\arctg x)'|_{x = \xi} = \frac{1}{1 + \xi^2}$$
 $$\Big| \frac{\arctg x - \arctg y}{x - y}\Big| = \frac{1}{1 + \xi^2} \leq 1$$
-Домноживши обидвы частини на $|x - y|$ отримаємо:
+Домноживши обидві частини на $|x - y|$ отримаємо:
 $$|\arctg x -\arctg y| \leq |x-y|$$
 
-\textit{Геометрична інтерпретація теореми Лагранжа.} Якщо $f \in C([a,b]) \cap D((a,b))$, то завжди можна провести дотичну до функції $f$, паралельну до відрізка, о сполучає точки $(a, f(a))$ та $(b, f(b))$.
+\textit{Геометрична інтерпретація теореми Лагранжа.} Якщо $f \in C([a,b]) \cap D((a,b))$, то завжди можна провести дотичну до функції $f$, паралельну до відрізка, що сполучає точки $(a, f(a))$ та $(b, f(b))$.
 
 \vspace{3mm}
 
@@ -617,7 +617,7 @@ $$F(x) = (f(b) - f(a))g(x) - (g(b) - g(a))f(x)$$
 \begin{enumerate}
 \item $F \in C([a,b])\cap D((a,b))$
 \item $F(a) = (f(b) - f(a))g(a) - (g(b) - g(a))f(a) = f(b)g(a) - f(a)g(a) + f(a)g(a) - g(b)f(a) = f(b)g(a) - g(b)f(a)$
-
+	
 \vspace{1mm}
 
 $F(b) = (f(b) - f(a))g(b) - (g(b) - g(a))f(b) = f(b)g(b) - f(a)g(b) + f(b)g(a) - g(b)f(b) = f(b)g(a) - g(b)f(a)$
@@ -686,7 +686,7 @@ $$f'(x) = 2x \sin \frac{1}{x} - \cos \frac{1}{x},\ x\neq 0$$
 $$f'(0) = \lim_{x \to 0}\frac{f(x) - f(0)}{x - 0} = \lim_{x\to 0}\frac{x^2 \sin \frac{1}{x}}{x} = $$
 $$= \lim_{x\to 0}x \sin \frac{1}{x} = 0$$
 Чи буде $f'$ неперервна в точці $x_0$?
-$$\lim_{x \to 0}f'(x) = \lim_{x\to 0 }(2x \sin frac{1}{x} - \cos \frac{1}{x}) = -\lim_{x\to 0}\cos \frac{1}{x} = $$
+$$\lim_{x \to 0}f'(x) = \lim_{x\to 0 }(2x \sin \frac{1}{x} - \cos \frac{1}{x}) = -\lim_{x\to 0}\cos \frac{1}{x} = $$
 $$-\lim_{y \to \infty} \cos y \textrm{ --- не існує}$$
 Отже $f'(x)$ має розрив другого роду у точці $0$.
 
@@ -700,7 +700,7 @@ $$\exists \lim_{x\to a+}\frac{f'(x)}{g'(x)} = \lambda \in \mathbb{R}$$
 \item 
 $$g'(x) \neq 0 \ \forall x \in (a,b)$$
 \end{enumerate}
-$$\textrm{Тоді} \exists \lim_{x\to a+}\frac{f(x)}{g(x)} = \lambda$$
+$$\textrm{Тоді } \exists \lim_{x\to a+}\frac{f(x)}{g(x)} = \lambda$$
 
 \textbf{Доведення.} Доозначимо функції $f$ і  $g$ у точці $a$. Розглянемо 
 $$F(x) = \begin{cases} 0,& x = a \\
@@ -721,15 +721,15 @@ $$\Longrightarrow \exists \lim_{\xi \to a+}\frac{f'(\xi)}{g'(\xi)} \Longrightarr
 \begin{enumerate}
 \item $$\exists \lim_{x \to +\infty}f(x) = \lim_{x\to +\infty}g(x) = 0$$
 \item $$\exists \lim_{x\to +\infty}\frac{f'(x)}{g'(x)} = \lambda$$
-\item $$\forall x \in (a, +\infty) g'(x) \neq 0$$
+\item $$\forall x \in (a, +\infty)\ g'(x) \neq 0$$
 \end{enumerate}  
-$$\textrm{Тоді } \exists \lim_{x\to +\infty}\frac{f(x)}{g(x)} = \lambda$$
+$$\textrm{Тоді}\ \exists \lim_{x\to +\infty}\frac{f(x)}{g(x)} = \lambda$$
 
 \textit{Зауваження.} Умову $\lim f = \lim g = 0$ можна замінити на $\lim f = \lim g = \infty$ і правило Лопіталя теж буде виконуватись. Головне, щоб функції прямували до $0$ або $\infty$ одночасно.
 
 \textit{Приклад:}
 \begin{itemize}
-\item $$\lim_{x\to 0}\frac{\sin x}{e^x - 1} = \lim_{x\to 0}\frac{\cos x}{e^x} - 1$$
+\item $$\lim_{x\to 0}\frac{\sin x}{e^x - 1} = \lim_{x\to 0}\frac{\cos x}{e^x} = 1$$
 \item $$\lim_{x\to +\infty}\frac{e^x}{x} = \lim_{x \to +\infty}\frac{e^x}{1} = +\infty$$
 \item $$\lim_{x\to 0}x \ln x = \lim_{x \to 0}\frac{\ln x}{\frac{1}{x}} = \lim_{x\to 0}\frac{\frac{1}{x}}{\frac{-1}{x^2}} = \lim_{x\to 0}(-x) = 0$$
 \end{itemize}
@@ -742,7 +742,7 @@ $$\textrm{Тоді } \exists \lim_{x\to +\infty}\frac{f(x)}{g(x)} = \lambda$$
 
 Многочлен
 
-$$P_{n,x}(x_0) = \sum_{k = 0}{n}\frac{f^{(k)}(x)}{k!} \cdot (x-x_0)^k = $$
+$$P_{n,x}(x_0) = \sum_{k = 0}^{n}\frac{f^{(k)}(x_0)}{k!} \cdot (x-x_0)^k = $$
 $$= f(x_0) + \frac{f'(x_0)}{1!} + \frac{f''(x_0)}{2!}(x-x_0)^2 + \ldots + \frac{f^{(n)}(x_0)}{n!} (x-x_0)^n$$
 
 називається \textbf{многочленом Тейлора} $n$-того порядку для функції $f$ в точці $x_0$.
@@ -760,15 +760,15 @@ $$r(x) = o((x - x_0)^n)$$
 
 Тобто:
 
-$$f(x) = \sum_{k = 0}{n}\frac{f^{(k)}(x)}{k!} \cdot (x-x_0)^k + o((x - x_0)^n)$$
+$$f(x) = \sum_{k = 0}^{n}\frac{f^{(k)}(x_0)}{k!} \cdot (x-x_0)^k + o((x - x_0)^n)$$
 
 \textbf{Доведення.}
 
-$$\lim_{x\to x_0}\frac{f(x) - \sum_{k = 0}{n}\frac{f^{(k)}(x)}{k!} \cdot (x-x_0)^k}{(x - x_0)^n} = $$
-$$ = \lim_{x\to x_0}\frac{(f(x) - \sum_{k = 0}{n}\frac{f^{(k)}(x)}{k!} \cdot (x-x_0)^k)'}{((x - x_0)^n)'} $$
+$$\lim_{x\to x_0}\frac{f(x) - \sum_{k = 0}^{n}\frac{f^{(k)}(x_0)}{k!} \cdot (x-x_0)^k}{(x - x_0)^n} = $$
+$$ = \lim_{x\to x_0}\frac{(f(x) - \sum_{k = 0}^{n}\frac{f^{(k)}(x_0)}{k!} \cdot (x-x_0)^k)'}{((x - x_0)^n)'} $$
 
 $$\Big(\frac{f^{(k)}(x_0)}{k!} (x - x_0)^k\Big)' = \frac{f^{(k)}(x_0)}{(k-1)!} (x - x_0)^{k-1}\textrm{, отже:}$$
-$$\lim_{x\to x_0}\frac{(f(x) - \sum_{k = 0}{n}\frac{f^{(k)}(x)}{k!} \cdot (x-x_0)^k)'}{((x - x_0)^n)'} = $$
+$$\lim_{x\to x_0}\frac{(f(x) - \sum_{k = 0}^{n}\frac{f^{(k)}(x_0)}{k!} \cdot (x-x_0)^k)'}{((x - x_0)^n)'} = $$
 $$= \lim_{x \to x_0}\frac{f'(x) - f'(x_0) - \frac{f''(x_0)}{1!}(x - x_0) - \ldots - \frac{f^{(n)}(x_0)}{(n-1)!} (x - x_0)^{n-1}}{n(x - x_0)^{n-1}} = $$
 $$= \lim_{x \to x_0}\frac{(f'(x) - f'(x_0) - \frac{f''(x_0)}{1!}(x - x_0) - \ldots - \frac{f^{(n)}(x_0)}{(n-1)!} (x - x_0)^{n-1})'}{(n(x - x_0)^{n-1})'} = $$
 $$= \ldots = \lim_{x \to x_0}\frac{f^{n-1}(x) - f^{n-1}(x_0) - \frac{f^{n}(x_0)}{1} (x - x_0)}{n! (x - x_0)} = $$
@@ -786,9 +786,9 @@ $$\frac{1}{n!} \lim_{x \to x_0}(f^{(n)}(x_0) - f^{(n)}(x_0)) = 0$$
 \textbf{Теорема. Формула Тейлора із залишковим членом у формі Лагранжа.}
 Нехай $f \in D^{(n+1)}((a,b)),\ x,x_0 \in (a,b)$, тоді:
 $$\exists \xi \in (x_0, x):$$
-$$r(x) = \frac{f^({n+1})(\xi)}{(n+1)!}\cdot (x - x_0)^{n+1}$$
+$$r(x) = \frac{f^{(n+1)}(\xi)}{(n+1)!}\cdot (x - x_0)^{n+1}$$
 Тобто
-$$f(x) = \sum_{k = 0}{n}\frac{f^{(k)}(x)}{k!} \cdot (x-x_0)^k + \frac{f^({n+1})(\xi)}{(n+1)!}\cdot (x - x_0)^{n+1}$$
+$$f(x) = \sum_{k = 0}^{n}\frac{f^{(k)}(x)}{k!} \cdot (x-x_0)^k + \frac{f^{(n+1)}(\xi)}{(n+1)!}\cdot (x - x_0)^{n+1}$$
 
 \textbf{Теорема. Формула Тейлора із залишковим членом у формі Коші.}
 $$\exists \xi \in (x, x_0):$$
@@ -797,7 +797,7 @@ $$r(x) = \frac{\theta^n}{n!}(x - x_0)^n f^{(n+1)}(\xi)$$
 Це деяке число, яке належить проміжку $[0,1]$. Завдяки цьому виходить, що:
 $$\theta x_0 + (1-\theta)x \in [x, x_0]$$
 Оскільки $\xi \in (x, x_0)$, то:
-$$\xi = \theta x_0 + (1 - \theta x,\ \theta \in (0,1)$$
+$$\xi = \theta x_0 + (1 - \theta x),\ \theta \in (0,1)$$
 
 \textit{Домашнє завдання:}
 \begin{enumerate}
@@ -812,7 +812,7 @@ $$\xi = \theta x_0 + (1 - \theta x,\ \theta \in (0,1)$$
 При $x_0 = 0$:
 $$\sin x = x - \frac{x^3}{3!} + r(x),\ x \in [0,1]$$
 $$\sin x = x - \frac{x^3}{3!} + \frac{\sin^{(4)} (\xi)}{4!} x^4 = x - \frac{x^3}{3!} + \frac{\sin \xi}{4!} x^4$$
-$$\sin x - (x - \frac{x^3}{3!}) = \Big|\frac{\sin \xi}{4!} x^4\Big|\leq \frac{1}{24}$$
+$$\Big|\sin x - (x - \frac{x^3}{3!})\Big| = \Big|\frac{\sin \xi}{4!} x^4\Big|\leq \frac{1}{24}$$
 
 \begin{center}
 \textbf{Дослідження функцій за допомогою похідних}
@@ -823,9 +823,9 @@ $$\sin x - (x - \frac{x^3}{3!}) = \Big|\frac{\sin \xi}{4!} x^4\Big|\leq \frac{1}
 \textbf{Теорема.} Нехай $f \in D((a,b))$. Тоді:
 \begin{enumerate}
 \item $f \nearrow$ (нестрого зростає) на $(a,b)$ $\Longleftrightarrow$ $\forall x \in (a,b)\ f'(x) \geq 0$. 
-\item $f \searrow$ (нестрого спадає) на $(a,b)$ $\Longleftrightarrow$ $\forall x \in (a,b)\ f'(x) \geq 0$.
-\item $f \uparrow$ (строго зростає) на $(a,b)$ $\Longleftarrow$ $\forall x \in (a,b)\ f'(x) \geq 0$.
-\item $f \downarrow$ (строго спадає) на $(a,b)$ $\Longleftarrow$ $\forall x \in (a,b)\ f'(x) \geq 0$.
+\item $f \searrow$ (нестрого спадає) на $(a,b)$ $\Longleftrightarrow$ $\forall x \in (a,b)\ f'(x) \leq 0$.
+\item $f \uparrow$ (строго зростає) на $(a,b)$ $\Longleftarrow$ $\forall x \in (a,b)\ f'(x) > 0$.
+\item $f \downarrow$ (строго спадає) на $(a,b)$ $\Longleftarrow$ $\forall x \in (a,b)\ f'(x) < 0$.
 \end{enumerate}
 
 \textbf{Доведення.} 
@@ -985,7 +985,7 @@ $$f(x) = \begin{cases} x^2 \sin \frac{1}{x}, & x\neq 0 \\
 \end{itemize} 
 
 \textbf{Доведення.} Доведемо для випадку $f''(x_0) > 0$. Випадок $f''(x_0) < 0$ доводиться аналогічно.
-$$f''(x_0) = \lim_{x \to x_0}\frac{f'(x) - f(x_0)}{x - x_0} > 0$$
+$$f''(x_0) = \lim_{x \to x_0}\frac{f'(x) - f'(x_0)}{x - x_0} > 0$$
 $$\textrm{Якщо для деякої функції $\Phi$}\lim_{x\to x_0} \Phi (x) > 0, \textrm{ то}$$
 $$\exists \varepsilon : \forall x \in I_{\varepsilon}(x_0)\  \Phi(x) > 0$$
 У нашому випадку виходить, що:
@@ -1000,5 +1000,9 @@ $$\exists \varepsilon : \forall x \in I_{\varepsilon}(x_0)\ \frac{f'(x) - f'(x_0
 \item Якщо $x < x_0$, то $f'(x) < 0$
 \end{itemize}
 Отже, $f'$ змінює знак з $-$ на $+$ у точці $x_0$. З попередньої теореми отримуємо, що в $f$ має у точці $x_0$ локальний мінімум.
+
+\vspace{3mm}
+
+\textit{Домашня робота.} Лектор сказав, щоб ми самі розібрали Третю достаню умову екстремуму, та усе що пов'язане з крайовими екстремумами.
 
 \end{document} 
