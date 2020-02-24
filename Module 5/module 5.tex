@@ -1,0 +1,97 @@
+\documentclass[12pt]{report}
+\usepackage[utf8x]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[makeroom]{cancel}
+\usepackage{mathtext} 
+\usepackage{relsize}
+\usepackage{scalerel}
+\usepackage[usestackEOL]{stackengine}
+\title{Конспекти лекцій з математичного аналізу Анікушина А.В. Модуль 4.}
+\author{Автор тексту @vic778 \\ Якщо знайшли помилки, пишіть мені в телеграм \\  \small{A special thanks to @bezkorstanislav without whom these lecture notes would never have been created}}
+
+\date{February 2020}
+
+\begin{document}
+	\maketitle
+
+\begin{center}
+	\textbf{\LargeІнтеграл Рімана} 
+\end{center}
+ 
+ Нехай f: [a,b]	$\rightarrow \mathbb{R}$. Розіб'ємо [a,b] на n частин точками 
+ 
+ a=$x_0<x_1<x_2<...<x_n=b$. Сукупність  $\{x_0, x_1, ..., x_n\}$ = P назвемо \textit{ розбиттям} [a,b]. Розглянемо довжини $\Delta x_i = x_i - x_{i-1},     i = 1, ..., n.$
+Число $\textit{diam} (P)$ = max$ \Delta x_i$ назвемо $\textit{діаметром}$ розбиття.
+
+Тепер на кожному проміжку $[x_{i-1}, x_i]$ оберемо довільну точку  
+
+$\xi \in [x_{i-1}, x_i]$. Множину $\xi = \{\xi_1, \xi_2, ..., \xi_n\}$ назвемо  \textit{сукупністю} проміжних точок, що віповідає розбиттю P. 
+
+Тепер утворимо таку суму \[  S_p (f, \xi)  = \sum\limits_{i=1}^n f(\xi_i)\Delta x_i \]
+$ S_p (f, \xi)   $ називається інтегральною сумою Рімана для функції f на відрізку [a,b], що побудована за розбиттям P і сукупністю проміжних точок $ \xi $.
+
+$ f(\xi_1)(x_1 - x_0)+ f(\xi_2)(x_2 - x_1)+ f(\xi_3)(x_3 - x_2) +f(\xi_4)(x_4- x_3) $ 
+
+(Інтегральна сума дорівнює сумі площ прямокутників).
+
+\textit{Означення} Число $I$ називається $\textit{інтегралом Рімана} $ від функції  $ f $
+на [a,b], якщо $ \forall \varepsilon > 0 $   $ \exists \delta > 0$   $ diam (P) < \delta$ $\Rightarrow  $ $ \forall \xi $ $ |S_p(f\xi) - I|  < \varepsilon$
+
+\vspace{5 mm} 
+
+\textbf{Лема. (Необхідна умова інтегровності за Ріманом).} Якщо функція $ f $ інтегровна за Ріманом, то $ f $ - обмежена на [a,b].
+
+Якщо $ f $ - необмежена, то $ \forall n $  $ \exists y_n $ : $ f(y_n) > n$ $ y_nk \rightarrow y $. Тоді при деякому $ \xi $ $ S_p (f, \xi)  \rightarrow \infty$.
+
+\vspace{5 mm} 
+Сукупність всіх функцій, інтегрованих за Ріманом, позначають $ R([a,b]) $.
+
+\begin{center}
+	\textbf{\Large Чи пов'язані між собою інтеграли Рімана та Ньютона-Лейбніца?} 
+\end{center}
+
+\textbf{Теорема 1.} Нехай  $ f $ - інтегровна за Ньютоном-Лейбніцом. Тоді $ \forall P  $
+$ \exists \xi : $ $\mathlarger\int\limits_ a^b f(x)dx$ = $ S_p (f, \xi) $
+
+\textbf{Доведення} $\mathlarger\int\limits_ a^b f(x)dx =  \sum\limits_{k=0}^{n-1}\mathlarger\int\limits_{x_k}^{x_{k+1}} f(x)dx = \sum\limits_{k=0}^{n-1}(F(x_{k+1}) - F(x_k)) =$
+
+$=  \sum\limits_{k=0}^{n-1} F'(\xi_{k+1}) (x_{k+1} - x_k) = \sum\limits_{k=0}^{n-1} f(\xi_{k+1})(x_{k+1} - x_k)$
+
+\vspace{5 mm} 
+\textit{Тобто, за кожним інтегралом Ньютона-Лейбніца стоїть інтеграл Рімана.}
+
+\vspace{5 mm} 
+
+\textbf{Теорема 2} Якщо існують інтеграли Рімана та Ньбтона-Лейбніца, то вони співпадають.
+
+\textbf{Доведення} Нехай $ I $ - інтеграл Рімана. Тоді $ \forall \varepsilon > 0 $  $\exists \delta > 0  $ $ \forall P: diam (P)  < \delta , $  $ \forall \xi |S_p(f, \xi) - I| < \varepsilon.$ Тепер 
+$ \forall P$ $ \exists \xi_0  $ $ \mathlarger\int\limits_a^b f(x) dx - S_p (f, \xi) = 0.$
+ Якщо $ diam(P)< \delta $, то |$\mathlarger\int\limits_a^b f(x) dx  - I  $| < $ \varepsilon. $
+ 
+Отже, $\mathlarger\int\limits_a^b f(x) dx   = I$.
+
+\vspace{5 mm} 
+\textit{Зауваженняя} Можна показати, що всі неперервн функції інтегровні за Ріманом.
+
+\vspace{5 mm} 
+
+$ \overline S_p(f) = \sum M_i (x_{i+1} - x_{i}) ,$ де $ M_i = supf(x)  x_i [x_i, x_{i+1}]$
+називають \textit{верхньою інтегральною сумою Дарбу.}
+
+Аналогічно, $ \underline S_p(f) = \sum M_i (x_{i+1} - x_{i}) ,$ де $ M_i = inf(x)  x_i [x_i, x_{i+1}]$ називають \textit{нижньою інтегральною сумою Дарбу.}
+
+\vspace{3 mm} 
+Зрозуміло, що $ \forall \xi  $ $ \underline S_p(f) \leq S_p (f, \xi) \leq  \overline S_p(f)$
+
+
+
+
+
+
+
+
+
+
+\end{document}  
