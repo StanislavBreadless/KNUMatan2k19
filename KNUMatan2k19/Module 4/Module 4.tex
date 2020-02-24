@@ -1,0 +1,656 @@
+
+\documentclass[12pt]{report}
+\usepackage[utf8x]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[makeroom]{cancel}
+\usepackage{mathtext} 
+\usepackage{relsize}
+\usepackage{scalerel}
+\usepackage[usestackEOL]{stackengine}
+\stackMath
+\title{Конспекти лекцій з математичного аналізу Анікушина А.В. Модуль 4.}
+\author{Автор тексту @vic778 \\ Якщо знайшли помилки, пишіть мені в телеграм \\  \small{A special thanks to @bezkorstanislav without whom these lecture notes would never have been created}}
+
+\date{January - February 2020}
+
+\begin{document}
+	
+	\maketitle
+	
+	\begin{center}
+		\textbf{\LargeІнтеграл Ньютона-Лейбніца} 
+	\end{center}
+
+	\textbf{Означення.} Нехай $I=(a,b)$ - деякий проміжок. Функція $F$ називається первісною  функції $f$ на інтервалі $I,$ якщо $\forall x \in I$ $F'(x) = f(x).$
+
+	\vspace{3mm}
+	
+	\textit{Зауваження.} Первісна $F$ завжди неперервна. (Доведення цього факту виходить за рамки нашого курсу).
+	
+	\vspace{3mm}
+	
+	\textbf{Теорема. (Зв'язок між первісною).} Нехай $F_1$ та $F_2$  - первісні для $f$ на $I$. Тоді $\exists C \in \mathbb{R} : \forall x \in I: F_1(x) - F_2(x) = C.$
+	
+	\textbf{Доведення.} $(F_1(x) - F_2(x))' = f_1(x) - f_2(x) = 0.$За наслідком з теореми Лагранжа $F_1(x) - F_2(x) = C.$ 
+	
+	\vspace{3mm}
+	\textbf{Означення.} Функція $ f : \mathbb(a,b) \to \mathbb{R}$ називається інтегровною за Ньютоном-Лейбніцом, якщо у $f$ існує хоча б одна первісна на 
+	$(a,b)$.
+	\textbf{Означення.} Первісна від функції $f$ з фіксованою нижньою межею $a$ називається первісна, така, що $F(a) = 0$.
+
+	Позначається $F(x)=\int\limits_a^x f(t)dt$.
+	\vspace{3mm}
+	
+	\textit{Зауваження.}  $\int\limits_a^x f(t)dt=\int\limits_a^x f(s)ds= \int\limits_a^x f(x)dx$.
+	(Можемо по-різному записати інтеграл).
+	
+	\vspace{5mm}
+	
+	\textbf{Теорема. (Формула Ньютона-Лейбніца).} Нехай $F$ = довільна первісна $f$ на $I$. Тоді $\int\limits_a^b f(t)dt = F(b) - F(a)$.
+	
+	\textbf{Доведення.} Нехай $\varphi$ - первісна функції $f$ з фіксованою нижньою межею $a$. Тоді $\int\limits_a^x f(t)dt = \varphi(x)$.Оскільки $F$ та $\varphi$ - первісні, то $\varphi(x) =  F(x) = C$, $\forall x \in I$. Тоді $\int\limits_a^x f(t)dt = \varphi(b) - \varphi(a) =(\varphi(b) - C) - (\varphi(a) - C) = F(b) - F(a)$.
+	
+	\textbf{Властивості ІНЛ.}
+	\vspace{1mm}
+		
+	1) $\int\limits_a^b f(t)dt = - \int\limits_b^a f(t)dt $
+	
+	$\int\limits_a^b f(t)dt = F(b) - F(a),  \int\limits_b^a f(t)dt = F(a) - F(b)$
+	
+	2) $\int\limits_a^b f(t)dt = \int\limits_a^c f(t)dt +  \int\limits_c^bf(t)dt $
+	
+	$ F(b) - F(a) =  F(c) - F(a) +  F(b) - F(c)$
+	
+	3) $\frac{d}{dx}$($\int\limits_a^xf(t)dt)  = f(x)$
+	
+	\textbf{Теорема. (Лінійність ІНЛ).} Нехай $f$ та $g$ - інтегровні за ІНЛ на $I$. Тоді 
+	 $ \forall \alpha, \beta \in \mathbb{R}, \:  \int\limits_a^b  (\alpha f(x)+\beta g(x))dx =  \alpha\int\limits_a^b f(x)dx + \beta \int\limits_a^b f(x)dx $
+	 
+	\textbf{Доведення.}  $\int\limits_a^x  (\alpha f(t)+\beta g(t))dt = \alpha\int\limits_a^x f(t)dt + \beta \int\limits_a^x g(t)dt $
+	
+	1)$ \frac{d}{dx}$($\alpha\int\limits_a^xf(t)dt+\beta\int\limits_a^xg(t)dt)  = \alpha \frac{d}{dx}$($\int\limits_a^xf(t)dt) + \beta\frac{d}{dx}$($\int\limits_a^xg(t)dt) =$
+	
+	 = $\alpha f(x) +\beta g(x) $
+	
+    2) x = a:
+    
+   $\alpha\int\limits_a^a +\beta\int\limits_a^a$ = 0.
+	
+	\textbf{Теорема. (Заміна змінної).} 
+	Нехай $\mathbb\varphi : [a,b] \to \mathbb{R}, f$ - ?(умову додумайте самі) і $f$-інтегровна за Ньютоном-Лейбніцом на ...  i ... . $f(\varphi(t)\varphi'(t)$ - інтегровна за Ньютоном-Лейбніцом на $(a,b)$. Тоді $\int\limits_a^ b f(\varphi(t)\varphi'(t)dt$ = $\int\limits_{\varphi(a)}^{\varphi(b)}f(s)ds.$
+	
+	\textbf{Доведення.} Heхай $F$ - первісна для $f$. Тоді  $\int\limits_(\varphi(a))^(\varphi(b))f(s)ds.$ = $F(\varphi(b)) - F(\varphi(a)). $
+	Тепер розглянемо функцію $F(\varphi(t)).$ $(F(\varphi(t)))'= F'(\varphi(t))(\varphi(t))' = f(\varphi(t))(\varphi'(t)).$ Тобто $F(\varphi(t))$ - первісна для $f(\varphi(t))(\varphi'(t)).$
+	Тому, за формулою Ньютона-Лейбніца: $\int\limits_a^ b f(\varphi(t)\varphi'(t)dt = F(\varphi(b)- F(\varphi(a))$.	
+	
+	\textbf{Приклад 1.}
+	 $	\mathlarger{ \int\frac {cosx}{1+2sin^2x}dx} =   $ 
+	$ \begin{vmatrix}
+	 u = sinx \\
+	 du = cosxdx\
+	 \end{vmatrix}$	
+	$ =	\mathlarger{ \int\limits\frac {du}{1+2u^2}dx} =   $ 
+		$ \begin{vmatrix}
+	t  = \sqrt{2}u \\
+	dt = \sqrt{2}u\\
+	du = 	\mathlarger{\frac{dt}{ \sqrt{2}} }
+	\end{vmatrix}=$	
+	
+	
+
+	$ = 	\mathlarger{  \int\frac { \frac{dt}{\sqrt{2}}}{1+t^2}} = \mathlarger{ \int\frac {dt} {{\sqrt{2}(1+t^2)}}} = 	\mathlarger{  \frac{1}{\sqrt{2}}  \int\frac{1}{1+t^2}}  = 	
+	\mathlarger {  \frac{1}{\sqrt{2}}arctgt + C = \frac{1}{\sqrt{2}}arctg{\sqrt{2}u + C}} = $
+		$\mathlarger {\frac{1}{\sqrt{2}}arctg({\sqrt{2}sinx) + C}} $ 
+		
+		
+		\textbf{Теорема. (Формула інтегрування частинами).} Нехай $I=(a,b)$. Функції $f$ та $g$ диференційовні на  $ (a,b) $ і функція $ g'\circ f $ - інтегровна за Ньютоном- Лейбніцом на $ (a,b) $. Тоді функція  $ g'\circ f$ - також інтегровна за Ньютоном- Лейбніцом на $ (a,b) $ і справедливе співвідношення:
+	\[  
+    	\int\limits _a^bf'(x)g(x)\mathrm{d}x = f(x)g(x) \Big|_{x=a}^{x=b}  -  \int\limits _a^bg'(x)f(x)    		
+	\]
+		\textbf{Доведення.} $(fg)' = f'g + fg'  \Rightarrow  f' g = (fg)' - f g'$
+		
+		$	\mathlarger\int\limits _a^bf'(x)g(x) =	\mathlarger fg \Big|_a^b -  	\mathlarger\int\limits _a^b fg'dx$
+		
+      \vspace{5mm}
+      
+      \textbf{Приклад.}$\mathlarger\int\ x^2e^x dx= $
+	$ \begin{vmatrix}
+	f' = e^x&& g = x^2 \\
+    f = e^x && g' = 2x\
+	\end{vmatrix}$	
+ $ = x^2e^x - \mathlarger\int e^x 2xdx = x^2e^x - -2\mathlarger\int e^x xdx$
+ 
+   \vspace{5mm}
+{\Large ${I_1}$} = $ \mathlarger\int xe^xdx = $
+	$ \begin{vmatrix}
+f' = e^x&& g = x \\
+f = e^x && g' = 1\
+\end{vmatrix}$	
+$ = e^xx - \mathlarger\int e^x dx = e^xx-e^x + C$	
+\vspace{5mm}
+\textbf{Зауваження.}1)$ \mathlarger\int P(x)$
+$\left\{ 
+\Centerstack{sin \alpha x\\
+   cos \alpha x	\\
+	e^{\alpha x}}
+\right \}$dx $ \Rightarrow  P(x) = g, $
+$\left\{ 
+\Centerstack{sin \alpha x\\
+	cos \alpha x	\\
+	e^{\alpha x}}
+\right \}= f'$
+
+2)$ \mathlarger\int P(x)$
+$\left\{ 
+\Centerstack{arctg x \\
+	arcctgx	\\
+	\log_a x\\
+     arcsinx\\
+     arccosx}
+\right \}$dx $ \Rightarrow  P(x) = f', $
+$\left\{ 
+\Centerstack{arctg x \\
+	arcctgx	\\
+	\log_a x\\
+	arcsinx\\
+	arccosx}
+\right \}dx = g$
+
+\vspace{5mm}
+\textbf{Приклад.} 
+{\Large ${I}$ }= $\mathlarger\int e^{\alpha x}cos\beta x dx= $  
+$ \begin{vmatrix}
+f' = e^{\alpha x}&& g = cos\beta x  \\
+f = \frac {e^{\alpha x}}{\alpha} && g' = -\beta sin\beta x\
+\end{vmatrix} = $	
+$\dfrac {e^{\alpha x}}{\alpha}cos\beta x dx-$ $-\mathlarger\int $$\dfrac {e^{\alpha x}}{\alpha}
+cos(-\beta sin \beta x) dx=\dfrac{1}{\alpha }{e^{\alpha x}}cos\beta x +\dfrac{\beta}{\alpha}\mathlarger\int e^{\alpha x}sin\beta x dx=  $ 
+$ \begin{vmatrix}
+f' = e^{\alpha x}&& g = sin\beta x   \\
+f = \dfrac{1}{\alpha } e^{\alpha  x}  && g' = \beta cos \beta x\
+\end{vmatrix} = $	
+$ = \dfrac{1}{\alpha } e^{\alpha  x}   cos \beta x + \dfrac{\beta}{\alpha} \)$
+$$\left(\dfrac{1}{\alpha } e^{\alpha  x}sin\beta x -\mathlarger\int \dfrac {\beta}{\alpha} e^{\alpha  x}cos \beta x dx\right)=  \dfrac{1}{\alpha ^2} e^{\alpha  x} (\alpha cos\beta x + sin \beta x ) - - \dfrac{{\beta}^2}{{\alpha} ^2}$ {\Large ${I}$} 
+$ \Rightarrow \dfrac{\alpha^2+\beta^2}{\alpha^2} ${\Large ${I}$} $  = \dfrac{1}{\alpha^2}
+e^{\alpha  x}(\alpha cos \beta x + \beta sin \beta x) $
+$ \Rightarrow$  
+
+$\Rightarrow$  { \Large ${I}$ } = $ \dfrac {\alpha cos\beta x +\beta sin\beta x } {\alpha^2 + \beta^2} + C$
+
+\textbf{Приклад.} 
+a)$\mathlarger{\int[x]}dx, x \in  (0,2) =
+ \begin{cases}
+$$\mathlarger \int $0 dx$ ,&  x \in(0,1)  \\
+$$\mathlarger\int $(1-x)dx $,& x\in [1, 2)
+ \end{cases}$
+$= \begin{cases}
+$$0 + C_1$$,&  x \in(0,1)  \\
+$$x + C_2$$,& x\in [1, 2)
+\end{cases}$
+Функція $y = [x]$ не має первісної на (0, 2), але при цьому має первісну на (0, 1) і (1,2).
+Якщо $f$ має розрив першого роду, то в точці $x_0$ $\in$ $I$ то $f$ інтегровна на $I$. Якщо $f$ - неперервна, то  $f$  - інтегровна за Ньютоном- Лейбніцом.
+В розриві другого роду невідомо що(це вже не такий тривіальний випадок).
+
+б) $\mathlarger{\int | x-1|}dx,  x \in (0,2)
+=\begin{cases}
+	$$\mathlarger \int (x-1) $dx$,&  x \ge 1 \\
+	$$\mathlarger \int (1-x)$dx $,& x<1
+\end{cases}$
+$=\begin{cases}
+\dfrac {x^2}{2} -x +C_1 &  x \in [1,2)\\
+x -\dfrac {x^2}{2} +C_2 & x\in (0,1)
+\end{cases}$
+Якщо первісна розривна,то вона не може бути диференційовна. Проте якщо ми
+ підберемо $C$$С_1$ і $C$$С_2$, то тоді первісна стане неперервною, а значить і диференційовною.
+  
+ $\lim\limits_{x \to 1-0} = x -\dfrac {x^2}{2} +C_2 = \lim\limits_{x \to 1+0} \dfrac {x^2}{2} -x +C_1$
+ 
+$ \dfrac {1}{2} + C_2 = -\dfrac{1}{2}+C_1 \Rightarrow C_2 = C_1 -1 $
+
+Отже, $\mathlarger{\int | x-1|}dx
+=\begin{cases}
+\dfrac {x^2}{2} -x +C_1 &  x \in [1,2)\\
+x -\dfrac {x^2}{2} +C_1 - 1 & x\in (0,1)
+\end{cases}$
+\vspace{5mm}
+\begin{center}
+	\textbf{\large{Техніка Інтегрування}}
+\end{center}
+\textit{Раціональні, ірраціональні, тригонометричні функції} 
+
+Раціональна функція - це функція вигляду $\dfrac{P(x)}{Q(x)}$,  де $P(x), Q(x)$ - деякі многочлени. 
+
+\textbf{Теорема 1.} Нехай $Q(x)$  (deg $Q(x)$>2) - поліном з дійсними коефіцієнтами. Тоді його можна подати  вигляді \[ Q(x) = a\prod\limits_{i = 1}^n(x - \alpha_i)\prod\limits_{i = 1}^m(x_i^2 - p_ix + q_i) \]
+$Q(x)$ завжди можна розкласти на множники, кожен з яких є або лінійним, або квадратичним.
+\vspace{3mm}
+
+\textbf{Теорема 2.}  Нехай deg $P(x)$ < deg $Q(x)$. 
+Тоді 
+ \[\dfrac{P(x)}{Q(x)} = \sum\limits_{i=1}^n  \sum\limits_{k=1}^{m_i} \dfrac{{A_k}_i}{(x -\alpha_i)^k} + \sum\limits_{j=1}^r \sum\limits_{k=1}^{e_j} \dfrac{{B_k}_jx+{C_k}_j}{(x^2 -p_jx + q_j)^k} \]
+
+Для того, щоб обчислити інтеграл $\dfrac{P(x)}{Q(x)}$, достатньо лише:
+\vspace{2mm}
+
+a) Поділити $P(x)$ на $Q(x)$ в стовпчик: $\dfrac{P(x)}{Q(x)}$ = $S(x)$ + $\dfrac{R(x)}{Q(x)}$, 
+
+deg $P(x)$ < deg $Q(x)$. 
+
+б) S(x) проінтегрувати.
+
+\vspace{2mm}
+
+в)$\dfrac{P(x)}{Q(x)}$ розкласти на прості дроби. Як це зробити? Використати \textit{метод невизначених коефіцієнтів}.
+
+\textbf{Приклад.} $\dfrac{x^6+2}{x^3(x-1)(x^2+1)} = 1 + \dfrac{x^5+x^4 +x^3 +2}{x^3(x-1)(x^2+1)} =1+  \dfrac{A}{x} + \dfrac{B}{x^2} +$
+
+\vspace{3mm} 
+
+$+ \dfrac{C}{x^3} +  \dfrac{D}{x-1} +\dfrac{Ex + F}{x^2+1} =$
+
+ $\dfrac{Ax^2(x-1)(x^2+1)+Bx(x-1)(x^2+1)+C(x-1)(x^2+1)+Dx^3(x^2+1)}{x^3(x-1)(x^2+1)} ;$
+ \vspace{3mm} 
+$x^5-x^4+x^3+2 = Ax^2(x^3 - x^2 + x - 1) + Bx(x^3 - x^2 + x - 1) + C(x^3 - x^2 + x - 1)
++ D(x^5 + x^3) + (Ex^2 - Ex + Fx - F)x^3 = Ax^5 - Ax^4 + Ax^3 - Ax^2 + Bx^4 -Bx^3 +Bx^2 - 
+Bx+Cx^3 - Cx^2 + Cx- C + Dx^5 +Dx^3 + Ex^5 - Ex^4 +Fx^4 -Fx^5 $
+
+$x^5: 1 = A+D + E$
+
+$x^4: -1 = -A +B - E + F $
+
+$x^3: 1 = A - B +C + D -F $
+
+$x^2: 0 = -A + B -C  $
+
+$x^2: 0 = -A + B -C  $
+
+$x^1:  0 = -A + B -C$
+
+$x^0: 2 = -C$
+ 
+ Розв'язавши цю систему рівнянь, маємо: С = -2, B = -2, A = 0, D = 3/2, E = -1/2, F = 1/2
+ \vspace{3mm} 
+ 
+$\dfrac{x^6+2}{x^3(x-1)(x^2+1)} = 1 - \dfrac{2}{x^2} - \dfrac{3}{2(x-1)} + \dfrac{-1/2x+1/2}{x^2+1}$
+
+А далі вже інтегруємо кожен доданок як степенева функція , логарифмічна функція, або як арктангенс. 
+
+Як записати вираз з невизначеними коефіцієнтами?
+
+В розкладі знаменника Q(x) можливі множники 4 типів: $(x-\alpha), (x-\alpha)^k, 
+(x^2 + px+q), (x^2 + px + q)^k$
+
+1) $(x-\alpha) \rightarrow \dfrac{A}{x-\alpha}$
+
+2) $(x-\alpha)^k \rightarrow \dfrac {A_1}{x-\alpha} + \dfrac {A_2}{(x-\alpha)^2} + ... + \dfrac {A_k}{(x-\alpha)^k}$
+
+
+3) $(x^2 + px+q)  \rightarrow  \dfrac {Ax+B}{x^2+px+q}$
+
+4) $(x^2 + px + q)^k \rightarrow \dfrac {A_1x+B_1}{x^2+px+q}+ \dfrac{A_2x+B_2}{(x^2+px+q)^2} +...+\dfrac  {A_kx+B_k}{(x^2+px+q)^k}$
+
+
+\textbf{Приклад.} 
+$\mathlarger\int\dfrac{dx}{(x^2+2x+2)^{10}} =$
+
+$ \mathlarger\int 1(x^2+2x+2)^{-10}dx = x(x^2+2x+2)^{-10} - \mathlarger\int x(-10)(x^2+2x+2)^{-11}(2x++2)dx = \dfrac{x}{(x^2+2x+2)^{10}}+20 \mathlarger\int \dfrac {x^2 + x}{(x^2 + 2x + 2)^{11}}dx =  $
+
+$\ast$
+$\dfrac {x^2 + x}{(x^2 + 2x + 2)^{11}} = \dfrac {(x^2+2x+2) - 1/2(2x+2)-1}{(x^2 + 2x + 2)^{10}}$
+
+$ = \dfrac{x}{(x^2+2x+2)^{10}} + 20\left(\mathlarger\int \dfrac {dx}{(x^2 + 2x + 2)^{10}} - 1/2  \mathlarger\int \dfrac {2x+2}{(x^2+2x+2)^11} -   \mathlarger\int \dfrac {dx}{(x^2+2x+2)^
+	{11}} \right) = $
+
+\vspace{3mm} 
+{\Large ${I_{10}}$ =} $\dfrac{dx}{(x^2+2x+2)^{10}}+ 20 (I_{10} - I_{11})$
+%=20\left({\Large ${I_{10}}$} - {\Large ${I_{11}}$} \right)  $
+
+\vspace{3mm} 
+{\Large ${I_{11}}$ =}  $\dfrac{1}{20}(19I_{10} - I_{11})$
+
+ \vspace{2mm} 
+
+...і так далі інтегрувати десять разів за рекуренним співвідношенням.
+
+\vspace{3mm} 
+
+\textbf{Приклад.} $\dfrac{Ax+B}{x^2 + px + q} $
+
+\vspace{2mm} 
+1) A = 0 $\Rightarrow \dfrac{B}{x^2 + px + q} $
+\vspace{3mm} 
+
+$ \mathlarger\int\dfrac{dx}{3x^2+ x+ 1} =\mathlarger\int\dfrac{dx}{\left(\sqrt{3}x + \dfrac{1}{2 \sqrt{3}}\right)^2 + \dfrac{11}{12}} = \dfrac {11}{12}\mathlarger\int\dfrac{dx}{\left(\sqrt{3}x + \dfrac{1}{2 \sqrt{3}}\right)^2 + \dfrac{11}{12}} =$ $= \dfrac{12}{11}\mathlarger\int\dfrac{dx}{\left(\dfrac{\sqrt{3}x + \dfrac{1}{2 \sqrt{3}}}{\sqrt{\dfrac{11}{12}}}\right)^{2} + 1} = $
+$= \dfrac{12}{11}\mathlarger\int\dfrac{dx}{1+\left( \dfrac{6x +1 }{\sqrt{11}}\right)^{2}} = 
+ \dfrac{12}{11} arctg\left(\dfrac{6x+1}{\sqrt{11}}\right) \dfrac{\sqrt{11}}{6} + C$
+ 
+ \vspace{3mm} 
+ 2) $ \mathlarger\int\dfrac{5x+2}{3x^2+x+1}dx = \mathlarger\int\dfrac{5/6(6x+1)+7/6}{3x^2 +x +1 } dx= \dfrac{5}{6} \mathlarger\int\dfrac{6x+1}{3x^2 + x+1 } +\dfrac{7}{6}\mathlarger\int\dfrac{dx} {3x^2+x+1} = ...$
+ 
+  \vspace{5mm} 
+ \textbf{Інтегрування тригонометричних функцій.} 
+ $\mathlarger \int \mathbb{R}(sin\varphi ,cos\varphi)d\varphi$
+ 
+ ($\mathbb{R}$ - деякий раціональний вираз )
+ 
+ 1) $ \mathbb{R}(-sin\varphi, cos\varphi)= -  \mathbb{R}(sin\varphi ,cos\varphi) \Rightarrow
+ $заміна: $t = cos\varphi$ 
+ 
+ 2) $ \mathbb{R}(sin\varphi, -cos\varphi)=  -  \mathbb{R}(sin\varphi ,cos\varphi)\Rightarrow
+ $заміна: $t = sin\varphi$
+  
+ 3) $ \mathbb{R}(-sin\varphi, -cos\varphi)=  \mathbb{R}(sin\varphi ,cos\varphi)\Rightarrow
+ $заміна: $t = tg\varphi$
+ 
+  \vspace{5mm} 
+  
+  \textbf{Приклад.}
+  
+    \vspace{3 mm} 
+  1)$\mathlarger \int \dfrac{1}{sin^2x}$dx = 
+  $ \begin{vmatrix}
+cos  x = t \\
+-sinxdx = dt
+  \end{vmatrix} = $$\mathlarger \int \dfrac{-sinx}{sin^4x} dx= $$\mathlarger \int \dfrac{dt}{(1-t^2)^2}$
+ 
+ \vspace{2 mm} 
+  2) $\mathlarger \int \dfrac{sin^3x}{cos^5x}dx= $ 
+    $ \begin{vmatrix}
+  sinx = u \\
+  cosxdx = du
+  \end{vmatrix} = $
+  $\mathlarger \int \dfrac{u^3 }{(1 - u^2)^3}du= $
+   $ \begin{vmatrix}
+  cosx = v \\
+  -sinxxdx = dv
+  \end{vmatrix}$
+  
+   \vspace{1 mm} 
+$ =  -\mathlarger \int \dfrac{1-v^2}{v^5}dv $
+
+ \vspace{2 mm} 
+ 3)$\mathlarger \int \dfrac{sin^3x}{cos^5x}dx= $ 
+ $ \begin{vmatrix}
+ tgx = \varphi \\
+ \dfrac{dx} {cos^2x}= d\varphi
+ \end{vmatrix} = $
+ $\mathlarger \int \varphi^3 d\varphi$
+ 
+  \vspace{3 mm} 
+ Якщо жоден із способів не працює, застосовуйте тригонометричні формули:
+ 
+  \vspace{3 mm} 
+  $\mathlarger \int \dfrac{1}{1+cos\varphi} d\varphi=  \mathlarger \int\dfrac{1}{2cos^2\dfrac{\varphi}{2}} d\varphi = \dfrac{1}{2}$
+  $ \mathlarger \int\dfrac{1}{1+\dfrac {1}{tg^2\varphi}}d\varphi $ 
+  
+  \vspace{3 mm} 
+...або універсальну тригонометричну підстановку:
+
+  $\mathlarger \int \dfrac{1}{1+cos\varphi} d\varphi=$
+  $ \begin{vmatrix}
+  u  = tg\dfrac{\varphi}{2}&&sin\varphi = \dfrac{2u}{1+u^2} \\
+cos \varphi  = \dfrac{1-u^2}{1+u^2}&& tg \varphi = \dfrac {2u}{1-u^2}&&d\varphi = \dfrac{d}{1+u^2}
+  \end{vmatrix} $
+$=$= $\mathlarger \int \dfrac {1}{1+ \dfrac{1 - u^2}{1+u^2}}\dfrac {du}{1+u^2}$
+
+...ще один приклад:
+$\mathlarger \int \dfrac{1}{sin^6 + cos^6} = \mathlarger \int \dfrac{dx}{sin^4 - sin^2xcos^2x cos^4}$
+
+\vspace{5 mm} 
+\textbf{Інтегрування ірраціональних функцій}
+
+\vspace{3 mm} 
+а)$\mathbb{R}(x, x^{\dfrac{m_1}{n_1}}, x^{\dfrac{m_2}{n_2}}, ..., x^{\dfrac{m_k}{n_k}})$
+Заміна: $U = x^{\dfrac{1}{n}},$де n - НСК$(n_1, n_2, ..., n_k)$
+
+\textbf{ Приклад.}
+$\mathlarger\int \dfrac{\sqrt{x}}{x^{\dfrac{1}{3}}+ x ^{\dfrac{6}{15}}+ x}$ = 
+$ \begin{vmatrix}
+u  = x^{\dfrac{1}{30}}\\
+x = u^{30}
+\end{vmatrix} $
+= 
+$\mathlarger\int \dfrac{u^{15} 30u^{29}}{u^{10}+u^{26}+u^{30}}du$
+
+\vspace{3 mm} 
+b) $\mathbb{R}\left(x, \dfrac{ax+b}{cx+d}^{\dfrac{m_1}{n_1}}, \dfrac{ax+b}{cx+d}^{\dfrac{m_2}{n_2}}, ..., \dfrac{ax+b}{cx+d}^{\dfrac{m_k}{n_k}}\right)$
+
+Заміна: $U =  \left(\dfrac{ax+b}{cx+d}\right)^{\dfrac{1}{n}}$, 
+де n - НСК$(n_1, n_2, ..., n_k)$
+
+\vspace{3 mm} 
+\textbf{ Приклад.}
+$\mathlarger \int\left(1 + \sqrt[3]{\left(\dfrac{x+1}{x-1}\right)^2}\right)$ dx = 
+$\mathlarger \int(1+u^2)\dfrac{-6u^2}{{(u^3-1)^2}}$du = ...
+
+$\left(\dfrac{x+1}{x-1}\right)^{\dfrac{1}{3}}$ dx = u   $ \Rightarrow \dfrac{x+1}{x-1}= u^3
+\Rightarrow x = \dfrac{u^3+1}{u^3 - 1}; dx = \dfrac{3u^2(u^3-1)+ 3u^2(u^3+1)}{(u^3-1)^2}dx$
+
+\vspace{5 mm} 
+...to be continued
+
+ \vspace{5 mm}    
+ 
+ 
+ \textbf{\large {Підстановки Чебишева.}}	$\mathlarger \int x^r(a+bx^q)^p $dx.
+ $ \qquad r, q, p \in \mathbb {Z} $\\ \\ \\ \\ \\
+ \textbf{Теорема Чебишева.} Інтеграл $I$ обчислюється в елементарних функціях тоді і тільки тоді, коли виконано хоча б одну з трьох умов: 
+ 
+ $\obeylines$
+ 
+ a) $p \in \mathbb{Z}$  
+ 
+ 
+  \vspace{3 mm}    
+b) $\dfrac{r+1}{q} \in\mathbb{Z}$
+ 
+ \vspace{3 mm} 
+c) $\dfrac{r+1}{q} + p \in\mathbb{Z}$
+
+ \vspace{3 mm} 
+ \textit{Зауваження.} Інтеграл $\mathlarger \int f(x)dx$ обчислюється в елементарних функціях, якщо первісну $F$ можна подати у скінченному вигляді за допомогою елементарних функцій $(x^n, a^x,\log_a x, sinx, cosx, tgx, arcsinx, arccosx )$ ,їхніх суперпозицій та знаків арифметичних дій.
+ 
+  \vspace{5 mm} 
+ a) $ p \in\mathbb{Z} \Rightarrow $ заміна $x^{\dfrac{1}{k}} = t, k - $спільний знаменник  r, q
+ 
+ $\mathlarger\int x^{\dfrac{1}{3}}\left(a + bx^{2/5}\right)$dx = 
+ $ \begin{vmatrix}
+ t   = x^{\dfrac{1}{15}}\\
+ x = u^{15}\\
+ dx = 15t^{14}dt
+ \end{vmatrix} $
+=  $\mathlarger\int t^5(a+bt^6)^4 15t^{14}dt$
+ 
+  \vspace{3 mm} 
+b)  $\dfrac{r+1}{q} \in\mathbb{Z} \Rightarrow $ заміна $x^q = t$
+
+\vspace{3 mm} 
+$\mathlarger\int x^r(a+bx^q)^p =$
+\vspace{3 mm}
+ $ \begin{vmatrix}
+x  = t^{\dfrac{1}{q}}\\
+dx = \dfrac{1}{q}t^{\dfrac{1}{q}-1}dt
+\end{vmatrix} = $
+$\mathlarger\int t^{\dfrac{r}{q}}(a+bt)^p\dfrac{1}{q} t^{\dfrac{1}{q}}$ =
+
+ $\dfrac{1}{4}\mathlarger\int t ^{\frac{r+1}{q} -1}(a+bt)^p dt = $
+ $ \begin{vmatrix}
+ (a+bt)^{\dfrac{1}{q} }= u \\
+ $k - знаменник числа p$
+ \end{vmatrix} = $
+ $\mathlarger\int x^3(a+bx^{\frac{1}{2}})^\frac{3}{2}$dx= 
+ 
+ \vspace{3 mm}
+ 
+ $=  \begin{vmatrix}
+x = t^2 \\
+dx = 2tdt
+ \end{vmatrix} = $
+2$\mathlarger\int t^7(a+bt)^{3/2}dt = $
+$ \begin{vmatrix}
+(a+bt)^{1/2} = t^2 \\
+t= \dfrac{1}{b} (u^2 - a)\\
+dt = \dfrac{2u}{b}
+\end{vmatrix} = $
+$ 2\mathlarger\int \left(\dfrac{1}{b}(u^2 - a)\right)^7u^3 \dfrac{2u}{b}$du
+
+  \vspace{3 mm} 
+c) $\dfrac{r+1}{q} + p \in\mathbb{Z}$
+
+$ \mathlarger\int x^r(a+bx^q)^pdx = \dfrac{1}{q}\mathlarger\int t^{{\frac{r+1}{q}} -1}(a+bt)^p$dt = $\dfrac{1}{q}\mathlarger\int t^{\frac{r+1}{q}+ p -1 }\left(b + \dfrac{a}{t}\right)^p$dt = 
+
+\vspace{3 mm}
+$\begin{vmatrix}
+	(b+\dfrac{a}{t})^{1/k} = u \\
+	 $k - знаменник числа p$
+\end{vmatrix} = ...$
+ 
+ \vspace{5 mm}
+ \textbf{Квадратична ірраціональність} $\mathbb{R}(x, \sqrt{ax^2+bx+c})$
+ 
+ \vspace{3 mm}
+ \textbf{Підстановки Ейлера} 
+\vspace{2 mm}
+  
+1)$\sqrt{ax^2+bx+c} = \pm \sqrt {a}x + t, a>0$
+
+\vspace{2 mm}
+2)$\sqrt{ax^2+bx+c} = xt \pm \sqrt{c}, c>0$
+
+\vspace{2 mm}
+3)$\sqrt{ax^2+bx+c} = (x-x_1), x_1$  - корінь тричлена
+
+\vspace{2 mm}
+ \textit{Зауваження.} Знак + або - обираємо залежно від ситуації.
+
+\vspace{5 mm}
+$\textbf{Приклад 1.} \mathlarger\int \dfrac{dx}{x + \sqrt{x^2+x+1}} = ... $
+
+\vspace{3 mm}
+1) $\sqrt{x^2+x+1} = x+t $
+
+$x^2+x+1 = x^2 + 2tx+ t^2$
+
+$x - 2tx = t^2 + 1$
+
+$x(1-2t) = t^2 - 1$
+
+$x = \dfrac{t^2 - 1}{1-2t}$, 
+$dx = \dfrac {2t(1-2t)}{1-2t}^2$dt
+
+\vspace{4 mm}
+
+...=$ \mathlarger\int\dfrac{\dfrac{2t(1-2t) + 2(t^2-1)}{(1-2t)^2}}{2 \dfrac {t^2 -1}{1 - 2t} +t}$dt\\\\\\
+
+
+2) $\sqrt{x^2+x+1} = -x+t $
+
+$x^2+x+1 = x^2 - 2tx+ t^2$
+
+x = /$x = \dfrac{t^2 - 1}{1+2t}$, 
+dx $= \dfrac {2t(1+2t)- 2(t^2- 1)}{1+2t}^2$dt
+
+\vspace{3 mm}
+$\mathlarger\int \dfrac{dx}{x + \sqrt{x^2+x+1}}$ $= \dfrac{\dfrac{2t(1+2t)-2(t^2 - 1)}{(1+2t)^2}}{t}$dt $= \dfrac{2t^2 +2t + 2}{t(1+2t)^2}$dt
+
+\vspace{5 mm}
+$\textbf{Приклад 2.} \sqrt{x^2+x+1} = xt \pm 1$
+
+$x^2+x+1 = x^2t^2 \pm 2xt+ 1$
+
+$ x+1 = xt^2 \pm 2t$
+
+$ x = \dfrac{-1\pm2t}{1-t^2} $
+
+\vspace{5 mm} 
+$\textbf{Приклад 3} \sqrt{x^2 +2x-3} = (x-1)t$
+
+$ (x-1)(x+3) = (x-1)^2t^2$
+
+$ x+3 = (x-1)t^2 $
+
+$ x = ... $
+
+\vspace{5 mm}  
+\textit{Ще один спосіб:}
+
+\vspace{3 mm}  
+$\mathlarger\int\dfrac{1}{\sqrt{ax^2+bx+c}} dx$ 
+
+\vspace{3 mm} 
+$\mathlarger\int\dfrac{dx}{\sqrt{x^2\pm a^2}}= ln|x+\sqrt {x^2\pm a^2}| +C$
+
+\vspace{3 mm} 
+$\mathlarger\int\dfrac{dx}{\sqrt{a^2 -  x^2}}= \dfrac{1}{2a} ln|\dfrac{a+x}{a-x}| + C$
+
+\vspace{3 mm} 
+$\mathlarger\int\dfrac{dx}{\sqrt{a^2 -  x^2}} = arcsin \dfrac{x}{a} + C, |x|<|a|$
+
+\vspace{5 mm} 
+\textbf{a.k.a Лямбда-формула}
+
+\vspace{3 mm} 
+$\mathlarger\int\dfrac{P_n(x)}{\sqrt{ax^2+bx+c}} dx = Q_{n-1}(x)\sqrt{ax^2+bx+c}+\dfrac{\lambda}{\sqrt{ax^2+bx+c}}dx$
+\\ \\ \\
+
+\textbf{Приклад}
+
+\vspace{3 mm} 
+$\mathlarger\int\dfrac{x^2+1}{\sqrt{x^2 +x+1}}dx = (Ax+B)\sqrt{x^2+x+1} + \mathlarger\int\dfrac{\lambda}{\sqrt{x^2+x+1}}dx$
+
+\vspace{3 mm} 
+$ \dfrac{x^2 +1} {\sqrt{x^2+x+1}}dx = A\sqrt{x^2+x+1}+ (Ax+B)\dfrac{2x+1}{2\sqrt{x^2+x+1}} + \dfrac{\lambda}{\sqrt{x^2+x+1}}$
+
+$2(x^2+1) = 2A (x^2+x+1)+ (Ax+B)(2x+1) +2\lambda$
+
+\vspace{3 mm} 
+Далі знаходимо $A, B, \lambda$
+
+**********************
+\vspace{5 mm} 
+
+$ \dfrac{1}{x+\sqrt {x^2+x+1}}=  \dfrac{x-\sqrt{x^2+x+1}}{x^2 - x^2 - x- 1} $dx = $-\dfrac {x}{x+1} + \dfrac {x^2 +x +1}{(x+1)\sqrt{x^2+x+1}}$
+
+(Ще один метод перетворення виразу для інтегрування)
+
+***
+\vspace{5 mm} 
+
+$\dfrac{P(x)}{(x-\alpha)^k \sqrt{ax^2 + bx+c}} \Rightarrow $ заміна$  \dfrac{1}{x - \alpha} = t
+$
+
+	\begin{center}
+	\textbf{\LargeПервісна в широкому розумінні} 
+\end{center}
+
+Функція $F \in I $ називається первісною в широкому розумінні від $f$ на інтервалі $I$, якщо $F'(x) = f(x) \forall x \in I\S,$ де $S$- не більш, ніж зліченна.
+
+\textbf{Приклад}
+
+$f(x) = 
+\begin{cases}
+1,&  x >0  \\
+-1, & x<0
+\end{cases}$
+- не є інтегровною за Ньютоном- Лейбніцом (бо розривна)
+
+\vspace{5 mm} 
+
+$\mathlarger\int f(x)dx = 
+\begin{cases}
+x+C_1,&  x \geq 0  \\
+-x+C_2, & x<0
+\end{cases}$
+
+
+\vspace{5 mm} 
+$ f(x) = [x] = \begin{cases}
+x+C,&  x \geq 0  \\
+-x+C, & x<0
+\end{cases}$ $\Rightarrow = |x| + C $ - первісна в широкому розумінні від $f$.
+
+
+  
+ 
+\end{document}  
