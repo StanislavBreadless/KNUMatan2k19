@@ -86,14 +86,185 @@ $ \overline S_p(f) = \sum M_i (x_{i+1} - x_{i}) ,$ де $ M_i = supf(x)  x_i [x_
 Зрозуміло, що $ \forall \xi  $ $ \underline S_p(f) \leq S_p (f, \xi) \leq  \overline S_p(f)$
 
 
+\vspace{5 mm}
 
+Нехай $P$ --- розбиття. $P_1 = P \cup \{ x^{*}\}$.
 
+$$\overline S_p(f) = \sum_{k = 1}^m M_{k} \Delta x_k + M_{m+1}\Delta x_{m+1} + \sum_{k = m+2}^n M_k \Delta x_k$$
 
+$$\overline S_{p_1}(f) = \sum_{k = 1}^m M_{k} \Delta x_k + \sup_{x \in [x_{m}; x^{*}]} f(x) (x^* - x_m) + \sup_{x \in [x^{*}; x_{m+1}]} f(x) (x_{m+1} - x^*) + \sum_{k = m+2}^n M_k \Delta x_k$$
+$$A \subset B \Longrightarrow \sup_{A} f \leq \sup_{B} f$$
+$$\sup_{x \in [x_{m}; x^{*}]} f(x) \leq M_{m+1}$$
+$$\sup_{x \in [x^{*}; x_{m+1}]} f(x) \leq M_{m+1}$$
 
+$$\overline S_{p_1}(f) \leq \sum_{k = 1}^m M_{k} \Delta x_k + M_{m+1}\Delta x_{m+1} + \sum_{k = m+2}^n M_k \Delta x_k$$
+$$\overline S_p \geq \overline S_{p+1}$$
+Додаючи точку до розбиття, верхня (з супремами) інтегральна сума може зменшитися або залишитис такою ж.
 
+Тому зрозуміло, що 
+$$P_1 \subset P_2 \Longrightarrow \overline S_{p_1} \geq \overline S_{p_k}, \underline S_{p_1} \leq \underline S_{p_2}$$
 
+\textbf{Наслідок:}
 
+$$\forall P_1, P_2 \overline S_{P_1}(f) \geq \underline S_{P_2}(f)$$ 
 
+Розглянемо розбиття $P = P_1 \cup P_2$.
+$$\overline S_{P_1} \geq \overline S_{p} \textrm{(з попередньої теореми $P_1 \subset P_2 \Longrightarrow \overline S_{P_1} \geq \overline S_{p}$)}$$
+$$\underline S_{P} \geq \underline S_{P_2}$$
+$$\overline S_{P_1} \geq \overline S_{P} \geq \underline S_{P} \geq \underline S_{P_2}$$
+$$\overline S_{P_1} \geq \underline S_{P_2}$$
+Що й треба було довести.
 
+\vspace{3mm}
 
+Розглянемо всі можливі верхні суми. $\overline S_{P} (f)$. Ця множина є обмеженою знизу (Необхідна умова інтегрованості за Ріманом). 
+Тому існує $\inf_{P} \overline S_{P} (f) = \overline \int f dx$. Назвемо це число верхнім інтегралом Дербу. Аналогічно 
+нижній інтеграл Дербу $\underline \int f dx = \sup_{P} \underline S_{p} (f)$.
+
+\vspace{3mm}
+
+Розглянемо нерівність $\overline S_{P_1} (f) \geq S_{P_2} (f)$. 
+Зафіксуємо $P_2$. Тоді 
+$$\forall P_1 \overline S_{P_1} (f) \geq \underline S_{P_2} \Longrightarrow \inf \overline S_{P_1} (f) \geq \underline S_{P_2} (f)$$
+(Всі елементи множини $>$ за фіксоване число $\Longrightarrow$ $>$ за інфінум.)
+
+Аналогічно для $P_2$ та супремума:
+
+Зафіксуємо $P_1$. Тоді:
+$$\forall P_2 \ \underline S_{P_2} (f) \leq \overline S_{P_1} (f) \Longrightarrow \sup \overline S_{P_1} (f) \leq \underline S_{P_1} (f)$$
+Звідcи $\overline \int fdx \geq \underline f dx$.
+
+\textbf{Означення}. Функція $f$ називається інтегровною за Дарбу, якщо $\overline \int f dx = \underline \int fdx$. (Найкраше наближення зверху = найкраще наближення знизу).
+
+\textbf{Теорема. (Критерій інтегрованості за Дарбу)}. Функція $f$ є інтегровною за Дарбу тоді й тільки тоді, коли:
+$$\forall \varepsilon > 0 \ \exists P : |\overline S_{p}(f) - \underline S_{P} (f)| < \varepsilon$$
+(Можна підібрати число, для якого верхня і нижня інтегральні суми відрізняються на мале число)
+
+\textbf{Доведення}
+
+\begin{itemize}
+\item $\Longleftarrow.$
+$$\underline S_{P} (f) fdx \leq \overline \int fdx \leq \overline S_{P} (f)$$ 
+$$\underline S_{P} (f) \leq \underline \int fdx \leq \overline \int f dx \leq \overline S_{P} (f)$$
+$$\varepsilon \geq \overline S_{P} (f) - \underline S_{P} (f) \geq \overline \int f dx - \underline \int f dx \geq 0$$
+
+Отже, $\overline \int f dx - \underline f dx = 0$.
+
+\item $\Longrightarrow.$
+
+Зафіксуємо $\varepsilon > 0$. Тоді супремум $\inf \overline S_{P} (f) = \overline \int f dx$ є точкою дотику 
+в будь-якому $\varepsilon$-околі множини.
+$$\exists P_{1} \ \overline \int f dx \leq \overline S_{P_1} (f) \leq \overline \int fdx + \frac{\varepsilon}{2}$$
+$$\exists P_{2} \ \underline \int f dx \leq \underline S_{P_2} (f) \leq \underline \int fdx $$
+
+Розглянемо $P = P_1 \cup P_2$. Збільшуємо розбиття, збільшуємо точність, верхня інтегральна сума збільнується (або залишається такою ж).
+
+$$0 \leq \overline S_{P} (f) - \underline S_{P} (f) \leq \overline S_{P_1} - \underline S_{P_2} (f) < \varepsilon$$
+Що і треба було довести.
+\end{itemize}
+
+\vspace{5mm}
+
+\textbf{Теорема.} Функція $f$ є інтегрованою за Дарбу тоді й тільки тоді, коли $f$ інтегровна за Ріманом і їх інтеграли співпадають.
+
+\vspace{3mm}
+
+\textit{Приклад 1.}
+$$0 = x_0,\ x_k = \frac{1}{n},\ x_n = 1$$
+$$\overline S_{P} (f) = \sum_{k=1}^n M_k \cdot \Delta x_k = \sum_{k=1}^n \frac{k}{n} \cdot \frac{1}{n}$$
+$$M_k = \sup_{[x_{k-1}, x_k]} x = x_k = \frac{k}{n}$$
+$$\underline S_{P} (f) = \sum_{k = 1}^n M_k \Delta x_k = \sum_{k=1}^n x_k + \Delta x_k = \sum_{k=1}^{n} \frac{k-1}{n} \cdot \frac{1}{n}$$
+$$\overline S_{P}(f) - \underline S_{P} (f) = \frac{1}{n}$$
+$\frac{1}{n}$ може бути як завгодно мале, а тому $x \in R([0,1])$ (інтегрована за Ріманом).
+\vspace{3mm}
+
+\textit{Приклад 2.}
+$$D(x) =  \begin{cases} 1 &, x \in \mathbb{Q} \\
+						  0 &, x \in \mathbb{R} \setminus \mathbb{Q} \end{cases}$$
+Функцію розглядаємо на проміжку $[0,1]$.
+
+$$\overline S_{P} (D) = \sum_{k=1}^n \sup_{x \in [\ldots]} D(x) = \sum_{k=1}^n \Delta x_k = 1$$
+$$\underline S_{P} (D) = \sum_{k=1}^n( \inf_{x \in [\ldots]} (D(x)) \cdot  \Delta x_k) = 0$$
+$$\forall p : \overline S_{p}(D) - \underline S_{p} (D) > \frac{1}{13} =  \varepsilon$$
+Отже, $D \notin R([0,1])$.
+
+\begin{center}
+	\textbf{\LargeМножини Лебегової міри нуля} 
+\end{center}
+
+\textbf{Означення} Множина $A \subset \mathbb{R}$ має міру нуль, якщо $\forall \varepsilon > 0 \ \exists$ не більш як скінчена кількість $ (\alpha_1,\beta_1), (\alpha_2,\beta_2), \ldots$ такі, що:
+
+\begin{enumerate}
+
+\item $A \subset \bigcup_{k=1}^{\infty} (\alpha_k, \beta_k)$ (Множину можна покрити інтервалами, що є завгодно малими)
+
+\item $\sum (\beta_k - \alpha_k) < \varepsilon$
+
+\end{enumerate}
+
+\textit{Приклад}:
+
+\begin{enumerate}
+
+\item $A = \{ x_0\}$
+\item $A = \{ x_1, x_2, \ldots, x_n\}$
+\item $A = (0; \frac{1}{2})$ При $\varepsilon < \frac{1}{2}$ покритий не існує. (Якщо є неперервна множина, з більше, ніж однієї точки), $A$ не має точки нуль).
+\item $A = \{ x_1, x_2, \ldots\}$
+\end{enumerate}
+
+\textbf{Властивості:}
+
+\begin{enumerate}
+
+\item Якщо $A$ -- зліченна, або обмежена, то $A$ має міру нуль.
+\item Якщо $\exists \alpha, \beta : (\alpha, \beta) \subset A \Longrightarrow A$ не має міру нуль.
+\item Незліченні (континуальні) множини теж мають міру нуль.
+\item Якщо $A_1, A_2, \ldots$ мають міру нуль, то їх об'єднання теж має міру нуль.  
+
+\end{enumerate}
+
+\textbf{Приклад:}
+
+\begin{itemize}
+
+\item $Q \cap [0,1]$ -- зліченна, тож має міру нуль.
+\item $(\mathbb{R} \setminus \mathbb{Q}) \cap [0,1]$. Якщо припустити, що $(\mathbb{R} \setminus \mathbb{Q}) \cap [0,1]$ 
+має міру нуль, то за властивістю $4$:
+
+$(\mathbb{Q}\cap[0,1]) \cup (\mathbb{R} \setminus \mathbb{Q}) \cap [0,1] = [0,1]$ теж має міру 0. Але це суперечить властивості $2$.
+
+\end{itemize}
+ 
+
+\textbf{Критерій Лебега інтегровності за Ріманом}
+
+Нехай $f$ -- обмежена на $[a,b]$. Тоді $f \in R([a,b])$ тоді й тільки тоді, коли множина точок розриву функції $f$ на $[a,b]$ має міру $0$.
+(Тобто коли точок розриву не більше, ніж зліченна кількість).
+
+\textbf{Приклади:}
+
+\begin{enumerate}
+\item D(x) = $\begin{cases} 1 &, x \in \mathbb{Q} \\ 0 &, x \notin \mathbb{Q} \end{cases}$ на проміжку $[0,1]$.
+
+$E_{D} = [0,1]$ -- не має міру $0$ за властивостю $2$.
+
+Отже, за критерієм $D \notin R([0,1])$.
+
+\item $f(x) = \frac{x - \frac{1}{2}}{|x - \frac{1}{2}|} = \begin{cases} 1 &, x > \frac{1}{2} \\ -1 &, x < \frac{1}{2} \end{cases}$
+
+$E_f = \{\frac{1}{2}\}$ -- множина точок розриву має міру нуль. Отже, $f(x) \in R([0,1])$.
+
+\item Функція Рімана:
+
+$$f(x) = \begin{cases} 0 &, x \in \mathbb{R} \setminus \mathbb{Q} \\ 
+					   \frac{1}{n} &, x = \frac{m}{n}, \textrm{НСД($m$,$n$) = 1}
+		 \end{cases}$$
+$E_f = \mathbb{Q} \cap [0,1]$. Отже, $f$ інтегрована.
+
+\item $f(x) = \ln x$
+
+$E_f = \{0\}$ -- точки розриву. Але $f(x)$ необмежена, тому не є інтегрованою за Ріманом на $[0,1]$.
+
+\end{enumerate}
+ 
 \end{document}  
